@@ -1100,6 +1100,23 @@ span.buy {
 		vertical-align: top;
 		box-sizing: border-box;
 	}
+	.animated-sec1.animated-in1{
+			-webkit-transition: all .65s cubic-bezier(.39,.575,.565,1) 1.55s;
+			transition: all .65s cubic-bezier(.39,.575,.565,1) 1.55s;
+	}
+
+	.animated-sec2.animated-in2{
+			-webkit-transition: all .65s cubic-bezier(.39,.575,.565,1) 1.8s;
+			transition: all .65s cubic-bezier(.39,.575,.565,1) 1.8s;
+	}
+
+	.animated-sec3.animated-in3{
+			-webkit-transition: all .65s cubic-bezier(.39,.575,.565,1) 2.05s;
+			transition: all .65s cubic-bezier(.39,.575,.565,1) 2.05s;
+	}
+	.navigation-btn-open-m{
+		opacity: 1!important;
+	}
 	.mainBody-stuff{
 		margin-top: 25px;
 		background: none;
