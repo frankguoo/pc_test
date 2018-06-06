@@ -359,22 +359,17 @@ $(function(){
 $(document).ready(function() {
 	$('.image-popup-no-margins').magnificPopup({
 		  type: 'image',
-  mainClass: 'mfp-with-zoom', // this class is for CSS animation below	
-		zoom: {
-    enabled: true, // By default it's false, so don't forget to enable it
-
-    duration: 100, // duration of the effect, in milliseconds
-    easing: 'ease-in-out', // CSS transition easing function
-
-    // The "opener" function should return the element from which popup will be zoomed in
-    // and to which popup will be scaled down
-    // By defailt it looks for an image tag:
-    opener: function(openerElement) {
-      // openerElement is the element on which popup was initialized, in this case its <a> tag
-      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-      return openerElement.is('img') ? openerElement : openerElement.find('img');
-    }
-  }
+          closeOnContentClick: true,
+          closeBtnInside: false,
+          fixedContentPos: true,
+          mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+          image: {
+            verticalFit: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+          }
 	});
 });	
 </script>
@@ -391,7 +386,7 @@ $(document).ready(function() {
     }
     /* padding for main container */
    .mfp-container {
-      padding: 50px!important;
+      padding: 0px!important;
     }
 
 
