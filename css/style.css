@@ -1135,6 +1135,16 @@ span.buy {
 	#clock span 	{ font-size: 6vw; }
 	ul.pd_wrap li 	{ width: calc(100% / 2); }
 	.section_03 	{ margin-top: 0; }
+	
+	#slidebody{
+		margin: 0!important;
+		padding: 0!important;
+		width: 100%!important;
+		right:auto!important;
+		overflow-x: hidden!important;
+		position: none!important;
+		transition: none!important;
+	}
 	.mainBody-about{
 		overflow-y: scroll!important;
 	}
