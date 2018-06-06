@@ -1240,6 +1240,11 @@ span.buy {
 		width: calc(100% / 3);
 		float: left;
 	}
+	
+	html{
+		width: 100%!important;
+		position: relative!important;
+	}
 
 }
 
@@ -1303,15 +1308,7 @@ span.buy {
          width: 100%!important;
          display:block!important;
     }
-	#boxman_box {
-		margin-top: 0px;
-		width: 95%;
-		max-width: 95%;
-		margin: 0 auto;
-		position: relative;
-		box-sizing: border-box;
-		-webkit-box-sizing: border-box;
-	}
+
 
 	
 }
