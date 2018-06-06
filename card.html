@@ -359,16 +359,15 @@ $(function(){
 $(document).ready(function() {
 	$('.image-popup-no-margins').magnificPopup({
 		  type: 'image',
-          closeOnContentClick: true,
-          closeBtnInside: false,
-          fixedContentPos: true,
           mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-          image: {
-            verticalFit: true
-          },
           zoom: {
             enabled: true,
-            duration: 300 // don't foget to change the duration also in CSS
+            duration: 300, // don't foget to change the duration also in CSS
+			  opener: function(openerElement) {
+      // openerElement is the element on which popup was initialized, in this case its <a> tag
+      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+    }
           }
 	});
 });	
@@ -386,10 +385,26 @@ $(document).ready(function() {
     }
     /* padding for main container */
    .mfp-container {
-      padding: 0px!important;
+      padding: 0px 20px!important;
     }
+	
+	.mfp-wrap{
+		z-index: 999999!important;
+		
+	}
 
+	.mfp-bg{
+		z-index: 999998!important;
+		
+	}
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
 
+    right: 0px!important;
+    top: -40px!important;
+
+}	
+	
+	
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
