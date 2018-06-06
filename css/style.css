@@ -1138,12 +1138,6 @@ span.buy {
 	.mainBody-about{
 		overflow-y: scroll!important;
 	}
-	body{
-		position: relative!important;
-		width: 100%!important;
-		overflow-x: hidden!important;
-		right:auto!important;
-	}
 	.stuff_items li {
 		display: block;
 		width: 100%;
@@ -1204,6 +1198,11 @@ span.buy {
 	}
 	.photos_wrap {
 		width: 100%;
+		max-width: 100%;
+		margin: 0 auto;
+		position: relative;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
 	}
 	#boxman_box {
 		margin-top: 0px;
