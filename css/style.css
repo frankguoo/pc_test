@@ -730,7 +730,7 @@ body.pushmenu-push-toright {
 	width:50%;
 	height:100%;
 	min-height: 2500px!important;
-	z-index: 99999;
+	z-index: 999998;
 	background:#fff;
 	-webkit-transition: all 1.5s ;
 	-moz-transition: all 1.5s;
@@ -745,7 +745,7 @@ body.pushmenu-push-toright {
 	width:50%;
 	height:100%;
 	min-height: 2500px!important;
-	z-index: 99999;
+	z-index: 999998;
 	background:#fff;
 	-webkit-transition: all 1.5s;
 	-moz-transition: all 1.5s;
@@ -1240,7 +1240,7 @@ span.buy {
 		width: calc(100% / 3);
 		float: left;
 	}
-	
+
 
 
 }
