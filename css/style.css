@@ -1192,6 +1192,9 @@ span.buy {
 		margin-top: 25px;
 		background: none;
 		background-color: #9ed8d5;
+		position: relative;
+		width: 100%!important;
+		max-width: 100%!important;
 	}
 	#boxman_box {
 		margin-top: 0px;
