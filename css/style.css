@@ -1138,6 +1138,11 @@ span.buy {
 	.mainBody-about{
 		overflow-y: scroll!important;
 	}
+	body{
+		position: relative!important;
+		width: 100%!important;
+		overflow-x: hidden!important;
+	}
 	.stuff_items li {
 		display: block;
 		width: 100%;
