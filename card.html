@@ -220,24 +220,24 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 	
 		<div class="wallpaper_box card_box animated-sec3">	
 			<div class="wallpaper_inner">
-				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YamRkS0l4U251aS9oaFdIVXNib2ZQSWZaVnkrbmVtNXk2dFhmK01Md2RjZyI7.jpg">
-					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YcUY3NEE4dk54eU1KVnZrWlhETFhDMTNYMytDeUtBNXgyb0RHcHJBQ0N5LyI7.jpg" alt=""/>
+				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YZ3Q4emd3b0dWWEhkdWwxb05Pd3YvTGlVS0tlY29oM2dlNWtQRFZJQ2YvNiI7.jpg">
+					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YbmdvTGVIWmpuM0hmVkFKbk5IY3c0dURqSWp3Q3loL2Jiejl5WFFVM1NaOSI7.jpg" alt=""/>
 				</a>			
 			</div>
 		</div>
 	
 		<div class="wallpaper_box card_box animated-sec1">	
 			<div class="wallpaper_inner">
-				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YdDNpS2xYYjUrK0l1S3ZvY0xlc0tYVmtnRnU0U3R1OGpkS0xEWGI2OVc0MiI7.jpg">
-					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YbDBrTVJVTUp1NVRXb1ZTVHFGdG5rMWYrV0JMWHZCeXlOSk4renRMZXBILyI7.jpg" alt=""/>
+				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YZ3Q4emd3b0dWWEhkdWwxb05Pd3YvTGlVS0tlY29oM2dlNWtQRFZJQ2YvNiI7.jpg">
+					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YbmdvTGVIWmpuM0hmVkFKbk5IY3c0dURqSWp3Q3loL2Jiejl5WFFVM1NaOSI7.jpg" alt=""/>
 				</a>			
 			</div>
 		</div>
 	
 		<div class="wallpaper_box card_box animated-sec2">	
 			<div class="wallpaper_inner">
-				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YamRkS0l4U251aS9oaFdIVXNib2ZQSWZaVnkrbmVtNXk2dFhmK01Md2RjZyI7.jpg">
-					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YcUY3NEE4dk54eU1KVnZrWlhETFhDMTNYMytDeUtBNXgyb0RHcHJBQ0N5LyI7.jpg" alt=""/>
+				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YZ3Q4emd3b0dWWEhkdWwxb05Pd3YvTGlVS0tlY29oM2dlNWtQRFZJQ2YvNiI7.jpg">
+					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YbmdvTGVIWmpuM0hmVkFKbk5IY3c0dURqSWp3Q3loL2Jiejl5WFFVM1NaOSI7.jpg" alt=""/>
 				</a>			
 			</div>
 		</div>
@@ -359,16 +359,7 @@ $(function(){
 $(document).ready(function() {
 	$('.image-popup-no-margins').magnificPopup({
 		  type: 'image',
-          mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
-          zoom: {
-            enabled: true,
-            duration: 300, // don't foget to change the duration also in CSS
-			  opener: function(openerElement) {
-      // openerElement is the element on which popup was initialized, in this case its <a> tag
-      // you don't need to add "opener" option if this code matches your needs, it's defailt one.
-      return openerElement.is('img') ? openerElement : openerElement.find('img');
-    }
-          }
+
 	});
 });	
 </script>
@@ -397,30 +388,10 @@ $(document).ready(function() {
 		z-index: 999998!important;
 		
 	}
-.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
-
-    right: 0px!important;
-    top: -40px!important;
-
-}	
 	
 	
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-  opacity: 0;
-}
+	
 
-.mfp-with-zoom.mfp-ready .mfp-container {
-    opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-    opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container,
-.mfp-with-zoom.mfp-removing.mfp-bg {
-  opacity: 0;
-}
     </style>	
 	
 
