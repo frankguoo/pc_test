@@ -1201,6 +1201,9 @@ span.buy {
 		width: 100%!important;
 		max-width: 100%!important;
 	}
+	.photos_wrap {
+		width: 100%;
+	}
 	#boxman_box {
 		margin-top: 0px;
 		width: 95%;
