@@ -141,7 +141,7 @@
                      
                             <div class="item">
                                 <div class="news-item">
-                                    <a href="ajax.html" target="_blank" class="popup-ajax">
+                                    <a href="180607/ajax.html" target="_blank" class="popup-iframe">
                                         <img class="img-responsive" src="img/1920-6.jpg" width="365" alt="" >
                                     </a>
                                     <h5>跟著小編動吃動 <span>|</span> <span>2018/2/25</span></h5>
@@ -398,46 +398,64 @@
 	
 <script>
 $(document).ready(function() {
-	$('.popup-ajax').magnificPopup({
-    	type: 'ajax',
-          alignTop: true,
-          overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+	$('.popup-iframe').magnificPopup({
+    	type: 'iframe',
+	alignTop: false,
+         
+          iframe: {
+  markup: '<div class="mfp-iframe-scaler">'+
+            '<div class="mfp-close"></div>'+
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+  patterns: {
+    youtube: {
+      index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+      id: 'v=', // String that splits URL in a two parts, second part should be %id%
+      // Or null - full URL will be returned
+      // Or a function that should return %id%, for example:
+      // id: function(url) { return 'parsed id'; }
+
+      src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe.
+    },
+    vimeo: {
+      index: 'vimeo.com/',
+      id: '/',
+      src: '//player.vimeo.com/video/%id%?autoplay=1'
+    },
+    gmaps: {
+      index: '//maps.google.',
+      src: '%id%&output=embed'
+    }
+
+    // you may add here more sources
+
+  },
+
+  srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
+}
 	});
+	
 });	
 </script>
 	
 <style type="text/css">
-    /* padding-bottom and top for image */
-    .mfp-no-margins img.mfp-img {
-      padding: 0;
-    }
-    /* position of shadow behind the image */
-    .mfp-no-margins .mfp-figure:after {
-      top: 0;
-      bottom: 0;
-    }
-    /* padding for main container */
-   .mfp-container {
-      padding: 0px 20px!important;
-    }
-	
-	.mfp-wrap{
-		z-index: 999999!important;
-		
-	}
 
-	.mfp-bg{
-		z-index: 999998!important;
-		
+
+	
+	.mfp-iframe-scaler iframe {
+
+    box-shadow: none!important; 
+    background-color: transparent!important; 
+}
+	.mfp-iframe-holder .mfp-content{
+		height:80%!important;
 	}
-	
-	
-	
 
     </style>	
 
-	
-	
+
 	
 	
 </body>
