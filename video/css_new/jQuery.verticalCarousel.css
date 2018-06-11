@@ -1,0 +1,76 @@
+.vc_goUp, .vc_goDown {
+  display: block;
+}
+
+.vc_goUp.isDisabled, .vc_goDown.isDisabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+
+.vc_container {
+  overflow: hidden;
+  -moz-transition: height 0.2s ease-in;
+  -o-transition: height 0.2s ease-in;
+  -webkit-transition: height 0.2s ease-in;
+  transition: height 0.2s ease-in;
+}
+
+
+.vc_list {
+  list-style: none;
+  -moz-transition: -moz-transform 0.2s ease-in;
+  -o-transition: -o-transform 0.2s ease-in;
+  -webkit-transition: -webkit-transform 0.2s ease-in;
+  transition: transform 0.2s ease-in;
+}
+
+
+
+.verticalCarouselHeader {
+  float: right;
+
+}
+
+.verticalCarouselHeader:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.verticalCarouselHeader .vc_goUp, .verticalCarouselHeader .vc_goDown {
+  float: right;
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  color: #000;
+  margin:0px;
+}
+
+.verticalCarouselHeader .vc_goUp:active, .verticalCarouselHeader .vc_goDown:active {
+  -moz-transform: scale(0.7, 0.7);
+  -ms-transform: scale(0.7, 0.7);
+  -webkit-transform: scale(0.7, 0.7);
+  transform: scale(0.7, 0.7);
+}
+
+.verticalCarouselHeader .vc_goUp{
+  background: url(../img/arrow-up.png);
+  background-size: 60% auto;
+  background-repeat: no-repeat;  
+  background-position: center;
+  background-color: #e1e1e1;
+}
+
+.verticalCarouselHeader .vc_goDown{
+  background: url(../img/arrow-down.png);
+  background-size: 60% auto;
+  background-repeat: no-repeat;  
+  background-position: center;
+  background-color: #e1e1e1;
+}
+
+
