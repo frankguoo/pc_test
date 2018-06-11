@@ -1894,11 +1894,6 @@ ul li{
 }
 
 #myCarousel-G .item{
-	width: calc(100% / 3);
-	float: left; 
-}
-
-#myCarousel-G .item{
 	width: calc(100% / 3 );
 	float: left; 
 	padding: 5px;
