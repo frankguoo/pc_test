@@ -1899,11 +1899,6 @@ ul li{
 	padding: 5px;
 }
 
-	.mfp-iframe-scaler iframe {
-		box-shadow: none!important; 
-		background-color: transparent!important; 
-	}
-
 /*創意影音首頁結束*/
 
 @media (max-width: 932px) {
