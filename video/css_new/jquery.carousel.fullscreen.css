@@ -1899,6 +1899,11 @@ ul li{
 	padding: 5px;
 }
 
+	.mfp-iframe-scaler iframe {
+		box-shadow: none!important; 
+		background-color: transparent!important; 
+	}
+
 /*創意影音首頁結束*/
 
 @media (max-width: 932px) {
@@ -1908,8 +1913,15 @@ ul li{
 		margin: 0 15px!important;
 	}
 	#myCarousel-G .item{
-	width: calc(100% / 2 );
-	float: left; 
-	padding: 5px;
-}	
+		width: calc(100% / 2 );
+		float: left; 
+		padding: 5px;
+	}	
+	.mfp-iframe-holder .mfp-content{
+		height:80%!important;
+	}
+	.news-item img {
+		border-bottom: 60px solid #FFF;
+	}
+	
 }
