@@ -1913,4 +1913,10 @@ ul li{
 		margin: 0 15px!important;
 	}
 	
+	#myCarousel-G .item {
+		width: calc(100% / 2 );
+		float: left;
+		padding: 5px;
+	}
+	
 }
