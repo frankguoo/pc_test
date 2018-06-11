@@ -1907,10 +1907,9 @@ ul li{
 		padding-left: 0px!important;
 		margin: 0 15px!important;
 	}
-	
-	#myCarousel-G .item {
-		width: calc(100% / 2 )!important;
-
-	}
-	
+	#myCarousel-G .item{
+	width: calc(100% / 2 );
+	float: left; 
+	padding: 5px;
+}	
 }
