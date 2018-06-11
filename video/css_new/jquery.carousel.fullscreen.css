@@ -1905,3 +1905,12 @@ ul li{
 }
 
 /*創意影音首頁結束*/
+
+@media (max-width: 932px) {
+	
+	.tape_link_box ul {
+		padding-left: 0px!important;
+		margin: 0 15px!important;
+	}
+	
+}
