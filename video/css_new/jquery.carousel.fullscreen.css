@@ -1916,7 +1916,7 @@ ul li{
 		height:80%!important;
 	}
 	.news-item img {
-		border-bottom: 60px solid #FFF;
+		border-bottom: none;
 	}
 	
 }
