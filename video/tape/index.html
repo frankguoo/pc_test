@@ -386,7 +386,6 @@
     position:relative;
     height:0;
 }
-
 .facebook-responsive iframe {
     left:0;
     top:0;
@@ -400,11 +399,8 @@
 $(document).ready(function() {
 	$('.popup-iframe').magnificPopup({
     	type: 'iframe',
-	alignTop: false,
-         
-       
+		alignTop: false
 	});
-	
 });	
 </script>
 	
@@ -414,22 +410,19 @@ $(document).ready(function() {
 	box-shadow: none!important; 
 	background: transparent!important; 
 }
-	
 .mfp-iframe-scaler {
 	padding-top: 78%;
-}	
-	
-@media (max-width: 932px) {
-	
+}		
+@media (max-width: 932px) {	
 	.mfp-iframe-holder .mfp-content{
 		height:80%!important;
 	}	
 }	
 @media (max-width: 800px) {	
-.mfp-iframe-scaler {
+	.mfp-iframe-scaler {
 		padding-top: 56.25%;
 	}	
-	}
+}
 </style>
 
 	

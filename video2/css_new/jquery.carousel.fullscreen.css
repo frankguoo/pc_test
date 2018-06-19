@@ -1372,6 +1372,7 @@ ul li{
 	position: absolute;
 	top: 32%;
 	left: 43%;
+	z-index: 100;
 }
 
 .link-imga img{
@@ -1876,28 +1877,35 @@ ul li{
 	font-size: 18px;
 	text-align: center;
 	padding: 20px 0;
+	background: #241915;
+	 -webkit-transition: all 0.2s ease;
+						 -moz-transition: all 0.2s ease;
+						  -ms-transition: all 0.2s ease;
+						   -o-transition: all 0.2s ease;
+							  transition: all 0.2s ease; 
+	
 }
 .tape_link_box ul li a i{
     position: absolute;
     right: 30px;
     top: 15px;
 }
-.tape_link_box ul li:nth-child(1) a{
+.tape_link_box ul li:nth-child(1):hover a{
 	background: #006bff;
 }
 
-.tape_link_box ul li:nth-child(2) a{
+.tape_link_box ul li:nth-child(2):hover a{
 	background: #ff00c6;
 }
 
-.tape_link_box ul li:nth-child(3) a{
+.tape_link_box ul li:nth-child(3):hover a{
 	background: #12bdb5;
 }
 
 #myCarousel-F{padding:5px;}
 
 #myCarousel-F .news-item h5, #myCarousel-G .news-item h5 {
-    font-size: 18px;
+    font-size: 16px;
 	color: #838383;
 }
 
@@ -1916,8 +1924,19 @@ ul li{
 
 /*創意影音首頁結束*/
 
-@media (max-width: 932px) {
-	
+@media (max-width: 1024px) {
+	.tape_link_box ul li:nth-child(1) a{
+		background: #006bff;
+	}
+
+	.tape_link_box ul li:nth-child(2) a{
+		background: #ff00c6;
+	}
+
+	.tape_link_box ul li:nth-child(3) a{
+		background: #12bdb5;
+	}
+
 	.tape_link_box ul {
 		padding-left: 0px!important;
 		margin: 0 15px!important;
@@ -1935,6 +1954,34 @@ ul li{
 	}
 	.news-item h5 {
          margin-top: 10px; 
+	}
+	
+
+.videoWrapper {
+
+position: relative;
+
+padding-bottom: 56.25%;
+
+padding-top: 30px;
+
+height: 0;
+
+overflow: hidden;
+
 }
+
+.videoWrapper iframe, .videoWrapper object, .videoWrapper embed {
+
+position: absolute;
+
+top: 0;left: 0;
+
+width: 100%;
+
+height: 100%;}	
+	
+
+	
 	
 }
