@@ -31,27 +31,27 @@
    <section id="main_video_box">
 		<div id="myCarousel_main" class="owl-carousel owl-theme">
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/q4RBVhGEKbc?rel=0&autoplay=1">
+				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/q4RBVhGEKbc?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
 			</div>
 			
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/Mgu3zao6NaM?rel=0&autoplay=1">
+				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/Mgu3zao6NaM?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon2.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
 			</div>
 			
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/B-rWcXPFPtc?rel=0&autoplay=1">
+				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/B-rWcXPFPtc?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon3.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
 			</div>
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/Nxc6C0gWSIM?rel=0&autoplay=1">
+				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/Nxc6C0gWSIM?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon4.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
@@ -60,18 +60,18 @@
 			
 			<div>
 				  <div class="movieC videoWrapper">
-					 <iframe class="main_video" width="100%" height="480px" src="https://www.youtube.com/embed/q4RBVhGEKbc?autoplay=1" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;"></iframe>
+					 <iframe class="main_video" width="100%" height="480px" src="https://www.youtube.com/embed/q4RBVhGEKbc?autoplay=1&mute=1" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;"></iframe>
 				  </div>
 			</div>
 			
 			<div>
 				  <div class="movieC videoWrapper">
-					 <iframe class="main_video" width="100%" height="480px" src="https://www.youtube.com/embed/Mgu3zao6NaM?autoplay=1" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;"></iframe>				  
+					 <iframe class="main_video" width="100%" height="480px" src="https://www.youtube.com/embed/Mgu3zao6NaM?autoplay=1&mute=1" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;"></iframe>				  
 					</div>
 			</div>
 			
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/qr1dc_yYONw?rel=0&autoplay=1">
+				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/qr1dc_yYONw?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon5.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
@@ -544,7 +544,7 @@ $(document).ready(function() {
 <script>
 $('.movieC').click(function(){
 	$(this).children('.bgg').hide();
-  	var video = '<iframe class="main_video" width="100%" height="480px" src="'+ $(this).attr('data-video')+'" frameborder="0" scrolling="no" autoplay="1" allowfullscreen="" style="margin:0 auto; display: block;" ></iframe>';
+  	var video = '<iframe class="main_video" width="100%" height="480px" src="'+ $(this).attr('data-video')+'" frameborder="0" mute="1" scrolling="no" autoplay="1" allowfullscreen="" style="margin:0 auto; display: block;" ></iframe>';
     $(this).html(video);
 });		
 </script>	
