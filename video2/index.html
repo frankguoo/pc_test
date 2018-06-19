@@ -544,7 +544,7 @@ $(document).ready(function() {
 <script>
 $('.movieC').click(function(){
 	$(this).children('.bgg').hide();
-  	var video = '<iframe class="main_video" width="100%" height="480px" src="'+ $(this).attr('data-video')+'" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;" ></iframe>';
+  	var video = '<iframe class="main_video" width="100%" height="480px" src="'+ $(this).attr('data-video')+'" frameborder="0" scrolling="no" autoplay="1" allowfullscreen="" style="margin:0 auto; display: block;" ></iframe>';
     $(this).html(video);
 });		
 </script>	
