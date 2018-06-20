@@ -60,13 +60,13 @@
 			
 			<div>
 				  <div class="movieC videoWrapper">
-					 <iframe class="main_video" width="100%" height="480px" src="https://www.youtube.com/embed/q4RBVhGEKbc?autoplay=1&mute=1" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;"></iframe>
+					 <iframe class="main_video" width="100%" height="480px" src="https://www.youtube.com/embed/q4RBVhGEKbc" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;"></iframe>
 				  </div>
 			</div>
 			
 			<div>
 				  <div class="movieC videoWrapper">
-					 <iframe class="main_video" width="100%" height="480px" src="https://www.youtube.com/embed/Mgu3zao6NaM?autoplay=1&mute=1" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;"></iframe>				  
+					 <iframe class="main_video" width="100%" height="480px" src="https://www.youtube.com/embed/Mgu3zao6NaM" frameborder="0" scrolling="no" allowfullscreen="" style="margin:0 auto; display: block;"></iframe>				  
 					</div>
 			</div>
 			
@@ -98,19 +98,27 @@
     display: block;
     background: #000;
 	position: relative;
-	height: 271px;
+	height: 423px;
     border-bottom: 1px solid rgb(255, 255, 255);			
 }	
 	
 #main_video_box .owl-carousel {
-    width: 1440px!important;
-	max-width: 1440px!important;
-	height: 270px;
+    width: 2250px!important;
+	max-width: 2250px!important;
+	height: 422px;
 	left: 50%;
 	position: absolute;
-	margin-left: -720px;
+	margin-left: -1125px;
     z-index: 1;
-}	
+}
+	
+#main_video_box	.link-imga{
+	top: 50%;
+    left: 50%;
+	margin-top: -26px;
+	margin-left: -26px;
+		
+}
 		
 .videoWrapper {
 	position: relative;
@@ -133,9 +141,6 @@
 	.videobox_arrow{
 		opacity: 1!important;
 	}
-}
-	
-@media (max-width: 650px) {	
 	#main_video_box .owl-carousel {
 		width: 100%!important;
 		max-width: 100%!important;
@@ -148,7 +153,9 @@
 	#main_video_box {
 		height: auto!important;
 	}
-}		
+
+}
+		
 </style>
 	
    <section id="BoxD" class="boxd-section" style=" padding :20px 0; margin-top: 0px;">
@@ -525,7 +532,7 @@ $(document).ready(function() {
 				stagePadding: 0,
 				items:1
 			},
-			650:{
+			768:{
 				items:3
 			},
 			1920:{
@@ -546,9 +553,11 @@ $('.movieC').click(function(){
 	$(this).children('.bgg').hide();
   	var video = '<iframe class="main_video" width="100%" height="480px" src="'+ $(this).attr('data-video')+'" frameborder="0" mute="1" scrolling="no" autoplay="1" allowfullscreen="" style="margin:0 auto; display: block;" ></iframe>';
     $(this).html(video);
-});		
-</script>	
 	
+});	
+	
+</script>	
+
 	
 <style>
 	
@@ -576,7 +585,7 @@ $('.movieC').click(function(){
     height: 100%;
     border-radius: 0px!important;
 
-	background: linear-gradient(to right, #000, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0.2))!important;
+	background: linear-gradient(to right, #000, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.2))!important;
 	-ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -604,7 +613,7 @@ $('.movieC').click(function(){
     right: 0px;
     height: 100%;
     border-radius: 0px!important;
-	background: linear-gradient(to left, #000, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0.2))!important;
+	background: linear-gradient(to left, #000, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.2))!important;
 	-ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
@@ -664,7 +673,7 @@ $('.movieC').click(function(){
 	margin-top: 5px;
 }
 	
-@media (max-width: 650px) {	
+@media (max-width: 768px) {	
 	.sec_control2.left{
 		background: linear-gradient(to right, #000, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0))!important;
 		width:  10%!important;
