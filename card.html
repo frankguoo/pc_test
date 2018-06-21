@@ -101,7 +101,6 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 	/* .mobile { display: block; }
 	img 	{ width: auto !important; } */
 	#menu { height: 40px; line-height: 20px; font-size: 14px; }
-
 	</style>
 
   </head>
@@ -220,24 +219,24 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 	
 		<div class="wallpaper_box card_box animated-sec3">	
 			<div class="wallpaper_inner">
-				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YZ3Q4emd3b0dWWEhkdWwxb05Pd3YvTGlVS0tlY29oM2dlNWtQRFZJQ2YvNiI7.jpg">
-					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YbmdvTGVIWmpuM0hmVkFKbk5IY3c0dURqSWp3Q3loL2Jiejl5WFFVM1NaOSI7.jpg" alt=""/>
+				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YamRkS0l4U251aS9oaFdIVXNib2ZQSWZaVnkrbmVtNXk2dFhmK01Md2RjZyI7.jpg">
+					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YcUY3NEE4dk54eU1KVnZrWlhETFhDMTNYMytDeUtBNXgyb0RHcHJBQ0N5LyI7.jpg" alt=""/>
 				</a>			
 			</div>
 		</div>
 	
 		<div class="wallpaper_box card_box animated-sec1">	
 			<div class="wallpaper_inner">
-				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YZ3Q4emd3b0dWWEhkdWwxb05Pd3YvTGlVS0tlY29oM2dlNWtQRFZJQ2YvNiI7.jpg">
-					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YbmdvTGVIWmpuM0hmVkFKbk5IY3c0dURqSWp3Q3loL2Jiejl5WFFVM1NaOSI7.jpg" alt=""/>
+				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YdDNpS2xYYjUrK0l1S3ZvY0xlc0tYVmtnRnU0U3R1OGpkS0xEWGI2OVc0MiI7.jpg">
+					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YbDBrTVJVTUp1NVRXb1ZTVHFGdG5rMWYrV0JMWHZCeXlOSk4renRMZXBILyI7.jpg" alt=""/>
 				</a>			
 			</div>
 		</div>
 	
 		<div class="wallpaper_box card_box animated-sec2">	
 			<div class="wallpaper_inner">
-				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YZ3Q4emd3b0dWWEhkdWwxb05Pd3YvTGlVS0tlY29oM2dlNWtQRFZJQ2YvNiI7.jpg">
-					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YbmdvTGVIWmpuM0hmVkFKbk5IY3c0dURqSWp3Q3loL2Jiejl5WFFVM1NaOSI7.jpg" alt=""/>
+				<a class="download_btn_m image-popup-no-margins" href="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YamRkS0l4U251aS9oaFdIVXNib2ZQSWZaVnkrbmVtNXk2dFhmK01Md2RjZyI7.jpg">
+					<img src="http://link.photo.pchome.com.tw/imgdata/czo2NDoiMndDcU5XMjU5aWFzS2xERmlJMm9YcUY3NEE4dk54eU1KVnZrWlhETFhDMTNYMytDeUtBNXgyb0RHcHJBQ0N5LyI7.jpg" alt=""/>
 				</a>			
 			</div>
 		</div>
@@ -357,13 +356,25 @@ $(function(){
 	
 <script>
 $(document).ready(function() {
-	$('.simple-ajax-popup').magnificPopup({
-          type: 'ajax'
-    });
+	$('.image-popup-no-margins').magnificPopup({
+	      type: 'image',
+          closeOnContentClick: true,
+          mainClass: 'mfp-img-mobile',
+          image: {
+            verticalFit: true
+          }
+	});
 });	
 </script>
 	
 <style type="text/css">
+	html{
+		overflow-y: scroll!important;
+		    margin-right: 0px!important;
+	}
+	.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+		cursor: pointer!important;
+	}
     /* padding-bottom and top for image */
     .mfp-no-margins img.mfp-img {
       padding: 0;
@@ -374,24 +385,15 @@ $(document).ready(function() {
       bottom: 0;
     }
     /* padding for main container */
-   .mfp-container {
-      padding: 0px 20px!important;
+    .mfp-container {
+      padding: 50px!important;
     }
-	
-	.mfp-wrap{
-		z-index: 999999!important;
-		
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+	img.mfp-img{
+		max-height: 650px!important;
 	}
-
-	.mfp-bg{
-		z-index: 999998!important;
-		
-	}
-	
-	
-	
-
-    </style>	
+}
+</style>	
 	
 
 
