@@ -131,7 +131,6 @@ body{
 	text-align: center;
 	transition: all 1s;
 	right:0px;
-	overflow-y: scroll!important;
 }
 
 
@@ -1006,7 +1005,7 @@ html{
 }
 
 .mainBody-download .wallpaper_box{
-	margin-bottom: 70px;
+	margin-bottom: 0px;
 }
 
 .mainBody-download .wallpaper_box .wallpaper_inner {
