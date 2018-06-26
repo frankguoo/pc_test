@@ -25,7 +25,6 @@
     }
 }
 
-
 @keyframes loading-line{
     0%{
         -webkit-transform:scaleX(0);
@@ -64,7 +63,8 @@
 }
 
 
-.animated-sec1, .animated-sec2, .animated-sec3{
+
+.animated-sec1, .animated-sec2, .animated-sec3, .animated-sec4{
 	opacity: 0;
     -webkit-transform: translateY(20px);
     -ms-transform: translateY(20px);
@@ -78,7 +78,6 @@
 		-ms-transform: translateY(0);
 		transform: translateY(0);
 }
-
 .animated-sec2.animated-in2{
 		opacity: 1;
 		-webkit-transition: all .65s cubic-bezier(.39,.575,.565,1) .8s;
@@ -87,7 +86,6 @@
 		-ms-transform: translateY(0);
 		transform: translateY(0);
 }
-
 .animated-sec3.animated-in3{
 		opacity: 1;
 		-webkit-transition: all .65s cubic-bezier(.39,.575,.565,1) 1.05s;
@@ -96,7 +94,14 @@
 		-ms-transform: translateY(0);
 		transform: translateY(0);
 }
-
+.animated-sec4.animated-in4{
+		opacity: 1;
+		-webkit-transition: all .65s cubic-bezier(.39,.575,.565,1) 1.3s;
+		transition: all .65s cubic-bezier(.39,.575,.565,1) 1.3s;
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+}
 
 
 .clearfix:before,
@@ -463,9 +468,7 @@ body.pushmenu-push-toright {
 }
 /*---------END 手機版選單區域---------*/
 
-html{
-	margin-right: 0!important;
-}
+
 
 
 /*--------- 輪播區域 ---------*/
@@ -562,6 +565,14 @@ html{
     margin-top: 55px;
 }
 
+.shadow_box{
+	position: absolute;
+    z-index: 999999;
+    width: 100%;
+    background: linear-gradient(to bottom, #3e3e3e, rgb(51, 51, 51) 2%, rgba(255, 255, 255, 0))!important;
+    height: 23px;
+}
+
 .slide_box{
     display:block;
     position:relative;
@@ -639,7 +650,7 @@ html{
     background:rgba(255,255,255,0.5)
 }
 .content .swiper-slide{
-    margin-bottom:30px!important;
+    margin-bottom:0px!important;
     height:auto!important
 }
 .view .swiper-slide .content .swiper-slide div{
@@ -651,9 +662,26 @@ html{
 }
 .view .swiper-slide .content .swiper-slide div .title h2{
     margin-top: 5px;
+    font-size: 1.6em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+    font-weight: bold;
+	letter-spacing: 1px;
+    margin-bottom: 0px;
 }
 .view .swiper-slide .content .swiper-slide div h4{
     text-align: left;
+	font-size: 1.2em;
+	display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: 400;
 }
 .view .swiper-slide .content .swiper-slide:last-child{
     margin-bottom:0!important
@@ -743,8 +771,8 @@ html{
 	z-index: 999997;
 	display: block;
 	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+	height: 100%;
+	
 }
 
 .leftside {
@@ -753,7 +781,7 @@ html{
 	top:0px;
 	width:50%;
 	height:100%;
-	min-height: 2500px!important;
+	min-height: 1400px!important;
 	z-index: 999998;
 	background:#fff;
 	-webkit-transition: all 1.5s ;
@@ -768,7 +796,7 @@ html{
 	right:0;
 	width:50%;
 	height:100%;
-	min-height: 2500px!important;
+	min-height: 1400px!important;
 	z-index: 999998;
 	background:#fff;
 	-webkit-transition: all 1.5s;
@@ -819,9 +847,9 @@ html{
     width: 100%;
     height: 100%;
     border-radius: 15px;
-    background: #1baad1;
+    background: #d91b21;
     content: "";
-    opacity: .65;
+    opacity: 1;
     -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     -webkit-animation-duration: 2s;
@@ -1005,7 +1033,7 @@ html{
 }
 
 .mainBody-download .wallpaper_box{
-	margin-bottom: 0px;
+	margin-bottom: 70px;
 }
 
 .mainBody-download .wallpaper_box .wallpaper_inner {
@@ -1069,6 +1097,86 @@ html{
 	box-shadow:1px 2px 2px rgba(0,0,0,0.2);
 
 }
+
+
+
+/*---------- 名人堂 ----------*/
+.mainBody-card{
+	background: #e7ecf7;
+	height: 100%;
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	background-size: 1920px auto;
+}
+
+.card_wrap {
+	width: 932px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.card_top{
+	padding: 70px 25px 0px 25px;
+}
+
+.mainBody-card .card_logo{
+	float: left;
+	margin-right: 30px;
+}
+
+.mainBody-card .card_tittle{
+	text-align: left;
+	margin-top: 10px;
+}
+
+.mainBody-card h2{
+	color:#231916;
+	font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: 700;
+	margin-bottom: 10px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.mainBody-card  .card_wrap span{
+	color:#4367b0;
+	font-size: 17px;
+    font-weight: 100;
+	display: inline-block;
+}
+
+.mainBody-card h3{
+	color:#4367b0;
+	font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 200;
+	margin-bottom: 10px;
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.mainBody-card h4{
+	color:#3c3837;
+    font-weight: 200;
+    line-height: 30px;
+	letter-spacing: 1px;
+}
+
+.card_content{
+	padding: 50px 0;
+}
+
+.card_box{
+	width: calc(100% / 4)!important;
+	float: left!important;
+	padding: 1px 3px;
+}
+
+
 
 
 
@@ -1137,10 +1245,6 @@ span.buy {
 }
 
 
-.card_box{
-	width: calc(100% / 4)!important;
-	float: left!important;
-}
 
 
 
@@ -1224,6 +1328,7 @@ span.buy {
 	.mainBody-stuff h2, .mainBody-photos h2, .mainBody-download h2{
 		font-size: 28px;
 		letter-spacing: 2px;
+		margin-bottom: 5px!important;
 	}
 	.mainBody-stuff h2.bt, .mainBody-stuff span, .mainBody-photos h2.bt, .mainBody-photos .photos_wrap span, .mainBody-download h2.bt, .mainBody-download  .download_wrap span{
 		display: none;
@@ -1287,11 +1392,13 @@ span.buy {
 	.wallpaper_box{
 		width: calc(100% / 3);
 		float: left;
+		padding:0 2px;
 	}
 	
 	.card_box{
 		width: calc(100% / 3)!important;
 		float: left!important;
+		padding: 1px;
 	}
 
 
@@ -1363,6 +1470,27 @@ span.buy {
 	
 }
 
+@media only screen and (max-width: 640px) {
+	.mainBody-card .card_logo{
+		float: none;
+		margin-right: 0px;
+		margin-top: 20px; 
+	}
+	.mainBody-card .card_logo img{
+		width: 140px;
+	}
+	.mainBody-card h2 {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	.mainBody-card h3 {
+		margin: 10px 0 0 0;
+	}
+	.card_content {
+		padding: 20px 0;
+	}
+}
+
 @media only screen and (max-width: 450px) {
 	.hot, .pd_title, ul.pd_wrap p 	{ font-size: 3.5vw; height: 26px; line-height: 26px; }
 	ul.pd_wrap p 					{ letter-spacing: -1px; }
@@ -1391,8 +1519,15 @@ span.buy {
 		 display:block!important;
 	}
 	
+	.stuff_items li a .stuff_items_icon {
+		width: 100px;
+		padding: 10px 10px 5px 15px;
+	}
+	
 }
 
 @media only screen and (max-width: 320px) {
-
+	.stuff_items li a .stuff_items_title{
+		font-size: 21px;
+	}
 }

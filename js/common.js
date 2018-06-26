@@ -13,7 +13,7 @@ var $document = $(document)
 		$('.animated-sec1' ).addClass( 'animated-in1' );
 		$('.animated-sec2' ).addClass( 'animated-in2' );
 		$('.animated-sec3' ).addClass( 'animated-in3' );
-			
+		$('.animated-sec4' ).addClass( 'animated-in4' );
 	
 	// Mobile FB ＆ TOP icon
 	var navp = $('.pointer, .facebook, .go');
