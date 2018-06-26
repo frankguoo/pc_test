@@ -590,7 +590,7 @@ body.pushmenu-push-toright {
     position:relative;
     top:0;
     left:50%;
-    z-index:99;
+    z-index:999999;
     transform:translateX(-50%);
     -webkit-transform:translateX(-50%);
     overflow:hidden!important;
