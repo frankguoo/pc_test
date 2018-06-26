@@ -592,9 +592,7 @@ body.pushmenu-push-toright {
     z-index:999;
     transform:translateX(-50%);
     -webkit-transform:translateX(-50%);
-    overflow:hidden!important;
-	overflow-x: hidden!important;
-	-ms-overflow:hidden!important;
+
 }
 .nav{
     width:100%;
@@ -637,7 +635,7 @@ body.pushmenu-push-toright {
     -webkit-transform:translateX(-50%);
     transform:translateX(-50%);
     background:#fff;
-		overflow-x: hidden!important;
+		overflow: hidden!important;
 	-ms-overflow:hidden!important;
 }
 .view .swiper-slide{
