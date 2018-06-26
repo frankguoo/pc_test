@@ -582,21 +582,6 @@ body.pushmenu-push-toright {
     padding-left:9px
 }
 
-.appwraper{
-    width:768px!important;
-    height:100vh;
-    max-width:768px;
-    max-height:574px;
-    position:relative;
-    top:0;
-    left:50%;
-    z-index:999999;
-    transform:translateX(-50%);
-    -webkit-transform:translateX(-50%);
-    overflow:hidden!important;
-
-	-ms-overflow:hidden!important;
-}
 
 .app{
     width:768px!important;
