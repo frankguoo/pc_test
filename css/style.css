@@ -203,7 +203,7 @@ body{
 .navigation-btn-open {
     position: fixed;
     top: 24px;
-    right: 18px;
+    right: 8px;
     z-index: 3500;
     /*overflow: hidden;*/
     box-sizing: border-box;
@@ -422,7 +422,7 @@ body{
 }
 
 #header.pushmenu-push-toright{
-	right:300px;
+  right:300px;
 }
 
 body.pushmenu-push-toright {
@@ -436,7 +436,7 @@ body.pushmenu-push-toright {
 
 #header .navigation-btn-open-m {
     top: 3px!important;
-	width: 57px;
+	width: 50px;
 	-webkit-transition: none!important;
     transition: none!important;
 	color:#d81a21;
@@ -464,7 +464,6 @@ body.pushmenu-push-toright {
 
 #header .navigation-btn-open-line:nth-child(3) {
    	margin-bottom: 0px;
-
 }
 /*---------END 手機版選單區域---------*/
 
@@ -506,7 +505,7 @@ body.pushmenu-push-toright {
 }
 
 #myCarousel-D{
-	margin-top: 64px;
+	margin-top: 61px;
 }
 
 #myCarousel-D.owl-theme .owl-dots {
@@ -1381,9 +1380,9 @@ span.buy {
 		-webkit-box-sizing: border-box;
 	}
 	
-.app{
-    width:100%!important;
-}	
+	.app{
+		width:100%!important;
+	}	
 	
 	.nav{
 		margin:0px;
