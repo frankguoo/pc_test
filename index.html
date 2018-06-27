@@ -35,56 +35,60 @@
     <script type="text/javascript" src="js/jquery-1.11.0.js"></script>	  
     <script type="text/javascript" src="js/jquery.mb.YTPlayer.min.js"></script>
 
-	
-<script>
-    jQuery(function(){
-      jQuery("#bgndVideo").YTPlayer();
-    });	
-</script>
+	  
+	<script>
+		$(document).ready(function() {
+			if ($(window).width() < 769) {
+					  jQuery("#bgndVideo_M").YTPlayer();
+			} 
+			if ($(window).width() > 770) {
+					  jQuery("#bgndVideo_D").YTPlayer();
+			} 
+		});
+	</script>
+	  
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js? id=UA-25257804-1"></script>
-<script>
-window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
-gtag('config', 'UA-25257804-1'); </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js? id=UA-25257804-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+	gtag('config', 'UA-25257804-1'); </script>
 	  
 	
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2439447216084198'); // Insert your pixel ID here.
-fbq('track', 'PageView');
-fbq('track', 'act');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
-/></noscript>
-<!-- DO NOT MODIFY -->
-<!-- End Facebook Pixel Code -->  
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '2439447216084198'); // Insert your pixel ID here.
+	fbq('track', 'PageView');
+	fbq('track', 'act');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- DO NOT MODIFY -->
+	<!-- End Facebook Pixel Code -->  
 	  
 	  
-<style type="text/css">
-  body,div,span,h1,p,a,img,dl,dt,dd{margin:0;padding:0;border:0; vertical-align:baseline; background:transparent;}
-  .inset{text-align:center;}
-  .inset a{color:#06c;font:11px/20px normal;}
-  .logotype a{display:block;width:186px;height:60px;text-indent:-9999px;}
-  #HEADER .logotype a{background:url(//a.ecimg.tw/img/activity/v1/header/logo_h24.gif);}
-  #HEADER{position:relative;height:60px;width:930px;margin:0 auto;margin-bottom:6px;border:1px solid #e0e0e0;border-bottom:0;background:url(//a.ecimg.tw/img/activity/v1/header/header_bg.gif) repeat-x;}
-  #HEADER a{display:block;position:absolute;}
-  #HEADER .site_roadsign{width:68px;height:65px;left:186px;top:0;text-indent:-9999px;background:url(//a.ecimg.tw/img/activity/v1/header/site_roadsign.gif);}
-  #HEADER .site_ad{left:312px;top:16px;border:1px solid #ddd;}
-  #FOOTER {margin:10px 0 20px;color:#777;font:13px/1.5 Verdana;text-align:center;}
-  #FOOTER a{color:#333;font:13px/1.5 Verdana;}
-  #FOOTER span{margin:0 4px;color:#999;font:12px/1.5 Verdana;}
-  #GLOBALWRAPPER,#WRAPPER{margin:0 auto;}
-  #GLOBALWRAPPER{overflow:hidden;margin-bottom:7px;}
-</style> 
-	  
-	  
+	<style type="text/css">
+	  body,div,span,h1,p,a,img,dl,dt,dd{margin:0;padding:0;border:0; vertical-align:baseline; background:transparent;}
+	  .inset{text-align:center;}
+	  .inset a{color:#06c;font:11px/20px normal;}
+	  .logotype a{display:block;width:186px;height:60px;text-indent:-9999px;}
+	  #HEADER .logotype a{background:url(//a.ecimg.tw/img/activity/v1/header/logo_h24.gif);}
+	  #HEADER{position:relative;height:60px;width:930px;margin:0 auto;margin-bottom:6px;border:1px solid #e0e0e0;border-bottom:0;background:url(//a.ecimg.tw/img/activity/v1/header/header_bg.gif) repeat-x;}
+	  #HEADER a{display:block;position:absolute;}
+	  #HEADER .site_roadsign{width:68px;height:65px;left:186px;top:0;text-indent:-9999px;background:url(//a.ecimg.tw/img/activity/v1/header/site_roadsign.gif);}
+	  #HEADER .site_ad{left:312px;top:16px;border:1px solid #ddd;}
+	  #FOOTER {margin:10px 0 20px;color:#777;font:13px/1.5 Verdana;text-align:center;}
+	  #FOOTER a{color:#333;font:13px/1.5 Verdana;}
+	  #FOOTER span{margin:0 4px;color:#999;font:12px/1.5 Verdana;}
+	  #GLOBALWRAPPER,#WRAPPER{margin:0 auto;}
+	  #GLOBALWRAPPER{overflow:hidden;margin-bottom:7px;}
+	</style> 
 	  
 
 	<style>
@@ -108,18 +112,18 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 
 	
 
-<div id="bgndVideo" class="player" data-property="{videoURL:'http://youtu.be/_oYTffz2hqA'}">My video</div>
-
+<div id="bgndVideo_D" class="player desktop" data-property="{videoURL:'https://youtu.be/s7ZlGH72YNc'}"></div>
+<div id="bgndVideo_M" class="player mobile" data-property="{videoURL:'https://youtu.be/ZNIAKmgezbM'}"></div>
 
 	
 <!-----手機版右側選單內容----->	
-<div class="pushmenu pushmenu-left">	
+<div class="pushmenu pushmenu-left">
 	<ul>
 		<li class="nav-item clearfix"><i><img src="img/top_m.svg" style="width: 30px;"/></i><a href="index.html">TOP</a></li>
 		<li class="nav-item clearfix"><i><img src="img/cute_m.svg" style="width: 37px;"/></i><a href="about.html">萌萌的我</a></li>
+		<li class="nav-item clearfix"><i><img src="img/photo_m.svg" style="width: 35px;"/></i><a href="photos.html">我的照片</a></li>
 		<li class="nav-item clearfix"><i><img src="img/haveno_m.svg" style="width: 35px;"/></i><a href="stuff.html">有的沒的</a></li>	
 		<li class="nav-item clearfix"><i><img src="img/download_m.svg" style="width: 35px;"/></i><a href="download.html">桌布下載</a></li>	
-		<li class="nav-item clearfix"><i><img src="img/photo_m.svg" style="width: 35px;"/></i><a href="photos.html">我的照片</a></li>
 	</ul>
 </div>	
 <!-----END 手機版右側選單內容----->
@@ -175,15 +179,8 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 <!----------END 桌機版選單區域結束---------->	
 	
 	
-	
-	
-	
-	<!-- 主要內容  -->
+<!--主要內容-->
 	<!--<div class="mainBody">
-			
-
-		
-	
 		<!-- Footer Start -->
 		<!--<div id="footer" style="background: #101010;padding: 15px 15px 105px 15px!important; font-size: 13px;">
 			<div>
@@ -191,18 +188,14 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 				網路家庭版權所有 Copyright PChome Online <span>版權所有，轉載必究</span><br /><span>*PChome聯名卡活動期間至2018/12/31，相關優惠權益或服務之細節及限制條件請詳花旗官網/權益手冊或PChome線上購物。</span>
 			</div>	
 	    </div>
-		<!-- END // Footer -->
-	
-	
+		<!--END // Footer-->
 	<!--</div>
-	<!-- END // 主要內容 -->
-
-
-    <!--JS-->
-
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-
+<!--END // 主要內容-->
+ 
 	
+	
+<!--JS-->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	
 <!----------跳轉區域---------->
 <script>	
@@ -257,18 +250,15 @@ $(function(){
 		});
     });
 </script>
-<!----------END 輪播區域設定---------->		
-
+<!----------END 輪播區域設定---------->	
 	
 	
-    <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
-    <script type="text/javascript" src="js/iframeResizer.min.js"></script>    
-	<script type="text/javascript" src="js/clipboard.min.js"></script>
-    <script type="text/javascript" src="js/primecard.js"></script>
-	<script type="text/javascript" src="js/newmobile2.js"></script>
-	<script type="text/javascript" src="js/common.js"></script>
-
-	
+<script type="text/javascript" src="js/imageMapResizer.min.js"></script>
+<script type="text/javascript" src="js/iframeResizer.min.js"></script>    
+<script type="text/javascript" src="js/clipboard.min.js"></script>
+<script type="text/javascript" src="js/primecard.js"></script>
+<script type="text/javascript" src="js/newmobile2.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 	
 <script>
 	$( ".navigation-btn-open" ).click(function() {
@@ -276,6 +266,7 @@ $(function(){
     $( ".navigation" ).toggleClass( 'closed' );
 	});
 </script>
+
 	
 <script>
 	$(document).ready(function() {
@@ -298,8 +289,6 @@ $(function(){
 		});
 	});	
 </script>	
-	
-
 	
 	
 </body>
