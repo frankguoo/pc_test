@@ -729,7 +729,16 @@ body.pushmenu-push-toright {
 	-webkit-box-sizing: border-box;
 }
 
-
+.mainBody-photos h2 {
+    color: #231916;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: inline-block;
+    vertical-align: baseline;
+}
 
 .mainBody-photos .photos_wrap span{
 	font-size: 32px;
@@ -1382,7 +1391,7 @@ span.buy {
 	}
 	#boxman_box {
 		margin-top: 0px;
-		width: 95%;
+		width: 90%;
 		max-width: 100%;
 		margin: 0 auto;
 		position: relative;
