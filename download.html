@@ -183,7 +183,7 @@ style="background: rgba(0, 0, 0, 0.85);
     width: 100%;
     z-index: 99;
     height: 100%;
-	   display: none!important;
+	display: none!important;
     overflow: hidden;
     padding: 60px 0 0 0;">
 	
@@ -243,7 +243,7 @@ style="background: rgba(0, 0, 0, 0.85);
 		</div>
 </div>		
 		
-		<div class="wallpaper_box">	
+		<div class="wallpaper_box animated-sec4">	
 			<img src="img/wallpaper3.png" alt=""/>
 
 			<div class="wallpaper_inner">
@@ -255,7 +255,7 @@ style="background: rgba(0, 0, 0, 0.85);
 			</div>
 		</div>
 		
-		<div class="wallpaper_box">	
+		<div class="wallpaper_box animated-sec3">	
 			<img src="img/wallpaper4.png" alt=""/>
 
 			<div class="wallpaper_inner">
@@ -267,7 +267,7 @@ style="background: rgba(0, 0, 0, 0.85);
 			</div>
 		</div>
 
-		<div class="wallpaper_box">	
+		<div class="wallpaper_box animated-sec3">	
 			<img src="img/wallpaper5.png" alt=""/>
 
 			<div class="wallpaper_inner">
@@ -279,7 +279,7 @@ style="background: rgba(0, 0, 0, 0.85);
 			</div>
 		</div>
 		
-		<div class="wallpaper_box">	
+		<div class="wallpaper_box animated-sec3">	
 			<img src="img/wallpaper6.png" alt=""/>
 
 			<div class="wallpaper_inner">
@@ -466,14 +466,15 @@ $(function(){
 	
 <script>
 $(document).ready(function() {	
-	
-	setTimeout(function(){ 
-		$('.download_popup').show();
-	}, 5000);
-	
-	$('.popup_close').click(function() {
-		$('.download_popup').css("cssText", "display: none !important;");
-	});
+	if ($(window).width() < 932) {
+		setTimeout(function(){ 
+			$('.download_popup').show();
+		}, 5000);
+
+		$('.popup_close').click(function() {
+			$('.download_popup').css("cssText", "display: none !important;");
+		});
+	} 
 });	
 </script>
 
