@@ -103,7 +103,7 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 
   </head>
 
-<body class="animsition">
+<body>
 	
 <!-----手機版右側選單內容----->	
 <div class="pushmenu pushmenu-left">	
@@ -336,11 +336,22 @@ $(function(){
 	<script type="text/javascript" src="js/common.js"></script>
 	<script type="text/javascript" src="js/animsition.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-  <script>
-	  $(document).ready(function() {
-		$('.animsition').animsition();
-	  });
-  </script>
+<script>
+$(document).ready(function() {
+	// 裝置判斷 PC or Mobile
+    var isMobile = {
+        iMob: function() {
+            return navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i);
+        }
+    };
+    if( isMobile.iMob() ) {
+    	
+    } else {
+	       $('body').addClass('animsition');
+    };
+});
+</script>
+
 	
 <script>
 	$( ".navigation-btn-open" ).click(function() {
