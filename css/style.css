@@ -1432,6 +1432,10 @@ span.buy {
 		float: left!important;
 		padding: 1px;
 	}
+	
+	.card_box:nth-child(7), .card_box:nth-child(8){
+		display: none;
+	}
 
 
 

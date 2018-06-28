@@ -8,6 +8,47 @@
  * Copyright (c) 2016 Daniel Eden
  */
 
+.colorboom {
+  -webkit-animation-name: colorboom;
+  animation-name: colorboom;
+-webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+	-webkit-animation-duration: 4s;
+  animation-duration: 10s;
+}
+
+@keyframes colorboom {
+  from {
+    background: #ef5aa1;
+  }
+
+  15% {
+    background: transparent;
+  }
+
+  30% {
+    background: #ef5aa1;
+  }
+
+  45% {
+    background: transparent;
+  }
+
+  60% {
+    background: #ef5aa1;
+  }
+
+  75% {
+    background: transparent;
+  }
+
+  to {
+    background: #ef5aa1;
+  }
+}
+
+
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
