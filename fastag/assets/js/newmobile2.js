@@ -2070,7 +2070,7 @@ $(document).ready(function(){
 	
 	
 			// Mobile FB ＆ TOP icon
-			var navp = $('.gotop, .popup, .linkmore, .fixedURL, .line2, .fb2, .sensor, .get');
+			var navp = $('.gotop, .popup, .linkmore, .fixedURL, .line2, .fb2, .sensor, .get, .fastsensor, .fastget');
 			$(window).scroll(function(){
 				if (  $(window).scrollTop() == 0 ) {
 					navp.css('opacity','0');

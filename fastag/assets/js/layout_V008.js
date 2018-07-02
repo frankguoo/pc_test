@@ -34,7 +34,7 @@ $( function(){
 
 	// 品牌輪播
 	$('.store_discount .owl-carousel').owlCarousel({
-	    loop: true,
+	    loop: false,
 	    margin: 10,
 	    autoplay: true,
 	    autoplayTimeout: 5000,
@@ -80,7 +80,10 @@ $( function(){
      $('html,body').animate({scrollTop:$('#feature＿block').offset().top}, "show");
                return false;
            });
-              
+   $('#getfastag').click(function() {       
+     $('html,body').animate({scrollTop:$('#getfastag＿block').offset().top}, "show");
+               return false;
+           });
 
 // 首頁滑動到指定區塊mobile
    $('#iwantgetfastag_mobile').click(function() {       
