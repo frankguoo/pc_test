@@ -1077,7 +1077,7 @@ hr.modal_line{
 }
 
 .modal-body .discount ul li{
-    text-align: left;
+    text-align: center;
     width: 90%;
     margin: 0% 5%;
     border-bottom: 1px solid #e6e6e6;
@@ -3874,7 +3874,7 @@ div.key_right a{
     width: 290px!important;
 }
 }.onlyKV_02 {
-    background: url("../img/only_KV_02.png") bottom center repeat-x;
+    background: url("../img/only_KV_02.jpg") bottom center repeat-x;
 }
 .onlyKV_02 hr {
     width: 82%}
@@ -4465,6 +4465,9 @@ img.point {
 }.onlyKV_04 {
     background: url("../img/only_KV_01.jpg") bottom center repeat-x;
 }
+.onlyKV_05 {
+    background: url("../img/only_KV_02.jpg") bottom center repeat-x;
+}
 .onlyKV_04 .sub_title_box {
     width: 400px;
     margin: 70px 0 0 105px;
@@ -4665,6 +4668,7 @@ img.point {
     width: 100%;
     text-align: left;
     padding: 8px 12px;
+	    white-space: normal!important;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
