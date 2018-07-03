@@ -85,20 +85,8 @@ $( function(){
                return false;
            });
 
-// 首頁滑動到指定區塊mobile
-   $('#iwantgetfastag_mobile').click(function() {       
-     $('html,body').animate({scrollTop:$('#iwantgetfastag＿block').offset().top}, "show");
-             
-           });   
 
-   $('#selectedbrand_mobile').click(function() {       
-     $('html,body').animate({scrollTop:$('#selectedbrand＿block').offset().top}, "show");
-             
-           });
-   $('#feature_mobile').click(function() {       
-     $('html,body').animate({scrollTop:$('#feature＿block').offset().top}, "show");
-            
-           });
+	
 
 $(".nav_mobile ul  .dropdown-menu li a").click(function () {
     $(".nav_mobile ul .dropdown-menu").css("display", "none");
