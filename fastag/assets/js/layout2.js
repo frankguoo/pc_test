@@ -86,11 +86,9 @@ $( function(){
            });
 
 
-	
-
-$(".nav_mobile ul  .dropdown-menu li a").click(function () {
-    $(".nav_mobile ul .dropdown-menu").css("display", "none");
-});
+	$(".nav_mobile ul  .dropdown-menu li a").click(function () {
+		$(".nav_mobile ul .dropdown-menu").css("display", "none");
+	});
 
 
 
@@ -105,6 +103,103 @@ $(".nav_mobile ul  .dropdown-menu li a").click(function () {
     $('.fixed_under .close_under .btn').click(function(evn){
     	$('.under_wrap').addClass('hide');
     });
+	
+	// 裝置判斷 PC or Mobile
+    var isMobile = {
+        iMob: function() {
+            return navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i);
+        }
+    };
+
+	// 連結滑動效果，PC,Mobile不同定位
+	$.scrollTo = $.fn.scrollTo = function(x, y, options){
+	    if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+
+	    // 判斷 Mobile or PC 取得y值高度
+	    if( isMobile.iMob() ) {
+	    	// Mobile
+	    	var mobTopmenu = -($('.header_desktop').outerHeight() - 270);
+	    } else {
+	    	// PC
+	    	var mobTopmenu = -($('.header_desktop').outerHeight() - -10);
+	    };
+
+	    options = $.extend({}, {
+	        gap: {
+	            x: 0,
+	            y: mobTopmenu
+	        },
+	        animation: {	// 滑動效果設定
+	            easing: 'swing',
+	            duration: 800,
+	            complete: $.noop,
+	            step: $.noop
+	        }
+	    }, options);
+
+	    return this.each(function(){
+	        var elem = $(this);
+	        elem.stop().animate({
+	            scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+	            scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
+	        }, options.animation);
+	    });
+	};
+
+
+    $('.right_post a.card, .header_mobile li.card a, .header_mobile li.card a.btn, .nnn a').click(function(evn){
+        evn.preventDefault();
+        $('html,body').scrollTo(this.hash, this.hash); 
+    });
+
+    $('.fixed_under .close_under .btn').click(function(evn){
+    	$('.under_wrap').addClass('hide');
+    });
+
+	$(document).on('scroll touchmove', function() {
+		var $win = $(window),
+			w = $win.width(),
+			h = $win.height();
+
+		// 手機置頂選單
+		if ( $(window).scrollTop() <= 30 ) {
+			$('.nav_mobile').removeClass('fixed');
+			$('.main_content').removeClass('fixPadding');
+		}else {
+			$('.nav_mobile').addClass('fixed');
+			$('.main_content').addClass('fixPadding');
+		}
+
+	    // 判斷 Mobile or PC 辦卡置底顯示
+	    if( isMobile.iMob() ) {
+	    	// Mobile
+			if( $(window).scrollTop() <= 30 ) {
+				$('.fixed_under').fadeOut(300);
+			} else {
+				$('.fixed_under').fadeIn(300);
+				
+				if( ($(window).scrollTop() + h) > $('.applyCard .btn_box').position().top)
+					$('.fixed_under').addClass('hide');
+				else 
+					$('.fixed_under').removeClass('hide');
+			}
+	    } else {
+	    	// PC
+			if( $(window).scrollTop() < $('.slider_wrap, .onlyKV_01, .onlyKV_02, .onlyKV_03, .onlyKV_04').height()*.05 ){
+				$('.fixed_under').fadeOut();
+			} else {
+				$('.fixed_under').fadeIn();
+				
+				if( ($(window).scrollTop() + h) > $('.applyCard').position().top)
+					$('.fixed_under').addClass('hide');
+				else 
+					$('.fixed_under').removeClass('hide');
+			}
+	    };
+
+	}).scroll();
+	
+	
 
 });
 
