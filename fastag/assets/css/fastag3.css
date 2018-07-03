@@ -554,9 +554,7 @@ li.nav-item:nth-child(3) {
     width: 100%;
     border-bottom: 1px dotted #ff7679;
 }
-.nav_mobile .nav-tabs>li:nth-child(3) {
-    border: 0;
-}
+
 .header_mobile ul {
     padding: 2.5vmin 3vmin 2.2vmin;
 }
