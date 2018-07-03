@@ -2719,6 +2719,15 @@ span.arw.rotate {
 	margin: 20px;
 	float: left;
 }
+
+@media only screen and (max-width: 380px){
+	.fourspecial ul.special li .radius_M{
+		background: #fff;
+		width: 100%!important;
+		height: 170px;
+
+	}
+}
 .fourspecial ul.special li .right_box{
     width: 140px;
     height: 100px;
