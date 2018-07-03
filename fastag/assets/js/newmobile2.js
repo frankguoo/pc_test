@@ -2072,7 +2072,7 @@ $(document).ready(function(){
 			// Mobile FB ＆ TOP icon
 			var navp = $('.gotop, .popup, .linkmore, .fixedURL, .line2, .fb2, .sensor, .get, .fastsensor, .fastget');
 			$(window).scroll(function(){
-				if (  $(window).scrollTop() == 0 ) {
+				if (  $(window).scrollTop() <= 500 ) {
 					navp.css('opacity','0');
 					navp.css('display','none');
 				}else {

@@ -50,10 +50,10 @@ $( function(){
 	    merge: true,
 	    navText : ["<",">"],
 	    items:1,
-	margin:10,
-	stagePadding:0,
-	autoHeight:true,
-	slideBy:2,
+		margin:10,
+		stagePadding:0,
+		autoHeight:true,
+		slideBy:2,
         lazyLoad:true,
  
 	    responsive:{
