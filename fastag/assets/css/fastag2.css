@@ -2778,9 +2778,9 @@ span.arw.rotate {
 
 @media only screen and (max-width: 767px){
  .fourspecial ul.special li{
-    width: 46%;
-    margin-right: 2%;
-    margin-left: 2%;
+    width: 50%;
+    padding-right: 2%;
+    padding-left: 2%;
 } 
 	
 .fourspecial ul.special li .radius_M {
