@@ -29,7 +29,7 @@ a {
     color: #158bca;
 }
 
-.modal{top:0!important;}
+.modal-content{top:0!important;overflow-y: scroll!important;}
 
 .header_box {
     width: 100%;
