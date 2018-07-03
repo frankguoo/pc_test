@@ -2707,6 +2707,7 @@ span.arw.rotate {
     width: calc(100%/2);
     text-align: center;
     float: left;
+	overflow: hidden;
 
 }
 
@@ -2720,11 +2721,11 @@ span.arw.rotate {
 	float: left;
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 420px){
 	.fourspecial ul.special li .radius_M{
 		background: #fff;
 		width: 100%!important;
-		height: 170px;
+		height: 165px;
 
 	}
 }
