@@ -88,16 +88,16 @@ $( function(){
 // 首頁滑動到指定區塊mobile
    $('#iwantgetfastag_mobile').click(function() {       
      $('html,body').animate({scrollTop:$('#iwantgetfastag＿block').offset().top}, "show");
-               return false;
+             
            });   
 
    $('#selectedbrand_mobile').click(function() {       
      $('html,body').animate({scrollTop:$('#selectedbrand＿block').offset().top}, "show");
-               return false;
+             
            });
    $('#feature_mobile').click(function() {       
      $('html,body').animate({scrollTop:$('#feature＿block').offset().top}, "show");
-               return false;
+            
            });
 
 
