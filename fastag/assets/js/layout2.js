@@ -147,7 +147,7 @@ $( function(){
 	};
 
 
-    $('.right_post a.card, .header_mobile li.card a, .header_mobile li.card a.btn, .nnn a').click(function(evn){
+    $('.right_post a.card, .header_mobile li.card a, .header_mobile li.card a.btn').click(function(evn){
         evn.preventDefault();
         $('html,body').scrollTo(this.hash, this.hash); 
     });
