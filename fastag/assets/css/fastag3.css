@@ -28,6 +28,7 @@ body.prime_body {
 a {
     color: #158bca;
 }
+.modal{top:0!important; bottom:auto!important;}
 .header_box {
     width: 100%;
     background: #fff;
