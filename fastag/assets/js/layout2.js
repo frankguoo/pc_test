@@ -67,20 +67,20 @@ $( function(){
 
 
 // 首頁滑動到指定區塊desktop
-   $('#iwantgetfastag').click(function() {       
+   $('#iwantgetfastag, #iwantgetfastagm').click(function() {       
      $('html,body').animate({scrollTop:$('#iwantgetfastag＿block').offset().top}, "show");
                return false;
            });   
 
-   $('#selectedbrand').click(function() {       
+   $('#selectedbrand, #selectedbrandm').click(function() {       
      $('html,body').animate({scrollTop:$('#selectedbrand＿block').offset().top}, "show");
                return false;
            });
-   $('#feature').click(function() {       
+   $('#feature, #featurem').click(function() {       
      $('html,body').animate({scrollTop:$('#feature＿block').offset().top}, "show");
                return false;
            });
-   $('#getfastag').click(function() {       
+   $('#getfastag, #getfastagm').click(function() {       
      $('html,body').animate({scrollTop:$('#getfastag＿block').offset().top}, "show");
                return false;
            });

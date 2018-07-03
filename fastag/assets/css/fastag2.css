@@ -1070,29 +1070,74 @@ hr.modal_line{
 }
 
 .discount{
-        margin-bottom: 40%;
+    -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+	border: 1px solid #d32327;
 }
 
 .modal-body .discount ul li{
-    width: calc(100% / 2 - 20px);
-    text-align: center;
-    /*margin-right: 5px;*/
-    margin-bottom: 1%;
-    margin-top: 0%;
-
+    text-align: left;
+    width: 90%;
+    margin: 0% 5%;
+    border-bottom: 1px solid #e6e6e6;
 }
 
-@media only screen and (max-width:1080px){
-.modal-body .discount ul li{
-    width: calc(100% / 1 - 8px);
+.modal-body .discount ul li:nth-child(4){
+    border-bottom: none;
 }
 
+.modal-body .discount ul li img{
+   	float:left;
+	margin-right: 30px;
 }
 
-@media only screen and (max-width:580px){
-    .discount ul li p{
-            font-size: 0.2rem;
-    }
+.modal-body .discount ul li dl{
+   	margin-top: 50px;
+}
+
+.modal-body .discount ul li dl dt{
+    color:red;
+	font-size: 22px;
+	margin: 10px 0;
+}
+
+.modal-body .discount ul li dl dd{
+	font-size: 18px;
+	line-height: 28px;
+	margin-bottom: 5px;
+}
+
+.modal-body .discount ul li dl b{
+	font-size: 15px;
+    font-weight: 400;
+    padding: 2px 50px 2px 10px;
+    background: #dadada;
+}
+
+
+
+@media only screen and (max-width:932px){
+	.modal-body .discount ul li img{
+		float:none;
+		margin-right: 0px;
+		display: block;
+		width: 100%!important;
+		margin-bottom: -20px;
+	}
+	.modal-body .discount ul li dl{
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	.modal-body .discount ul li dl dt{
+		font-size: 18px;
+		margin: 0px;
+	}
+	.modal-body .discount ul li dl dd{
+		font-size: 15px;
+		line-height: 22px;
+		margin-bottom: 5px;
+	}    
 }
 
 .modal_text p{
@@ -1202,7 +1247,6 @@ a.bank_about {
 
 .sub_KV {
     height: 270px;
-    border: 1px red solid;
     margin-top: 56px;
 }
 .sub_KV .sub_title_box {
@@ -4610,6 +4654,11 @@ img.point {
 .sort_Q .right_box .tab-content {
     padding: 30px 0;
     width: 97%}
+.sort_Q .right_box .tab-content .btn:hover{
+    color:#fff;
+	background: #d32327;
+}
+
 .sort_Q .right_box .btn {
     font-size: 1.15rem;
     background-color: #F6F6F6;
