@@ -96,8 +96,8 @@ $( function(){
     $('.fixed_under .close_under .btn').click(function(evn){
     	$('.under_wrap').addClass('hide');
     });
-
-	
+});
+$( document ).ready(function() {
 		var $win = $(window),
 			w = $win.width(),
 			h = $win.height();
@@ -110,10 +110,5 @@ $( function(){
 			$('.nav_mobile').addClass('fixed');
 			$('.main_content').addClass('fixPadding');
 		}
-
-	
-
 });
-
-
 
