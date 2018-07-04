@@ -147,10 +147,7 @@ $( function(){
     	$('.under_wrap').addClass('hide');
     });
 
-	$(document).on('scroll touchmove', function() {
-		var $win = $(window),
-			w = $win.width(),
-			h = $win.height();
+
 
 		// 手機置頂選單
 		if ( $(window).scrollTop() <= 30 ) {
@@ -161,34 +158,6 @@ $( function(){
 			$('.main_content').addClass('fixPadding');
 		}
 
-	    // 判斷 Mobile or PC 辦卡置底顯示
-	    if( isMobile.iMob() ) {
-	    	// Mobile
-			if( $(window).scrollTop() <= 30 ) {
-				$('.fixed_under').fadeOut(300);
-			} else {
-				$('.fixed_under').fadeIn(300);
-				
-				if( ($(window).scrollTop() + h) > $('.applyCard .btn_box').position().top)
-					$('.fixed_under').addClass('hide');
-				else 
-					$('.fixed_under').removeClass('hide');
-			}
-	    } else {
-	    	// PC
-			if( $(window).scrollTop() < $('.slider_wrap, .onlyKV_01, .onlyKV_02, .onlyKV_03, .onlyKV_04').height()*.05 ){
-				$('.fixed_under').fadeOut();
-			} else {
-				$('.fixed_under').fadeIn();
-				
-				if( ($(window).scrollTop() + h) > $('.applyCard').position().top)
-					$('.fixed_under').addClass('hide');
-				else 
-					$('.fixed_under').removeClass('hide');
-			}
-	    };
-
-	}).scroll();
 	
 	
 
