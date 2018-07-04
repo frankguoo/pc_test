@@ -97,11 +97,11 @@ $( function(){
     	$('.under_wrap').addClass('hide');
     });
 });
-$( document ).ready(function() {
+
 		var $win = $(window),
 			w = $win.width(),
 			h = $win.height();
-
+$(window).scroll(function(){
 		// 手機置頂選單
 		if ( $(window).scrollTop() <= 30 ) {
 			$('.nav_mobile').removeClass('fixed');
