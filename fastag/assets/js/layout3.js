@@ -1,4 +1,14 @@
 
+var hashGo = location.hash;
+// 所有資訊載入後執行
+$('body').delay(200).queue(function (next) {
+    if (hashGo == ''){
+
+    } else {
+        $('html,body').animate({scrollTop:$(hashGo).offset().top},10);            
+    }
+});
+
 $( function(){
 
 	// Add slideDown animation to Bootstrap dropdown when expanding.
@@ -90,11 +100,15 @@ $( function(){
     	$('.under_wrap').addClass('hide');
     });
 	
+
     $('.fixed_under .close_under .btn').click(function(evn){
     	$('.under_wrap').addClass('hide');
     });
 
-
+	$(document).on('scroll touchmove', function() {
+		var $win = $(window),
+			w = $win.width(),
+			h = $win.height();
 
 		// 手機置頂選單
 		if ( $(window).scrollTop() <= 30 ) {
@@ -105,6 +119,7 @@ $( function(){
 			$('.main_content').addClass('fixPadding');
 		}
 
+	}).scroll();
 	
 	
 
