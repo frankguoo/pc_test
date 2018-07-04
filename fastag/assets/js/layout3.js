@@ -101,14 +101,14 @@ $( function(){
 		var $win = $(window),
 			w = $win.width(),
 			h = $win.height();
-$(window).scroll(function(){
-		// 手機置頂選單
-		if ( $(window).scrollTop() <= 30 ) {
-			$('.nav_mobile').removeClass('fixed');
-			$('.main_content').removeClass('fixPadding');
-		}else {
-			$('.nav_mobile').addClass('fixed');
-			$('.main_content').addClass('fixPadding');
-		}
-});
+		$(window).scroll(function(){
+				// 手機置頂選單
+				if ( $(window).scrollTop() <= 30 ) {
+					$('.nav_mobile').removeClass('fixed');
+					$('.main_content').removeClass('fixPadding');
+				}else {
+					$('.nav_mobile').addClass('fixed');
+					$('.main_content').addClass('fixPadding');
+				}
+		});
 
