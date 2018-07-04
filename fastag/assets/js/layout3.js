@@ -106,10 +106,6 @@ $( function(){
     });
 
 	
-
-});
-
-	$(document).on('scroll', function() {
 		var $win = $(window),
 			w = $win.width(),
 			h = $win.height();
@@ -123,7 +119,9 @@ $( function(){
 			$('.main_content').addClass('fixPadding');
 		}
 
-	}).scroll();
 	
+
+});
+
 
 
