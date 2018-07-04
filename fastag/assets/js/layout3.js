@@ -1,14 +1,4 @@
 
-var hashGo = location.hash;
-// 所有資訊載入後執行
-$('body').delay(200).queue(function (next) {
-    if (hashGo == ''){
-
-    } else {
-        $('html,body').animate({scrollTop:$(hashGo).offset().top},10);            
-    }
-});
-
 $( function(){
 
 	// Add slideDown animation to Bootstrap dropdown when expanding.
@@ -100,49 +90,6 @@ $( function(){
     	$('.under_wrap').addClass('hide');
     });
 	
-	// 裝置判斷 PC or Mobile
-    var isMobile = {
-        iMob: function() {
-            return navigator.userAgent.match(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i);
-        }
-    };
-
-	// 連結滑動效果，PC,Mobile不同定位
-	$.scrollTo = $.fn.scrollTo = function(x, y, options){
-	    if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
-
-	    // 判斷 Mobile or PC 取得y值高度
-	    if( isMobile.iMob() ) {
-	    	// Mobile
-	    	var mobTopmenu = -($('.header_desktop').outerHeight() - 270);
-	    } else {
-	    	// PC
-	    	var mobTopmenu = -($('.header_desktop').outerHeight() - -10);
-	    };
-
-	    options = $.extend({}, {
-	        gap: {
-	            x: 0,
-	            y: mobTopmenu
-	        },
-	        animation: {	// 滑動效果設定
-	            easing: 'swing',
-	            duration: 800,
-	            complete: $.noop,
-	            step: $.noop
-	        }
-	    }, options);
-
-	    return this.each(function(){
-	        var elem = $(this);
-	        elem.stop().animate({
-	            scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
-	            scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
-	        }, options.animation);
-	    });
-	};
-
-
     $('.fixed_under .close_under .btn').click(function(evn){
     	$('.under_wrap').addClass('hide');
     });
