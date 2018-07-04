@@ -105,7 +105,11 @@ $( function(){
     	$('.under_wrap').addClass('hide');
     });
 
-	$(document).on('scroll touchmove', function() {
+	
+
+});
+
+	$(document).on('scroll', function() {
 		var $win = $(window),
 			w = $win.width(),
 			h = $win.height();
@@ -121,9 +125,5 @@ $( function(){
 
 	}).scroll();
 	
-	
-
-});
-
 
 
