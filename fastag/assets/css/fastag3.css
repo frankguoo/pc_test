@@ -28,20 +28,6 @@ body.prime_body {
 a {
     color: #158bca;
 }
-.modal {
-    text-align: center;
-    padding: 0!important;
-}
-
-.modal:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -4px;
-}
-.modal-content{top:0!important;overflow-y: scroll!important;}
-
 .header_box {
     width: 100%;
     background: #fff;
@@ -628,12 +614,17 @@ margin: 0 auto;
 }
 
 .menu_star{
- color: #d32226;
+ 	color: #d32226;
     font-size: 30px;
     font-weight: 400;
     cursor: pointer;
     margin-bottom: 5px;   
-    }    
+} 
+
+.menu_star img{
+ 	width: 100%;
+}
+
 .menu_star:hover{
      color: #dd6164;
     text-decoration: none;    
