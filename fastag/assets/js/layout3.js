@@ -67,6 +67,11 @@ $( function(){
 
 
 // 首頁滑動到指定區塊desktop
+   $('.gotop').click(function() {       
+     $('html,body').animate({scrollTop:$('.main_content').offset().top}, "show");
+   });   
+
+	
    $('#iwantgetfastag, #iwantgetfastagm').click(function() {       
      $('html,body').animate({scrollTop:$('#iwantgetfastag＿block').offset().top}, "show");
               
