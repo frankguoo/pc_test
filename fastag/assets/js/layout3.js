@@ -1,13 +1,5 @@
 
-var hashGo = location.hash;
-// 所有資訊載入後執行
-$('body').delay(200).queue(function (next) {
-    if (hashGo == ''){
 
-    } else {
-        $('html,body').animate({scrollTop:$(hashGo).offset().top},10);            
-    }
-});
 
 $( function(){
 
