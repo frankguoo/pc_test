@@ -85,20 +85,15 @@ $( function(){
           
            });
 
-
 	$(".nav_mobile ul  .dropdown-menu li a").click(function () {
 		$(".nav_mobile ul .dropdown-menu").css("display", "none");
 	});
-
-
 
 	// 注意事項
 	$('a.note').click(function(){
 		$('.notice').slideToggle(250);
 		$('a.note span.arw').toggleClass('rotate');
 	});
-
-
 
     $('.fixed_under .close_under .btn').click(function(evn){
     	$('.under_wrap').addClass('hide');
@@ -146,11 +141,6 @@ $( function(){
 	    });
 	};
 
-
-    $('.right_post a.card, .header_mobile li.card a.btn').click(function(evn){
-        evn.preventDefault();
-        $('html,body').scrollTo(this.hash, this.hash); 
-    });
 
     $('.fixed_under .close_under .btn').click(function(evn){
     	$('.under_wrap').addClass('hide');
