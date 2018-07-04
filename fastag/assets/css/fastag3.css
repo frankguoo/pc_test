@@ -28,6 +28,15 @@ body.prime_body {
 a {
     color: #158bca;
 }
+
+.modal:before {
+    content: '';
+    display: inline-block!important;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
 .header_box {
     width: 100%;
     background: #fff;
