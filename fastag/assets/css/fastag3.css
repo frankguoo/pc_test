@@ -31,20 +31,12 @@ a {
 
 .modal:before {
     content: '';
-    display: inline-block!important;
+    display: inline-block;
     height: 100%;
     vertical-align: middle;
     margin-right: -4px;
 }
-@media only screen and (max-width:767px) {
-.modal:before {
-    content: '';
-    display: inline-block!important;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -4px;
-}
-}
+
 .header_box {
     width: 100%;
     background: #fff;
