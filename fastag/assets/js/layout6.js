@@ -65,7 +65,7 @@ $( function(){
      $('html,body').animate({scrollTop:$('#iwantgetfastag＿block').offset().top}, "show");
    });   
 
-   $('#selectedbrand, #selectedbrandm').click(function() {       
+   $('#selectedbrand, #selectedbrandm, .fastget').click(function() {       
      $('html,body').animate({scrollTop:$('#selectedbrand＿block').offset().top}, "show");
    });
    $('#feature, #featurem').click(function() {       
