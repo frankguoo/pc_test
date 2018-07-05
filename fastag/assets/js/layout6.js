@@ -46,21 +46,17 @@ $( function(){
 		autoHeight:true,
 		slideBy:2,
         lazyLoad:true,
- 
 	    responsive:{
 	        0:{
 	        },
 	        768:{
-	    items:2,    	        
+	    		items:2,    	        
 	        }
 	    }
 	});
 
 
 // 首頁滑動到指定區塊desktop
-
-
-	
    $('#iwantgetfastag, #iwantgetfastagm').click(function() {       
      $('html,body').animate({scrollTop:$('#iwantgetfastag＿block').offset().top}, "show");
    });   

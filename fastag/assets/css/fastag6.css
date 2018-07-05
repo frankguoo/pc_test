@@ -1980,6 +1980,76 @@ span.arw.rotate {
 .footer .mobile a:hover {
     color: #00b0ec;
 }
+
+/*------底部宣告------*/
+.block_S {
+    height: 68px;
+    color: #959595;
+    background-color: #282828;
+}
+.block_S .msg_box {
+    padding-top: 15px;
+    font-size: 0;
+    text-align: center;
+}
+.block_S .msg_box .left, .block_S .msg_box .right {
+    float: none;
+    display: inline-block;
+}
+
+.block_S .left {
+    margin: 0 12px;
+    padding: 5px 10px;
+    border: 1px solid #959595;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    vertical-align: middle;
+}
+.block_S .msg_box .left, .block_S .msg_box .right {
+    float: none;
+    display: inline-block;
+}
+
+.block_S .right {
+    font-size: 13px;
+    vertical-align: middle;
+    text-align: left;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 736px){
+.block_S {
+    padding: 15px;
+    height: auto;
+}
+.block_S .msg_box {
+    padding: 0;
+    width: 100%;
+}
+	
+.block_S .msg_box .left, .block_S .msg_box .right {
+    display: block;
+}
+
+.block_S .left {
+    font-size: 5vw;
+}
+	
+.block_S .right {	
+    margin-top: 10px;
+    font-size: 3vw;
+}
+	
+.block_S .msg_box .left, .block_S .msg_box .right {
+    display: block;
+}
+	
+.block_S .right li {
+    display: inline;
+}	
+
+}
 .copyright {
     background-color: #101010;
     color: #fff;
@@ -2998,7 +3068,7 @@ div.key_right a{
 .new_event .owl-theme .owl-nav [class*=owl-] {
     position: absolute;
     top: 35%;
-    font-size: 5em;
+    font-size: 3em;
     background: inherit;
     font-family: 'Karla',  sans-serif;
     line-height: 1;
@@ -3024,13 +3094,11 @@ div.key_right a{
 .store_discount .owl-next {
     right: -15px;
 }
-
-
 .new_event .owl-prev {
-    left: -40px;
+    left: 0px;
 }
 .new_event .owl-next {
-    right: -40px;
+    right: 0px;
 }
 .new_event .owl-theme .owl-dots .owl-dot.active span, .new_event .owl-theme .owl-dots .owl-dot:hover span {
     background:#d32327;
@@ -3377,7 +3445,7 @@ div.key_right a{
     width: 450px;
 }
 .new_event .owl-nav {
-    display: none!important;
+    display: block!important;
 }
 .new_event .content_box {
     max-width: 90%}
@@ -3423,7 +3491,7 @@ div.key_right a{
     font-size: 0.8rem;
 }
 .new_event .owl-theme .owl-nav [class*=owl-] {
-    display: none;
+    display: block;
 }
 .about ul.special h5 br {
     display: none;
