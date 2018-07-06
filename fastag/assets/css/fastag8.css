@@ -1905,7 +1905,7 @@ span.arw.rotate {
 }
 .footer {
     width: 100%;
-    padding: 30px 0 40px;
+    padding: 30px 0 10px;
     background-color: #0e0e0e;
     text-align: center;
     color: #fff;
@@ -1983,7 +1983,6 @@ span.arw.rotate {
 
 /*------底部宣告------*/
 .block_S {
-    height: 68px;
     color: #959595;
     background-color: #282828;
 }
@@ -2053,7 +2052,7 @@ span.arw.rotate {
 .copyright {
     background-color: #101010;
     color: #fff;
-    padding: 30px 0 120px 0;;
+    padding: 0px 0 120px 0;;
 }
 .copyright .mobile {
     display: none!important;
@@ -2069,6 +2068,7 @@ span.arw.rotate {
     max-width: 92%;
     margin: auto;
     font-size: 13px;
+	margin-top: 30px;
 }
 #sendto p {
     text-align: center;
@@ -3072,7 +3072,7 @@ div.key_right a{
     background: inherit;
     font-family: 'Karla',  sans-serif;
     line-height: 1;
-    color: #b4b4b4;
+    color: #fff;
     padding: 0;
     margin: 0;
 }
@@ -4582,7 +4582,7 @@ img.point {
 }
 .onlyKV_04 .sub_title_box {
     width: 400px;
-    margin: 70px 0 0 105px;
+    margin: 100px 0 0 105px;
 }
 .onlyKV_04 .t4 {
     margin: -5px 0 5px 0;
@@ -4779,6 +4779,7 @@ img.point {
     background-color: #F6F6F6;
     width: 100%;
     text-align: left;
+	    margin: 5px 0;
     padding: 8px 12px;
 	    white-space: normal!important;
     -webkit-background-clip: padding-box;
@@ -4801,6 +4802,8 @@ img.point {
 }
 .sort_Q .right_box span.title {
     font-size: 1.2rem;
+	    font-weight: 700;
+    padding-bottom: 10px;
 }
 .sort_Q .btn:active, .sort_Q .btn:focus {
     outline: none;
@@ -4819,6 +4822,7 @@ img.point {
     margin-right: -1px;
     border: 0;
     padding-top: 30px;
+	    padding-bottom: 20px;
 }
 .sort_Q .nav-tabs>li>a {
     background-color: #595757;
