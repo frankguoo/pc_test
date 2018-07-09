@@ -815,7 +815,7 @@ $(function(){
     });
 </script>
 <!----------END 輪播區域設定---------->		
-
+    <script type="text/javascript" src="js/lazyload.min.js"></script>    
     <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
     <script type="text/javascript" src="js/iframeResizer.min.js"></script>    
 	<script type="text/javascript" src="js/clipboard.min.js"></script>
@@ -825,7 +825,11 @@ $(function(){
 	<script type="text/javascript" src="js/common.js"></script>
 	
 	
-
+ <script>
+      $(function() {
+            $("img").lazyload();
+      });
+</script>
 	
 <script>
 	$( ".navigation-btn-open" ).click(function() {
