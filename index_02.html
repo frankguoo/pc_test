@@ -106,21 +106,7 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 	
 
 <body>
-<script>	
-$('body').after("<div class='spinner-wrap'><div class='leftside'></div><div class='rightside'></div></div>");	
-	
-
-setTimeout(function () {
-			$(".leftside").stop().css('width', '0px');//loading完成對.leftside執行
-		$(".rightside").stop().css('width', '0px');//loading完成對.rightside執行
-		$('.spinner-wrap').fadeOut(1000, function () {//fadeOut後接著在HTML裡面刪除這個div
-			$(this).remove()
-		});
-},
-6000);
-	
-
-</script>
+<div class='spinner-wrap'><div class='leftside'></div><div class='rightside'></div></div>	
 	
 <div class='loading-main'><p class='oading-main-logo'><!--<img src='img/logo_b.svg' alt=""/>--></p><div class='loading-main-line'></div></div>
 
@@ -853,6 +839,16 @@ $(function(){
 </script>
 	
 	
+<script>	
+setTimeout(function () {
+			$(".leftside").stop().css('width', '0px');//loading完成對.leftside執行
+		$(".rightside").stop().css('width', '0px');//loading完成對.rightside執行
+		$('.spinner-wrap').fadeOut(1000, function () {//fadeOut後接著在HTML裡面刪除這個div
+			$(this).remove()
+		});
+},
+6000);
+</script>
 	
 	
 </body>	
