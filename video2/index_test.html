@@ -23,38 +23,37 @@
 </head>
 <body>
 	
-
-	
+<!------新影片輪播區域 開始------>	
    <section id="main_video_box">
 		<div id="myCarousel_main" class="owl-carousel owl-theme">
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/q4RBVhGEKbc?rel=0&autoplay=1&mute=1">
+				  <div class="videoID YTwrapper" data-video="https://www.youtube.com/embed/q4RBVhGEKbc?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
 			</div>
 			
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/Mgu3zao6NaM?rel=0&autoplay=1&mute=1">
+				  <div class="videoID YTwrapper" data-video="https://www.youtube.com/embed/Mgu3zao6NaM?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon2.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
 			</div>
 			
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/B-rWcXPFPtc?rel=0&autoplay=1&mute=1">
+				  <div class="videoID YTwrapper" data-video="https://www.youtube.com/embed/B-rWcXPFPtc?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon3.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
 			</div>
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/Nxc6C0gWSIM?rel=0&autoplay=1&mute=1">
+				  <div class="videoID YTwrapper" data-video="https://www.youtube.com/embed/Nxc6C0gWSIM?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon4.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
 			</div>
 			<div>
-				  <div class="movieC videoWrapper" data-video="https://www.youtube.com/embed/qr1dc_yYONw?rel=0&autoplay=1&mute=1">
+				  <div class="videoID YTwrapper" data-video="https://www.youtube.com/embed/qr1dc_yYONw?rel=0&autoplay=1&mute=1">
 					  <div class="bgg" style="background-image: url('img/dondon5.jpg')"></div>
 					  <div class="link-imga"><img src="img/play.png" width="56" height="56" alt=""></div>
 				  </div>
@@ -63,84 +62,160 @@
 	   </div>
 
 	</section>  
-<style>
-.bgg{
-	position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: 99;
-}	
-	
-#main_video_box{
-    width: 100%;
-    box-sizing: border-box;
-    display: block;
-    background: #000;
-	position: relative;
-	height: 423px;
-    border-bottom: 1px solid rgb(255, 255, 255);			
-}	
-	
-#main_video_box .owl-carousel {
-    width: 2250px!important;
-	max-width: 2250px!important;
-	height: 422px;
-	left: 50%;
-	position: absolute;
-	margin-left: -1125px;
-    z-index: 1;
-}
-	
-#main_video_box	.link-imga{
-	top: 50%;
-    left: 50%;
-	margin-top: -26px;
-	margin-left: -26px;
-		
-}
-		
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 0px;
-	height: 0;
-	overflow: hidden;
-	cursor: pointer;
-}
+<!------新影片輪播區域 結束------>	
 
-.videoWrapper iframe, .videoWrapper object, .videoWrapper embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-	
-@media (max-width: 768px) {	
-	.videobox_arrow{
-		opacity: 1!important;
-	}
-	#main_video_box .owl-carousel {
-		width: 100%!important;
-		max-width: 100%!important;
-		height: auto!important;
-		left: 0;
+<!------新影片輪播樣式------>	
+<style>	
+	#main_video_box{
+		width: 100%;
+		box-sizing: border-box;
+		display: block;
+		background: #000;
 		position: relative;
-		margin-left: 0;
+		height: 423px;
+		border-bottom: 1px solid rgb(255, 255, 255);			
+	}		
+	#main_video_box .owl-carousel {
+		width: 2250px!important;
+		max-width: 2250px!important;
+		height: 422px;
+		left: 50%;
+		position: absolute;
+		margin-left: -1125px;
 		z-index: 1;
 	}
-	#main_video_box {
-		height: auto!important;
+	#main_video_box	.link-imga{
+		top: 50%;
+		left: 50%;
+		margin-top: -26px;
+		margin-left: -26px;
+
+	}	
+	#main_video_box #myCarousel_main .owl-item{
+		opacity: .3;
+		display: block;
+		background-color: #000!important;
+	}
+	#main_video_box #myCarousel_main .owl-item.center{
+		opacity: 1;
+	}	
+	#main_video_box #myCarousel_main .owl-nav {	
+		pointer-events: auto;
+		transition: background 0.2s;	
+	}	
+	#main_video_box #myCarousel_main .arrow_btn.left{
+		width: 33.3333%;
+		position: absolute;
+		top: 0px;
+		margin: 0px!important;
+		left: 0px;
+		height: 100%;
+		border-radius: 0px!important;
+		background: linear-gradient(to right, #000, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.2))!important;
+		justify-content: center;
+
+	}
+	#main_video_box #myCarousel_main .arrow_btn.right{
+		width: 33.3333%;
+		position: absolute;
+		top: 0px;
+		margin: 0px!important;
+		right: 0px;
+		height: 100%;
+		border-radius: 0px!important;
+		background: linear-gradient(to left, #000, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.2))!important;
+		justify-content: center;
 	}
 
-}
-		
+
+	#main_video_box #myCarousel_main .videobox_arrow{
+		width: 36px;
+		height: 36px;
+		border-radius: 20px;
+		background-color: #fff;
+		opacity: 0;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);
+		color: #777;
+		transition: opacity 0.3s, box-shadow 1s;
+	}
+
+	#main_video_box #myCarousel_main .arrow_btn.left .videobox_arrow{
+		position: absolute;
+		right: -18px;
+		top:50%;
+		margin-top: -18px;
+	}
+
+	#main_video_box #myCarousel_main .arrow_btn.right .videobox_arrow{
+		position: absolute;
+		left: -18px;
+		top:50%;
+		margin-top: -18px;
+	}	
+	#main_video_box #myCarousel_main:hover .videobox_arrow{
+		opacity: 1;	
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
+	}	
+	#main_video_box #myCarousel_main .videobox_arrow img{
+		align-items: center;
+		justify-content: center;
+		vertical-align: middle;
+		stroke: none;
+		width: 25px;
+		height: 25px;
+		margin-top: 5px;
+	}
+	#main_video_box #myCarousel_main .bgg{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		z-index: 99;
+	}
+/*---------YOUTUBE 16:9包法------*/	
+	.YTwrapper {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 0px;
+		height: 0;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	.YTwrapper iframe, .YTwrapper object, .YTwrapper embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+/*---------YOUTUBE 16:9包法------*/	
+	
+	@media (max-width: 768px) {	
+		#main_video_box #myCarousel_main .videobox_arrow{
+			opacity: 1!important;
+		}
+		#main_video_box  #myCarousel_main.owl-carousel {
+			width: 100%!important;
+			max-width: 100%!important;
+			height: auto!important;
+			left: 0;
+			position: relative;
+			margin-left: 0;
+			z-index: 1;
+		}
+		#main_video_box{
+			height: auto!important;
+		}
+		#main_video_box #myCarousel_main .arrow_btn.left{
+			background: linear-gradient(to right, #000, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0))!important;
+			width:  10%!important;
+		}
+		#main_video_box #myCarousel_main .arrow_btn.right{
+			background: linear-gradient(to left, #000, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0))!important;
+			width: 10%!important;
+		}	
+	}		
 </style>
-
-    
-    
-
 
 	<script src="js_new/jquery-1.8.3.min.js"></script>
 	<script src="js_new/bootstrap/js/bootstrap.min.js"></script>
@@ -153,208 +228,39 @@
 	<script src="js_new/owl.carousel.js"></script>
 	
 	
-	<script>
-		$(function(){
-					
-		    $(".news-item").each( function(i) {
-		       $(".news-item:eq("+i+")").children().eq(0).append('<div class="link-imga"><img src="img/play.png" width="56" height="56" alt="" /></div>');
-            });
-			
-			$('#video-gallery').royalSlider({
-					arrowsNav: false,
-					arrowsNavAutoHide: true,
-					fadeinLoadedSlide: true,
-					controlNavigation: 'thumbnails',
-					thumbs: {
-							autoCenter: false,
-							fitInViewport: false,
-							orientation: 'horizontal',
-							spacing: 0,
-							paddingBottom: 0
-					},
-					randomizeSlides: true,
-					controlNavigation: 'none',
-					imageScaleMode: 'fill',
-					slidesSpacing: 0,
-					imageAlignCenter:true,
-					loop: true,
-					loopRewind: true,
-					slidesOrientation: 'vertical',
-					keyboardNavEnabled: true,
-					autoScaleSlider: true, 
-					autoPlay: {
-							enabled: true,
-							pauseOnHover: true,
-							delay: 6000,
-							stopAtAction: false
-						},
-					autoScaleSliderWidth: 1140,     
-					autoScaleSliderHeight: 200
-		  		});
+<!------新影片輪播JS------>	
+<script>
+	$(document).ready(function() {	
+		$('#myCarousel_main').owlCarousel({
+			loop:true,
+			center:true,
+			nav:true,
+			responsive:{
+				0:{
+					stagePadding: 0,
+					items:1
+				},
+				768:{
+					items:3
+				},
+				1920:{
+					items:3
+				}
+			},
+			navText : ["<div class='videobox_arrow'><img src='img/arrow_left.svg' alt=''/></div>","<div class='videobox_arrow'><img src='img/arrow_right.svg' alt=''/></div>"]
 		});
-		</script>
-        
-        
-	
+		$('#myCarousel_main > .owl-nav > .owl-prev').addClass("left").addClass("arrow_btn");
+		$('#myCarousel_main > .owl-nav > .owl-next').addClass("right").addClass("arrow_btn");
 
-<script>
-$(document).ready(function() {	
-	$('#myCarousel_main').owlCarousel({
-		loop:true,
-		center:true,
-		nav:true,
-		responsive:{
-			0:{
-				stagePadding: 0,
-				items:1
-			},
-			768:{
-				items:3
-			},
-			1920:{
-				items:3
-			}
-		},
-		navText : ["<div class='videobox_arrow'><img src='img/arrow_left.svg' alt=''/></div>","<div class='videobox_arrow'><img src='img/arrow_right.svg' alt=''/></div>"]
-	});
-	$('#myCarousel_main > .owl-nav > .owl-prev').addClass("left").addClass("sec_control2");
-	$('#myCarousel_main > .owl-nav > .owl-next').addClass("right").addClass("sec_control2");
-});	
+
+
+		$('.videoID').click(function(){
+			$(this).children('.bgg').hide();
+			var video = '<iframe class="main_video" width="100%" height="480px" src="'+ $(this).attr('data-video')+'" frameborder="0" mute="1" scrolling="no" autoplay="1" allowfullscreen="" style="margin:0 auto; display: block;" ></iframe>';
+			$(this).html(video);
+		});	
+	});	
 </script>	
-	
-	
-<script>
-$('.movieC').click(function(){
-	$(this).children('.bgg').hide();
-  	var video = '<iframe class="main_video" width="100%" height="480px" src="'+ $(this).attr('data-video')+'" frameborder="0" mute="1" scrolling="no" autoplay="1" allowfullscreen="" style="margin:0 auto; display: block;" ></iframe>';
-    $(this).html(video);
-});	
-</script>	
-
-	
-<style>	
-#myCarousel_main .owl-item{
-	opacity: .3;
-	display: block;
-	background-color: #000!important;
-}
-	
-#myCarousel_main .owl-item.center{
-	opacity: 1;
-}
-	
-#myCarousel_main .owl-nav {	
-    pointer-events: auto;
-    transition: background 0.2s;	
-}
-.sec_control2.left{
-	width: 33.3333%;
-    position: absolute;
-    top: 0px;
-    margin: 0px!important;
-    left: 0px;
-    height: 100%;
-    border-radius: 0px!important;
-	background: linear-gradient(to right, #000, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.2))!important;
-	-ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-	display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-	-ms-flex: 1 1 0.000000001px;
-    -webkit-flex: 1;
-    flex: 1;
-    -webkit-flex-basis: 0.000000001px;
-    flex-basis: 0.000000001px;
-	-ms-flex-align: end;
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
-	-ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-
-}
-.sec_control2.right{
-	width: 33.3333%;
-    position: absolute;
-    top: 0px;
-    margin: 0px!important;
-    right: 0px;
-    height: 100%;
-    border-radius: 0px!important;
-	background: linear-gradient(to left, #000, rgba(0,0,0,0.1) 75%, rgba(0,0,0,0.2))!important;
-	-ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-	display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-	-ms-flex: 1 1 0.000000001px;
-    -webkit-flex: 1;
-    flex: 1;
-    -webkit-flex-basis: 0.000000001px;
-    flex-basis: 0.000000001px;
-	-ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-	-ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-}
-	
-#myCarousel_main:hover .videobox_arrow{
-	opacity: 1;	
-	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.5);
-}
-	
-.videobox_arrow{
-	width: 36px;
-    height: 36px;
-    border-radius: 20px;
-    background-color: #fff;
-    opacity: 0;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.2);
-    color: #777;
-    transition: opacity 0.3s, box-shadow 1s;
-}
-	
-.sec_control2.left .videobox_arrow{
-	position: absolute;
-	right: -18px;
-	top:50%;
-	margin-top: -18px;
-}
-
-.sec_control2.right .videobox_arrow{
-	position: absolute;
-	left: -18px;
-	top:50%;
-	margin-top: -18px;
-}	
-	
-.videobox_arrow img{
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    stroke: none;
-    width: 25px;
-    height: 25px;
-	margin-top: 5px;
-}
-	
-@media (max-width: 768px) {	
-	.sec_control2.left{
-		background: linear-gradient(to right, #000, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0))!important;
-		width:  10%!important;
-	}
-	.sec_control2.right{
-		background: linear-gradient(to left, #000, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0))!important;
-		width: 10%!important;
-	}	
-}		
-</style>
-
 
 </body>
 </html>
