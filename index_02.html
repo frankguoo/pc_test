@@ -109,20 +109,13 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 <script>	
 $('body').after("<div class='spinner-wrap'><div class='leftside'></div><div class='rightside'></div></div>");	
 	
-var loaded = false;//宣告一個laoded =false
-function hide_loader() {
-	if (!loaded) { //true
-		/*$('body').css('overflow', 'visible');*/
-		$(".leftside").stop().css('width', '0px');//loading完成對.leftside執行
+
+setTimeout(function () {
+			$(".leftside").stop().css('width', '0px');//loading完成對.leftside執行
 		$(".rightside").stop().css('width', '0px');//loading完成對.rightside執行
 		$('.spinner-wrap').fadeOut(1000, function () {//fadeOut後接著在HTML裡面刪除這個div
 			$(this).remove()
 		});
-		loaded = true
-	}
-}	
-setTimeout(function () {
-	hide_loader()
 },
 6000);
 	
