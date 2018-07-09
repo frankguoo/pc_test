@@ -644,6 +644,12 @@ body.pushmenu-push-toright {
     -webkit-transition:300ms;
     transition:300ms
 }
+.view > .swiper-wrapper > .swiper-slide-prev, .view > .swiper-wrapper > .swiper-slide-next{
+	opacity: 0!important;
+}
+.view > .swiper-wrapper > .swiper-slide-active{
+	opacity: 1!important;
+}
 .view .swiper-slide .content{
     width:100%;
     height:100%;
