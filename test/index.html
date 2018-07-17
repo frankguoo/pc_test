@@ -412,8 +412,11 @@
 							
 							
 							
-<a data-toggle="modal" href="test.html" data-target="#theModal" id="ddd">Click me</a>
-							
+<!-- Link -->
+<a href="test.html" data-toggle="modal" data-container='modal-container'>Abrir Modal</a>
+
+<!-- Buenos Modales -->
+<div id="modal-container"></div>							
 
 							
 							
@@ -522,14 +525,7 @@
 					</div>
 			<!-- 精選品牌 結束-->
         </div>
-				<!-- Modal 吃貨卡-->
-		<div class="modal fade" id="theModal" >
-		  <div class="modal-dialog brand_pop" role="document">
-			<div class="modal-content">
-				1111111
-			  </div>
-			</div>
-		</div>
+
 		
 		   <!-- 影片輪播區 開始-->
 		<div class="section new_event" id="video_block">
@@ -825,23 +821,20 @@
 	
 <script>
  $(document).ready(function() {	
-
-$('#ddd').on('click', function(e) {
+$("[data-toggle='modal']").click(function(e) {
+    /* Prevent Default*/
     e.preventDefault();
-    var id = $(this).data('id');
-    $.ajax({
-        url:  'test.html',
-        type: 'GET',
-        data: {id: id},
-        success: function(html){
-            $('#theModal').modal('show');
-        },
-        error: function(){
-            alert("error");
-        }  
-    });  
-});	 
-	 
+    
+    /* Parameters */
+    var url = $(this).attr('href');
+    var container = "#" + $(this).attr('data-container');
+    
+    /* XHR */
+    $.get(url).done(function(data) {
+        $(container).html(data).modal();
+    }).success(function() { $('input:text:visible:first').focus() });
+
+}); 
 	 	
 });	
 </script>	
