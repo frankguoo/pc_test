@@ -410,18 +410,6 @@
 						<div class="content_box overhide">
 						 <!-- 品牌輪播-->
 							
-							
-							
-<!-- Link -->
-<a href="http://www.frankguo.ml/test/test.html" data-toggle="modal" data-container='modal-container'>Abrir Modal</a>
-
-<!-- Buenos Modales -->
-<div id="modal-container"></div>							
-
-							
-							
-							
-							
 						  <!-- 第一區塊-->                   
 						<div class="owl-carousel owl-theme">
 							<ul>
@@ -429,7 +417,7 @@
 
 									<div class="event_text">滿意寶寶<br>最高折$2388</div>
 									<div class="event_text_sub">限2018.7.5-2019.6.30</div>
-									<a class="more_about radius_XL moreBtn" data-toggle="modal" href="test.html"  data-target="#brand_eat">我要獲得&nbsp;<span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
+									<a class="more_about radius_XL moreBtn" data-toggle="modal" href="test.html"  data-target="#brand_eat" href="path-to-file.html" class="ajax-popup-link">我要獲得&nbsp;<span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>
 								</li>
 								
 		
@@ -818,26 +806,12 @@
         });
    });
 </script>
-	
 <script>
-
-$("[data-toggle='modal']").click(function(e) {
-    /* Prevent Default*/
-    e.preventDefault();
-    
-    /* Parameters */
-    var url = $(this).attr('href');
-    var container = "#" + $(this).attr('data-container');
-    
-    /* XHR */
-    $.get(url).done(function(data) {
-        $(container).html(data).modal();
-    }).success(function() { $('input:text:visible:first').focus() });
-
-}); 
-	 	
-
-</script>	
+$('.ajax-popup-link').magnificPopup({
+  type: 'ajax'
+});	
+	
+	</script>	
 	
 </body>
 </html>
