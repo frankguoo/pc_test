@@ -409,9 +409,20 @@
 					<div class="content_line radius_M">
 						<div class="content_box overhide">
 						 <!-- 品牌輪播-->
+							
+							
+							
 <a data-toggle="modal" href="test.html" data-target="#theModal" id="ddd">Click me</a>
 							
-
+		<!-- Modal 吃貨卡-->
+		<div class="modal fade" id="brand_eat"  style="display:block!important;">
+		  <div class="modal-dialog brand_pop" role="document">
+			<div class="modal-content">
+				1111111
+			  </div>
+			</div>
+		</div>
+							
 							
 							
 							
@@ -823,7 +834,6 @@ $('#ddd').on('click', function(e) {
         type: 'POST',
         data: {id: id},
         success: function(html){
-            $('#theModal .modal-body').html('test');
             $('#theModal').modal('show');
         },
         error: function(){
