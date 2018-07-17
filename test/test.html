@@ -16,29 +16,15 @@
     <meta name="format-detection" content="address=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- CSS-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karla:400">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min3.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/fastag9.css">
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
    <!-- CSS側選單-->
-    <link rel="stylesheet" href="assets/css/newmobile7.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox4.css">
-    <link rel="stylesheet" href="assets/css/primecard.css">
     <link rel="stylesheet" href="assets/css/common.css">   	
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115564493-3"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'UA-115564493-3');
-	</script>
+
 </head>
 
 <body>
@@ -186,93 +172,11 @@
 
 
     <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
-    <script>
-		$(function() {
-			$('li.text.about, li.text.about a').addClass('active');
-
-			//--- 版頭輪播
-			var KVslider = new Array();
-			KVslider = [
-
-				{
-					'id': '01',
-					'link': 'javascript:;',
-					'pc_img': 'index_cut1-2.jpg',
-					'mobile_img': 'mobile_banner_01-1.jpg'
-				},
-				{
-					'id': '02',
-					'link': 'javascript:;',
-					'pc_img': 'index_cut2-1.jpg',
-					'mobile_img': 'mobile_banner_02-1.jpg'
-				},
-				{
-					'id': '03',
-					'link': 'javascript:;',
-					'pc_img': 'index_cut3-2.jpg',
-					'mobile_img': 'mobile_banner_03-1.jpg'
-				}
-			];
-
-			var html_pc = '';
-			var html_mobile = '';
-
-			for (var i = 0; i < KVslider.length; i++) {
-				html_pc += '<div class="item index_banner_' + KVslider[i]['id'] + '" style="background: url(./assets/img/pic/' + KVslider[i]['pc_img'] + ') top center repeat-x; overflow: hidden; ">';
-				html_pc += '<a href="' + KVslider[i]['link'] + '"><img src="assets/img/space.png"></a></div>';
-				html_mobile += '<div class="item"><a href="' + KVslider[i]['link'] + '"><img src="assets/img/pic/' + KVslider[i]['mobile_img'] + '"></a></div>';
-			}
-
-
-		});
-    </script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/imageMapResizer.min.js"></script>
-    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="assets/js/event_v006.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
     <script type="text/javascript" src="assets/js/layout8.js"></script>
-    <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
-    <script type="text/javascript" src="assets/js/primecard.js"></script>
-    <script type="text/javascript" src="assets/js/newmobile3.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
 
-<style>
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 0px;
-	height: 0;
-	overflow: hidden;
-	cursor: pointer;
-}
 
-.videoWrapper iframe, .videoWrapper object, .videoWrapper embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}		
-</style>
-
-<script>
-    // 影像地圖RWD
-    $('map').imageMapResize()
-</script>	
-
-<script type="text/javascript">
-   $(document).ready(function() {
-        $('.popup-youtube').magnificPopup({
-          disableOn: 100,
-          type: 'iframe',
-          mainClass: 'mfp-fade',
-          removalDelay: 160,
-          preloader: false,
-          fixedContentPos: false
-        });
-   });
-</script>
 	
 </body>
 </html>
