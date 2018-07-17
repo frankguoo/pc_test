@@ -831,7 +831,7 @@ $('#ddd').on('click', function(e) {
     var id = $(this).data('id');
     $.ajax({
         url:  'test.html',
-        type: 'POST',
+        type: 'GET',
         data: {id: id},
         success: function(html){
             $('#theModal').modal('show');
