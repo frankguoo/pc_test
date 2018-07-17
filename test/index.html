@@ -409,26 +409,9 @@
 					<div class="content_line radius_M">
 						<div class="content_box overhide">
 						 <!-- 品牌輪播-->
-<a data-toggle="modal" href="test.html" data-target="#theModal" data-remote="false">Click me</a>
+<a data-toggle="modal" href="test.html" data-target="#theModal" id="ddd">Click me</a>
 							
-<!-- Default bootstrap modal example -->
-<div class="modal fade" id="theModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-     
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 							
 							
 							
@@ -832,11 +815,11 @@
 <script>
  $(document).ready(function() {	
 
-$('#theModal').on('click', function(e) {
+$('#ddd').on('click', function(e) {
     e.preventDefault();
     var id = $(this).data('id');
     $.ajax({
-        url:  'http://www.frankguo.ml/test/',
+        url:  'http://www.frankguo.ml/test/test.html',
         type: 'POST',
         data: {id: id},
         success: function(html){
@@ -849,12 +832,7 @@ $('#theModal').on('click', function(e) {
     });  
 });	 
 	 
-	 
-// Fill modal with content from link href
-$("#theModal").on("show.bs.modal", function(e) {
-    var link = $(e.relatedTarget);
-    $(this).find(".modal-body").load(link.attr("href"));
-});	
+	 	
 });	
 </script>	
 	
