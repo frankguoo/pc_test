@@ -831,7 +831,25 @@
 	
 <script>
  $(document).ready(function() {	
-	
+
+$('#theModal').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).data('id');
+    $.ajax({
+        url:  'http://www.frankguo.ml/test/',
+        type: 'POST',
+        data: {id: id},
+        success: function(html){
+            $('#theModal .modal-body').html('test');
+            $('#theModal').modal('show');
+        },
+        error: function(){
+            alert("error");
+        }  
+    });  
+});	 
+	 
+	 
 // Fill modal with content from link href
 $("#theModal").on("show.bs.modal", function(e) {
     var link = $(e.relatedTarget);
