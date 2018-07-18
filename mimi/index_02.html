@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+	  
+<!-- (1) 將css資料夾的bodyF1.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF1_0507.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+$( function(){
+	var myArray= new Array();
+	myArray = [
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN23 ",
+            "PIC": "400-A1-P.jpg",
+            "HIGHLIGHT": "贈保殼+保貼",
+            "NAME": "小米 A1 (玫瑰金)",
+            "PRICE": "6599",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN25",
+            "PIC": "400-MIX2.jpg",
+            "HIGHLIGHT": "送500加碼金",
+            "NAME": "小米MIX 2 64G",
+            "PRICE": "12999",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2C",
+            "PIC": "400-5-PG.jpg",
+            "HIGHLIGHT": "18：9 全面屏",
+            "NAME": "紅米5 ",
+            "PRICE": "3999",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN3I",
+            "PIC": "400-Note5-4.jpg",
+            "HIGHLIGHT": "AI雙攝",
+            "NAME": "紅米 Note 5",
+            "PRICE": "5499up",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2Q",
+            "PIC": "400-scale.jpg",
+            "HIGHLIGHT": "精準測量",
+            "NAME": "小米體重計",
+            "PRICE": "665",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN3P",
+            "PIC": "400-W.jpg",
+            "HIGHLIGHT": "高靈敏度感應器",
+            "NAME": "米家藍牙溫濕度計",
+            "PRICE": "365",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN3A",
+            "PIC": "400-5.jpg",
+            "HIGHLIGHT": "智慧控制中心",
+            "NAME": "米家智慧家庭套裝",
+            "PRICE": "245up",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1T",
+            "PIC": "400-sck.jpg",
+            "HIGHLIGHT": "贈自拍桿",
+            "NAME": "米家全景相機",
+            "PRICE": "7995",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1I",
+            "PIC": "400-littleaudio.jpg",
+            "HIGHLIGHT": "輕巧隨身",
+            "NAME": "小米隨身藍牙喇叭",
+            "PRICE": "395",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN24",
+            "PIC": "400-bsb2.jpg",
+            "HIGHLIGHT": "高品質音頻",
+            "NAME": "小米方盒子藍牙喇叭 2",
+            "PRICE": "665",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2R",
+            "PIC": "400-D.jpg",
+            "HIGHLIGHT": "1600 萬種燈光顏色",
+            "NAME": "米家床頭燈 金色",
+            "PRICE": "1295",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2L",
+            "PIC": "400-toothbrush.jpg",
+            "HIGHLIGHT": "聰明高效動力",
+            "NAME": "米家聲波電動牙刷",
+            "PRICE": "995",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN27",
+            "PIC": "400-bt3.jpg",
+            "HIGHLIGHT": "無線隨身",
+            "NAME": "小米藍牙音源接收器",
+            "PRICE": "465",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN28",
+            "PIC": "400-bte.jpg",
+            "HIGHLIGHT": "極小大用途",
+            "NAME": "小米藍牙耳機青春版",
+            "PRICE": "295",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1O",
+            "PIC": "400-SEP.jpg",
+            "HIGHLIGHT": "IPX4級防水",
+            "NAME": "小米運動藍牙耳機",
+            "PRICE": "695",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2J",
+            "PIC": "400-mini-y.jpg",
+            "HIGHLIGHT": "精緻迷你機身",
+            "NAME": "小米運動藍牙耳機 mini ",
+            "PRICE": "795",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN3B",
+            "PIC": "400-hy.jpg",
+            "HIGHLIGHT": "舒適配戴",
+            "NAME": "小米雙單元半入耳式耳機",
+            "PRICE": "365",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN20",
+            "PIC": "400-Type-c.jpg",
+            "HIGHLIGHT": "USB Type-C 介面",
+            "NAME": "小米降噪耳機 Type-C版 ",
+            "PRICE": "1395",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1G",
+            "PIC": "400-Pro-Y.jpg",
+            "HIGHLIGHT": "均衡自然聲音",
+            "NAME": "小米圈鐵耳機 Pro",
+            "PRICE": "765",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN3G",
+            "PIC": "U-400.jpg",
+            "HIGHLIGHT": "項圈式設計",
+            "NAME": "小米藍牙項圈耳機",
+            "PRICE": "1395",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1X",
+            "PIC": "400-2-port.jpg",
+            "HIGHLIGHT": "支援QC3.0,快速充電 ",
+            "NAME": "小米 2 Port USB 充電器",
+            "PRICE": "245",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1L",
+            "PIC": "400-4-port.jpg",
+            "HIGHLIGHT": "4 Port USB 接口",
+            "NAME": "小米 4 Port USB 充電器",
+            "PRICE": "395",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1K",
+            "PIC": "400-cusb.jpg",
+            "HIGHLIGHT": "雙USB智慧輸出",
+            "NAME": "小米車用充電器",
+            "PRICE": "265",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN26",
+            "PIC": "400-VR2.jpg",
+            "HIGHLIGHT": "3D 巨幕影院",
+            "NAME": "小米 VR 眼鏡 PLAY2",
+            "PRICE": "465",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN32",
+            "PIC": "400-2C.jpg",
+            "HIGHLIGHT": "20000 mAh大容量",
+            "NAME": "小米行動電源 20000 2C",
+            "PRICE": "665",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1Z",
+            "PIC": "400-QC.jpg",
+            "HIGHLIGHT": "高配版",
+            "NAME": "小米行動電源 10000 QC3.0",
+            "PRICE": "795",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN3Q",
+            "PIC": "400-ZMI.jpg",
+            "HIGHLIGHT": "電源供應器、行電二合一 ",
+            "NAME": "ZMI智慧雙模可充式鋰行動電源",
+            "PRICE": "665",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1F",
+            "PIC": "400-5000.jpg",
+            "HIGHLIGHT": "9.9mm 薄",
+            "NAME": "行動電源 5000 銀色",
+            "PRICE": "265",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2H",
+            "PIC": "400-sst.jpg",
+            "HIGHLIGHT": "360° 可旋轉手機支架",
+            "NAME": "小米支架式自拍桿",
+            "PRICE": "395",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN39",
+            "PIC": "400-bt.jpg",
+            "HIGHLIGHT": "3.0藍牙無線連接 ",
+            "NAME": "小米藍牙自拍桿",
+            "PRICE": "395",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN1N",
+            "PIC": "400-line.jpg",
+            "HIGHLIGHT": "隨插即用",
+            "NAME": "小米自拍桿線控版",
+            "PRICE": "265",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2W",
+            "PIC": "wall-400.jpg",
+            "HIGHLIGHT": "自由規劃清掃空間",
+            "NAME": "米家掃地機器人虛擬牆",
+            "PRICE": "255",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2V",
+            "PIC": "400-filter-P.jpg",
+            "HIGHLIGHT": "抗菌版",
+            "NAME": "米家空氣淨化器濾芯",
+            "PRICE": "795",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2U",
+            "PIC": "400-filter-G.jpg",
+            "HIGHLIGHT": "除甲醛版",
+            "NAME": "米家空氣淨化器濾芯",
+            "PRICE": "795",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2T",
+            "PIC": "400-tbt.jpg",
+            "HIGHLIGHT": "通用型(3支裝)",
+            "NAME": "米家聲波電動牙刷頭",
+            "PRICE": "345",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN36",
+            "PIC": "400-mini.jpg",
+            "HIGHLIGHT": "MINI型 (3支裝)",
+            "NAME": "米家聲波電動牙刷頭",
+            "PRICE": "345",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN30",
+            "PIC": "400-90.jpg",
+            "HIGHLIGHT": "輕巧堅固",
+            "NAME": "小米 90 分旅行箱 20 吋",
+            "PRICE": "1595",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2Z",
+            "PIC": "400-bb.jpg",
+            "HIGHLIGHT": "簡約百搭",
+            "NAME": "小米極簡都市雙肩包 ",
+            "PRICE": "765",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN31",
+            "PIC": "400-wiha.jpg",
+            "HIGHLIGHT": "24 枚 wiha 精密批頭 ",
+            "NAME": "米家 wiha 精修螺絲工具套裝",
+            "PRICE": "495",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        },
+        {
+            "LINK": "https://24h.pchome.com.tw/store/DYAN2X",
+            "PIC": "400-LED.jpg",
+            "HIGHLIGHT": "5級亮度調節 ",
+            "NAME": "LED隨身燈 增強版",
+            "PRICE": "119",
+            "PRICE-S": "",
+            "PCS": "",
+            "CODE": ""
+        }
+    
+		
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank" onclick="' + myArray[i]['CODE'] + '">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF1">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF1">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF1">' + myArray[i]['PRICE-S'] + '</span>';
+	htmlPD += '<span class="pcs1">' + myArray[i]['PCS'] + '</span>';
+    htmlPD += '<span class="hot_priceF1"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF1">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF1').html(htmlPD);
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+	
+
+  /*--- box ---*/
+  .boxF1 { 
+    width: 100%; 
+  }
+  .boxF1 ul {
+
+    padding: 0px;
+  }
+  .boxF1 ul li {
+	border: solid 1px #e0e0e0;
+    padding: 0px;
+	 -webkit-transition: all 0.2s ease;
+						 -moz-transition: all 0.2s ease;
+						  -ms-transition: all 0.2s ease;
+						   -o-transition: all 0.2s ease;
+							  transition: all 0.2s ease; 
+  }
+    ul.pd_wrapF1 li:nth-child() .hot_priceF1{ 
+		text-decoration: line-through;
+	}		
+  .boxF1 ul li:hover {
+	 -webkit-transform:translateY(-6px); transform:translateY(-6px); box-shadow:0 0 10px rgba(0,0,0,0.2);
+	} 
+	
+   .boxF1 .hotF1 {
+        background-color: #BBBCBC;
+    	color: #ffffff;
+  }
+</style>
+	  
+</head>
+
+<body>
+  <div class="wrap boxF1">
+    <ul class="pd_wrapF1">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+  
+<script language="javascript">
+
+
+<!-- Button1-->
+function setIframe1() {
+  document.getElementById('dd1').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC30521006&n=index_25.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+	
+<!-- Button2-->
+function setIframe2() {
+  document.getElementById('dd2').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC30521006&n=index_26.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button3-->
+function setIframe3() {
+  document.getElementById('dd3').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC30521006&n=index_27.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+<!-- Button4-->
+function setIframe4() {
+  document.getElementById('dd4').innerHTML = '<iframe src="http://shopping.pchome.com.tw/?m=index&f=activity&ac=AC30521006&n=index_28.html" style="border:none;width:1px;height:1px;" marginheight="0" marginwidth="0" frameborder="0"></iframe>';
+}
+
+</script>
+
+<div id="dd1" style="display:none;">
+<div id="dd2" style="display:none;">
+<div id="dd3" style="display:none;">
+<div id="dd4" style="display:none;">
+
+
+</body>
+</html>
