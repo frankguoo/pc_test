@@ -40,8 +40,25 @@
 
     
 
-    <style>    
-          
+    <style>  
+	.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}	
+		
+		
+		.fixedbarbox{
+			position: relative;
+			width: 100%;
+			
+		}   
 
     .fixedbarbox-2 img{
         width: calc(100% / 2);
@@ -69,7 +86,7 @@
 		
 			
 				<div class="fixedbarbox">
-					<div id="myCarousel-bottom" class="owl-carousel">
+					<div id="myCarousel-bottom" class="owl-carousel clearfix">
 					    <div>
 							<a href="http://www.pchomeec.tw/cdn/activity/AC06913696" target="_blank">
 								<img src="img/bottom_bar_1_4.jpg" alt="" />
@@ -123,7 +140,7 @@
 				dots: false,
 				loop:true,
 				slideBy:2 ,
-			responsive:{
+				responsive:{
 				0:{
 
 					stagePadding:0,
