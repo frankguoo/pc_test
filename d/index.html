@@ -30,7 +30,17 @@
 
     <style>   
 	
-		
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}		
 		
    /* ///////廣告版為輪播 //////start*/        
      .fixedbar_carousel{
@@ -68,7 +78,7 @@
 		
 		<div class="fixedbar_carousel">
 			<div class="wrap">
-                <div class="iframe_wrap" >
+                <div class="iframe_wrap clearfix" >
 				  <iframe src="index_01.html" width="100%" scrolling="no" frameborder="0" ></iframe>
 			    </div>
 
