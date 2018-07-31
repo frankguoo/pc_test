@@ -28,53 +28,47 @@
 	
 	<!--CSS-->
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
-	<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
-	<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
-
-	
+	<link href="css/swiper.min.css" rel="stylesheet" type="text/css">	
 	
 	 <!--[if lt IE 9]>
 	 	<script src="js/html5shiv.js"></script>
 	 	<script src="js/respond.min.js"></script>
 	 <![endif]-->
+  <style>
 
-    
-
-    <style>  
-	.owl-stage:before,
-.owl-stage:after {
-  content: "";
-  display: table;
-} 
-.owl-stage:after {
-  clear: both;
-}
-.owl-stage {
-  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-}	
-		
-		
-		.fixedbarbox{
-			position: relative;
-			width: 100%;
-			
-		}   
-
-    .fixedbarbox-2 img{
-        width: calc(100% / 2);
-        float: left;
-/*        padding: 10px;*/
-        }   
-        
-    .fixedbarbox a{display:block;margin:10px 5px;}
-        
-
-        
-    /* ///////廣告版為輪播 //////END*/    
-        
-    </style>
-
-
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide img{
+		width: 100%;
+    }
+  </style>
   </head>
 
 <body>
@@ -83,92 +77,70 @@
 <!----------------------------------------底部版為  start---------------------------------------------------->		
 <!----------------------------------------底部版為  start---------------------------------------------------->
     
-		
-			
-				<div class="fixedbarbox">
-					<div id="myCarousel-bottom" class="owl-carousel clearfix">
-					    <div>
+	
+<div class="fixedbarbox">					
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->		
+					    <div class="swiper-slide">
 							<a href="http://www.pchomeec.tw/cdn/activity/AC06913696" target="_blank">
 								<img src="img/bottom_bar_1_4.jpg" alt="" />
 							</a>
 						</div>
 					
-						<div>
+						<div class="swiper-slide">
 							<a href="http://www.pchomeec.tw/activity/AC08845774" target="_blank" >
 								<img src="img/bottom_bar_1_1.jpg" alt="" />
 							</a>
 						</div>
 
 						
-						<div>
+						<div class="swiper-slide">
 							<a href="https://www.pchomeec.tw/activity/AC16102046" target="_blank">
 								<img src="img/bottom_bar_1_3.jpg" alt="" />
 							</a>
 						</div>
 						
-						<div>
+						<div class="swiper-slide">
 							<a href="https://www.pchomeec.tw/cdn/activity/AC13385474" target="_blank">
 								<img src="img/bottom_bar_1_8.jpg" alt="" />
 							</a>
 						</div>
 						
-						<div>
+						<div class="swiper-slide">
 							<a href="https://www.pchomeec.tw/cdn/activity/AC48632875" target="_blank">
 								<img src="img/bottom_bar_1_9.jpg" alt="" />
 							</a>
 						</div>
-					</div>
-    </div>	
-					
-
-					
+		
+    </div>
+</div>
+</div>					
 	
 <!----------------------------------------底部版為  END---------------------------------------------------->		
 <!----------------------------------------底部版為  END---------------------------------------------------->		
  	
 
  <script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.js"></script>
-<script>
-		$('#myCarousel-bottom').owlCarousel({
-				loop:true,
-				margin:0,
-				nav:false,
-				autoplay:true,
-				autoplayTimeout:4000,
-				autoplayHoverPause:true,
-				dots: false,
-				loop:true,
-				slideBy:2 ,
-				responsive:{
-				0:{
-
-					stagePadding:0,
-					margin:10,
-					items:1,
-
-				},
-				600:{
-					stagePadding:5,
-					margin:10,
-					items:2
-				},
-				1000:{
-					items:2
-				}
-			}
-
-		});      
-	</script>	
-
+ <script type="text/javascript" src="js/swiper.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 
 
    
 <!--底部輪播js start-->
-
 	<script type="text/javascript" src="js/iframeResizer.contentWindow.min.js"></script>
-
-    
 <!--底部輪播js end-->
 
 </body>
