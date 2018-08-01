@@ -3,10 +3,6 @@
   <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>　</title>	
-   
-
-	
-
 	<meta property="og:title" content="【 ">
 	<meta property="og:description" content="！"/>
 	<link rel="apple-touch-icon" href="img/fb.jpg">
@@ -16,11 +12,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
 	
-	
-	
 	<!--CSS-->
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
-<!--<link href="css/bottom_bar_owl.css" rel="stylesheet" type="text/css">-->
+	<!--<link href="css/bottom_bar_owl.css" rel="stylesheet" type="text/css">-->
 
 	 <!--[if lt IE 9]>
 	 	<script src="js/html5shiv.js"></script>
@@ -31,9 +25,8 @@
 	<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
 	<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
 
-
     <style>    
-   /* ///////廣告版為輪播 //////start*/        
+   	 /* ///////廣告版為輪播 //////start*/        
      .fixedbar_carousel{
         position: fixed;
         z-index: 999;
@@ -51,8 +44,6 @@
         -webkit-box-sizing: border-box;
     }
     </style>
-
-
   </head>
 
 <body>
@@ -73,18 +64,10 @@
 	
 <!----------------------------------------底部版為  END---------------------------------------------------->		
 <!----------------------------------------底部版為  END---------------------------------------------------->		
- 	
-
-
-
-
-
-   
 <!--底部輪播js start-->
 <script type="text/javascript" src="js/jquery.min.js"></script>
-
 <script type="text/javascript" src="js/owl.carousel.js"></script>
-<script>
+<script >
 		$('#myCarousel-bottom').owlCarousel({
 				loop:true,
 				margin:0,
@@ -94,40 +77,33 @@
 				autoplayHoverPause:true,
 				dots: false,
 				loop:true,
-				slideBy:2 ,
+				slideBy:2,
                 margin:5,
 				responsive:{
 				0:{
-
 					margin:0,
 					items:1,
-
 				},
 				600:{
                     margin:0,
-					items:2
+					items:2,
 				},
 				1000:{
 					items:2
 				}
 			}
-
 		});      
-	</script>	
+</script>	
 
 <script type="text/javascript" src="js/iframeResizer.min.js"></script>
-	
-	
 <script>
 	// iframe RWD
 	$('iframe').iFrameResize( [{
 		inPageLinks	: true,
 	}] );
-
     // 影像地圖RWD
     $('map').imageMapResize()	
 </script>
-	
 	
 <style>
 .owl-carousel .owl-item img {
@@ -135,13 +111,23 @@
     width: 100%!important;
 	max-height: 150px!important;
 }
-	.fixedbarbox a {
+.fixedbarbox a {
     display: block;
     margin: 10px 5px;
 	max-height: 150px!important;
 }
-</style>
+	.wrap{
+		max-height: 150px!important;
+	}	
 	
+	.fixedbar_carousel{
+		max-height: 150px!important;
+	}
+	
+	#myCarousel-bottom{
+		max-height: 150px!important;
+	}	
+</style>
 	
 </body>
 </html>
