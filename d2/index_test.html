@@ -27,7 +27,10 @@
 	 	<script src="js/respond.min.js"></script>
 	 <![endif]-->
 
-    
+	<!--CSS-->
+	<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+	<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+
 
     <style>    
    /* ///////廣告版為輪播 //////start*/        
@@ -38,8 +41,6 @@
         width: 100%;
         display: block;
         background: rgba(44, 44, 44, 0.78);
-
-
     }           
 
 
@@ -144,17 +145,45 @@
 	// iframe RWD
 	$('iframe').iFrameResize( [{
 		inPageLinks	: true,
-		log			: false,
-//        maxHeight：'100px',
-        
-
-        
-        
 	}] );
 
     // 影像地圖RWD
     $('map').imageMapResize()	
 </script>
+	
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script>
+		$('#myCarousel-bottom').owlCarousel({
+				loop:true,
+				margin:0,
+				nav:false,
+				autoplay:true,
+				autoplayTimeout:4000,
+				autoplayHoverPause:true,
+				dots: false,
+				loop:true,
+				slideBy:2 ,
+                margin:5,
+				responsive:{
+				0:{
+
+					margin:0,
+					items:1,
+
+				},
+				600:{
+                    margin:0,
+					items:2
+				},
+				1000:{
+					items:2
+				}
+			}
+
+		});      
+	</script>	
+
+	
 
 </body>
 </html>
