@@ -1,0 +1,57 @@
+
+        
+       /* ///////廣告版為輪播 //////END */ 
+        @media only screen and (max-width: 1024px) {
+            .fixedbar_carousel    { height: 95px;}
+
+            
+
+        }
+        @media only screen and (max-width: 768px) {
+            .fixedbar_carousel    { height: 85px;}
+
+
+        }
+        @media only screen and (max-width: 680px) {
+            .fixedbar_carousel    { height: 75px;}
+
+
+        }
+        @media only screen and (max-width: 550px) {
+             .fixedbar_carousel    { height: 110px;}
+
+        }
+        @media only screen and (max-width: 480px) {
+             .fixedbar_carousel    { height: 120px;}
+
+        }
+        @media only screen and (max-width: 479px) {
+             .fixedbar_carousel    { height: 105px;}
+
+        }
+        @media only screen and (max-width: 420px) {
+            .fixedbar_carousel    { height: 95px;}
+
+        }
+        @media only screen and (max-width: 400px) {
+            .fixedbar_carousel    { height: 90px;}
+
+        }
+        @media only screen and (max-width: 380px) {
+            .fixedbar_carousel    { height: 85px;}
+
+        }
+        @media only screen and (max-width: 374px) {
+            .fixedbar_carousel    { height: 120px;}
+        }
+        @media only screen and (max-width: 360px) {
+            .fixedbar_carousel    { height: 85px;}
+        }
+
+        @media only screen and (max-width: 350px) {
+            .fixedbar_carousel    { height: 75px;}
+
+        }
+     
+        
+        
