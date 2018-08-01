@@ -67,7 +67,7 @@
 <!--底部輪播js start-->
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.js"></script>
-<script >
+<script>
 		$('#myCarousel-bottom').owlCarousel({
 				loop:true,
 				margin:0,
@@ -80,29 +80,33 @@
 				slideBy:2,
                 margin:5,
 				responsive:{
-				0:{
-					margin:0,
-					items:1,
-				},
-				600:{
-                    margin:0,
-					items:2,
-				},
-				1000:{
-					items:2
+					0:{
+						margin:0,
+						items:1,
+					},
+					600:{
+						margin:0,
+						items:2,
+					},
+					1000:{
+						items:2
+					}
 				}
-			}
 		});      
 </script>	
 
 <script type="text/javascript" src="js/iframeResizer.min.js"></script>
 <script>
+window.onload = function () {
+	
 	// iframe RWD
 	$('iframe').iFrameResize( [{
 		inPageLinks	: true,
 	}] );
     // 影像地圖RWD
-    $('map').imageMapResize()	
+    $('map').imageMapResize()
+	
+};	
 </script>
 	
 <style>
@@ -116,17 +120,17 @@
     margin: 10px 5px;
 	max-height: 150px!important;
 }
-	.wrap{
-		max-height: 150px!important;
-	}	
+.wrap{
+	max-height: 150px!important;
+}	
 	
-	.fixedbar_carousel{
-		max-height: 150px!important;
-	}
+.fixedbar_carousel{
+	max-height: 150px!important;
+}
 	
-	#myCarousel-bottom{
-		max-height: 150px!important;
-	}	
+#myCarousel-bottom{
+	max-height: 150px!important;
+}	
 </style>
 	
 </body>
