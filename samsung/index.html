@@ -225,6 +225,54 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	    </nav>
 	</div>
 	<!-- END // 電腦版 側邊選單-->
+<style>
+/*--- 倒數計時css  ---*/ 
+.timersfont3 {
+		font-family:"Century Gothic","微軟正黑體", Arial, Helvetica, Gadget, sans-serif;
+		font-size: 40px!important;
+		line-height: 20px!important;
+		color: #fff!important;
+		font-weight:bold!important;
+		position: absolute;
+		top: 450px;
+    	left: 297px;
+} 
+	
+.timersfont3 span{
+		font-family:"Century Gothic","微軟正黑體", Arial, Helvetica, Gadget, sans-serif!important;
+		font-size: 32px!important;
+		line-height: 20px!important;
+		color: #fff!important;
+		font-weight:bold!important;
+		letter-spacing: 0!important;
+} 
+	
+
+.timersfont3 #hour, .timersfont3 #min, .timersfont3 #sec{
+		display: inline-block;
+		width: 45px;
+		text-align: center;
+		letter-spacing:0px;
+}
+@media only screen and (max-width:932px) {
+.timers-position{text-align: center;}
+.timersfont3 {
+		font-family:"Century Gothic","微軟正黑體", Arial, Helvetica, Gadget, sans-serif;
+		font-size: 40px!important;
+		line-height: 20px!important;
+		color: #fff!important;
+		font-weight:bold!important;
+		width: 100%;
+	text-align: center!important;
+		position: relative;
+		top: auto;
+    	left: auto;
+} 
+	
+		
+}	
+	
+</style>	  
 		
 		
 <div class="main_content">
@@ -233,6 +281,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="content_box animation-in " style="position: relative;">
 					<div style="position: absolute; left:0px;">
 						<img class="hue-rotate-play2" src="img/main.png" alt="PChome雙11來了"/>
+						
+								  <!--倒數計時開始-->
+									  <div class="timers-position">
+
+										  <span class="timersfont3">
+											  <span id="hour">23</span>:
+											  <span id="min" style="margin-left: -10px;">59</span>:
+											  <span id="sec" style="margin-left: -10px;">59</span>
+
+										  </span>
+
+									 </div>
+								 <!--倒數計時END--> 
+						
+						
 					</div>
 					
 					<div style="position: absolute; right:-100px; width: 578px;">
@@ -244,6 +307,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	
 			<div id="section_01m" class="section animation-in clearfix mobile">
 						<img class="hue-rotate-play2" src="img/main.png" alt="PChome雙11來了"/>
+				
+									  <!--倒數計時開始-->
+									  <div class="timers-position">
+
+										  <span class="timersfont3">
+											  <span id="hour">23</span>:
+											  <span id="min" style="margin-left: -10px;">59</span>:
+											  <span id="sec" style="margin-left: -10px;">59</span>
+
+										  </span>
+
+									 </div>
+								 <!--倒數計時END--> 
+			
 						<img src="img/p-1.png" alt="PChome雙11來了"/>
 		    </div>
 	
@@ -650,5 +727,42 @@ $(document).keyup(function(e) {
         });
       });
 </script>
+	
+<!--倒數計時-->
+<script type="text/javascript">
+var setDate = new Date();
+var overDT = new Date('2018/10/30 20:00:00'); //此處設置年, 月, 日, 小時, 分, 秒
+var spantime = (overDT - setDate)/1000;
+var spantimes = (overDT - setDate);
+function zero( v ){
+	if( v < 10 ){
+		return '0'+v;
+	}else{
+		return v;
+	}
+}
+ 
+       function tick() {
+             spantime --;
+             var d = Math.floor(spantime / (24 * 3600));
+             var h = Math.floor((spantime % (24*3600))/3600);
+             var m = Math.floor((spantime % 3600)/(60));
+             var s = Math.floor(spantime%60);
+
+             if(spantime>0){
+                $(".timersfont3 #hour").text(h+(d*24));
+                $(".timersfont3 #min").text(zero(m));
+                $(".timersfont3 #sec").text(zero(s));
+             }else{
+                $(".timersfont3 #hour").text(0);
+                $(".timersfont3 #min").text(zero(0));
+                $(".timersfont3 #sec").text(zero(0));
+             }
+            setTimeout(tick, 1000);
+  		}
+	
+		document.addEventListener('DOMContentLoaded', tick);
+</script>
+<!--倒數計時ＥＮＤ-->	
 </body>
 </html>
