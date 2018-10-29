@@ -208,6 +208,9 @@ p.FBicon{padding-top:3px}
 .section h2{font-size:3em;font-weight:200;color:#fff;padding:16px 5px;width:250px;margin:30px auto;display:block;background-color:#545454}
 .section .content_box{width:1010px;max-width:100%;margin:auto}
 .iframe_wrap{width: 932px;margin: 0 auto;}
+.owl-theme .owl-nav.disabled + .owl-dots {margin-top: 0px!important;}
+.owl-theme .owl-dots .owl-dot span{width: 15px!important;height: 15px!important;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {background: #d29936!important;}
 @media only screen and (max-width:932px) {
 .section h2 {font-size: 2em;padding: 16px 5px;width: 180px;margin: 10px auto;}
 .main_content h5 {padding: 0 10px;font-size: 1rem;line-height: 26px;letter-spacing: 1px;}	
