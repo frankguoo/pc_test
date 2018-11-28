@@ -1,21 +1,21 @@
 <html>
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>I'M BOXMAN【PChome 線上購物】形象官方</title>
+	<title>I'M BOXMAN【PChome 24h購物】形象官方</title>
 	<meta name="description" content="PChome形象代表BOXMAN，隆重推出官方網站，想知道BOXMAN的來歷與生活嗎？趕快進來參觀吧！">
 	<meta name="keywords" content="PChome,24h購物,BOXMAN,官方網站,形象">
-	<meta property="og:title" content="I'M BOXMAN【PChome 線上購物】形象官方">
+	<meta property="og:title" content="I'M BOXMAN【PChome 24h購物】形象官方">
 	<meta property="og:description" content="PChome形象代表BOXMAN，隆重推出官方網站，想知道BOXMAN的來歷與生活嗎？趕快進來參觀吧！"/>
 	<meta property="og:url" content="https://www.pchomeec.tw/activity/AC16102046"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:image" content="http://a.ecimg.tw/img/activity/v1/AC16102/AC16102046/0102_200x200_fb.png">
 	<link rel="shortcut icon" type="image/x-icon" href="img/boxman.ico" />
-	<meta property="og:site_name" content="I'M BOXMAN【PChome 線上購物】形象官方"> 
+	<meta property="og:site_name" content="I'M BOXMAN【PChome 24h購物】形象官方"> 
 	<script type='application/ld+json'> 
 		{
 		  "@context": "http://www.schema.org",
 		  "@type": "WebSite",
-		  "name": "I'M BOXMAN【PChome 線上購物】形象官方",
+		  "name": "I'M BOXMAN【PChome 24h購物】形象官方",
 		  "url": "https://www.pchomeec.tw/activity/AC16102046"
 		}
 	</script>
@@ -145,7 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<li><a href="#slide-4"><i><img src="img/icon4.png" style="width:50px;"></i><p class="RMenuBtnF">愛買.愛箱送</p></a></li>
 				<li><a href="#boxman_box"><i><img src="img/icon5.png" style="width:50px;"></i><p class="RMenuBtnF">活動大事紀</p></a></li>
 				<li><div class="smallBannerF"><iframe src="//www.pchomeec.tw/activity/AC25218504" width="91" height="91" scrolling="no" frameborder="0"></iframe></div></li>
-	            <li><a href="#preload"><i><img src="img/icon6.png" style="width:50px;"></i><p class="RMenuBtnF RmenuTopF">TOP</p></a></li>
+	            <li><a href="body"><i><img src="img/icon6.png" style="width:50px;"></i><p class="RMenuBtnF RmenuTopF">TOP</p></a></li>
 	        </ul>
 	    </nav>
 	</div>
@@ -730,111 +730,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
 
-<script>
-$(document).ready(function(){
-			// $fn.scrollSpeed(step, speed, easing);
-			jQuery.scrollSpeed(200, 1500);
-});
+<style>
 
-// Custom scrolling speed with jQuery
-// Source: github.com/ByNathan/jQuery.scrollSpeed
-// Version: 1.0.2
 
-(function($) {
-    
-    jQuery.scrollSpeed = function(step, speed, easing) {
-        
-        var $document = $(document),
-            $window = $(window),
-            $body = $('html, body'),
-            option = easing || 'default',
-            root = 0,
-            scroll = false,
-            scrollY,
-            scrollX,
-            view;
-            
-        if (window.navigator.msPointerEnabled)
-        
-            return false;
-            
-        $window.on('mousewheel DOMMouseScroll', function(e) {
-            
-            var deltaY = e.originalEvent.wheelDeltaY,
-                detail = e.originalEvent.detail;
-                scrollY = $document.height() > $window.height();
-                scrollX = $document.width() > $window.width();
-                scroll = true;
-            
-            if (scrollY) {
-                
-                view = $window.height();
-                    
-                if (deltaY < 0 || detail > 0)
-            
-                    root = (root + view) >= $document.height() ? root : root += step;
-                
-                if (deltaY > 0 || detail < 0)
-            
-                    root = root <= 0 ? 0 : root -= step;
-                
-                $body.stop().animate({
-            
-                    scrollTop: root
-                
-                }, speed, option, function() {
-            
-                    scroll = false;
-                
-                });
-            }
-            
-            if (scrollX) {
-                
-                view = $window.width();
-                    
-                if (deltaY < 0 || detail > 0)
-            
-                    root = (root + view) >= $document.width() ? root : root += step;
-                
-                if (deltaY > 0 || detail < 0)
-            
-                    root = root <= 0 ? 0 : root -= step;
-                
-                $body.stop().animate({
-            
-                    scrollLeft: root
-                
-                }, speed, option, function() {
-            
-                    scroll = false;
-                
-                });
-            }
-            
-            return false;
-            
-        }).on('scroll', function() {
-            
-            if (scrollY && !scroll) root = $window.scrollTop();
-            if (scrollX && !scroll) root = $window.scrollLeft();
-            
-        }).on('resize', function() {
-            
-            if (scrollY && !scroll) view = $window.height();
-            if (scrollX && !scroll) view = $window.width();
-            
-        });       
-    };
-    
-    jQuery.easing.default = function (x,t,b,c,d) {
-    
-        return -c * ((t=t/d-1)*t*t*t - 1) + b;
-    };
-    
-})(jQuery);
-
-</script>
+</style>
 
 
 </body>
