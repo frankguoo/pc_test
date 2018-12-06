@@ -9,7 +9,7 @@ h1,h2,h3,.h1,.h2,.h3{margin-top:0;margin-bottom:0;font-family:"微軟正黑體"}
 a.active{color:#fff!important;background-color:#d32226}
 hr{width:95%;margin:2% auto}
 img,object,embed,video{max-width:100%}
-div,*{transition:.3s;-webkit-transition:.3s;box-sizing:border-box;-webkit-box-sizing:border-box;font-family:'微軟正黑體',Arial,Helvetica,sans-serif}
+div,*{transition:0s;-webkit-transition:0s;box-sizing:border-box;-webkit-box-sizing:border-box;font-family:'微軟正黑體',Arial,Helvetica,sans-serif}
 .ie6 img{width:100%}
 .mg_t10		{ margin-top: 20px; }
 .over-hide 	{ overflow: hidden; }
