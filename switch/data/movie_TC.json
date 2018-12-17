@@ -1,0 +1,130 @@
+// JSON Document
+
+[
+ {
+    "update": "2018-12-07",
+    "title": "Super Smash Bros. Ultimate - Take Your Heart - Nintendo Switch（英文版）",
+    "youtubeID": "Q7z1Ny1kc6g",
+    "thumbPath": "20181207_1.jpg",
+    "category": "fighter",
+    "topPageDisplay": true,
+    "moviePageDisplay": true
+  },
+  {
+    "update": "2018-11-01",
+    "title": "任天堂明星大亂鬥 特別版 直播會 2018.11.1",
+    "youtubeID": "8ZXFiSUr_Rc",
+    "thumbPath": "20181101_3_tc.jpg",
+    "category": "direct",
+    "topPageDisplay": true,
+    "moviePageDisplay": true
+  },
+  {
+    "update": "2018-11-01",
+    "title": "【大亂鬥特別版】火焰對決",
+    "youtubeID": "8VJfbCnZkJw",
+    "thumbPath": "20181101_1.jpg",
+    "category": "fighter",
+    "topPageDisplay": true,
+    "moviePageDisplay": true
+  },
+  {
+    "update": "2018-11-01",
+    "title": "【大亂鬥特別版】吞食花參戰！(早期購入特典)",
+    "youtubeID": "Rg5FVJtb_U4",
+    "thumbPath": "20181101_2.jpg",
+    "category": "fighter",
+    "topPageDisplay": true,
+    "moviePageDisplay": true
+  },
+  {
+    "update": "2018-11-01",
+    "title": "【大亂鬥特別版】燈火之星",
+    "youtubeID": "XO7kxaHtUKo",
+    "thumbPath": "20181101_4.jpg",
+    "category": "other",
+    "topPageDisplay": true,
+    "moviePageDisplay": true
+  },
+  {
+    "update": "2018-09-14",
+    "title": "【大亂鬥特別版】勤奮工作者的夢想",
+    "youtubeID": "cDyBUWa7a3Q",
+    "thumbPath": "20180907_1.jpg",
+    "category": "fighter",
+    "topPageDisplay": false,
+    "moviePageDisplay": true
+  },
+  {
+    "update": "2018-08-08",
+    "title": "任天堂明星大亂鬥 特別版 直播會 2018.8.8",
+    "youtubeID": "AWG3ECrnhog",
+    "thumbPath": "20180808_1_tc.jpg",
+    "category": "direct",
+    "topPageDisplay": false,
+    "moviePageDisplay": true
+  },
+  {
+    "update": "2018-08-08",
+    "title": "【大亂鬥特別版】Vampire Killer",
+    "youtubeID": "NX43cysmbrM",
+    "thumbPath": "20180808_2.jpg",
+    "category": "fighter",
+    "topPageDisplay": false,
+    "moviePageDisplay": true
+  },
+  {
+    "update": "2018-08-08",
+    "title": "【大亂鬥特別版】對手們",
+    "youtubeID": "1wdRcoi3ZRM",
+    "thumbPath": "20180808_3.jpg",
+    "category": "fighter",
+    "topPageDisplay": false,
+    "moviePageDisplay": true
+  },
+ {
+  "update": "2018-06-13",
+  "title": "【大亂鬥特別版】狩獵的魔爪",
+  "youtubeID": "KPDst8SrQmg",
+  "thumbPath": "20180613_2.jpg",
+    "category": "fighter",
+   "topPageDisplay": false,
+    "moviePageDisplay": true
+ },
+  {
+  "update": "2018-06-13",
+  "title": "Super Smash Bros. Ultimate - Challenger Approaching Intro Video - Nintendo Switch",
+  "youtubeID": "3YmIl3jA758",
+  "thumbPath": "20180613_1_tc.jpg",
+    "category": "fighter",
+   "topPageDisplay": true,
+    "moviePageDisplay": true
+ },
+ {
+  "update": "2018-06-13",
+  "title": "E3 2018『任天堂明星大亂鬥 特別版』",
+  "youtubeID": "FuBXBXBaqrE",
+  "thumbPath": "20180613_3.jpg",
+    "category": "direct",
+   "topPageDisplay": false,
+    "moviePageDisplay": true
+ },
+ {
+  "update": "2018-06-13",
+  "title": "【E3 2018 | Treehouse Live】Super Smash Bros. Ultimate",
+  "youtubeID": "8oPhDrn7juE",
+  "thumbPath": "20180613_5.jpg",
+    "category": "other",
+   "topPageDisplay": false,
+    "moviePageDisplay": true
+ },
+ {
+  "update": "2018-03-08",
+  "title": "Super Smash Bros. is coming to Nintendo Switch!",
+  "youtubeID": "w3Gt42kVgCw",
+  "thumbPath": "20180613_4.jpg",
+    "category": "other",
+   "topPageDisplay": false,
+    "moviePageDisplay": true
+ }
+]
