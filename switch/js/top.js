@@ -164,7 +164,7 @@
 
     var dir = getCurrentDir();
 
-    var jsonPath = '../data/movie_TC.json';
+    var jsonPath = '/data/movie_TC.json';
 
     $.ajax({
       url      : jsonPath,
