@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PChome X EZ</title>
+    <meta name="title" content="PChome X EZ">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="PChome X EZ">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <!-- 共用 -->
+    <link rel="stylesheet" href="css/plugin.css?v=0524">
+    <link rel="stylesheet" href="css/default.css?v=0724">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/vue.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="navbar ts-header ts-header--shadow ts-header--sub">
+            <div class="container-fluid container-columns-default">
+                <div class="row ts-columns__container__row">
+                    <!-- Header Menu -->
+                    <div class="ts-header__wrap clearfix desktop">
+                        <ul class="nav navbar-nav ts-header__wrap__inner">
+                                <li class="dropdown">
+                                        <a href="https://www.tstartel.com/CWS/shop.php" class="dropdown-toggle">首頁</a>
+                                </li>
+                                <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">購買3步驟</a>
+                                </li>
+                                <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">專屬優惠</a>
+                                </li>
+                                <li class="dropdown">
+                                        <a href="javascript:void(0);" class="dropdown-toggle">代購一口價</a>
+
+                                </li>
+                        </ul>
+                        <div class="rightbar">
+                            <span>以下內容ez易買提供<a href="" target="">詳細說明</a><img src="images/auction-logo.png" alt="" width="80px"/></span>
+                        </div>
+
+                        <div class="ts-header__wrap__inner ts-header__wrap__inner--last" style="display: none;">
+                            <!-- 漢堡選單 -->
+                            <div class="hamburger hamburger--header">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </header>
+    <!-- Header End -->    
+
+    <!-- 四欄式-通用型元件開始 -->
+    <section class="ts-columns">
+        <div class="container-fluid container-columns-default">
+        <div class="row ts-columns__container__row">
+            <div class="titlebox">
+                <h2 class="ts-columns__heading--main text-center ts-columns__heading--white">桌上的美術館-公仔收藏<br class="hidden-md hidden-lg"></h2>
+                <div class="ts-columns__heading--main-desc text-center ts-columns__heading--white">史上最惡搞figma系列，讓藝術巨作動起來！</div>
+            </div>
+            <!--EZ商品模組元件-->
+            <div id="ez_pdbox"> 
+                    <div class="col col-xs-12 col-md-3" v-for="item in items">
+                        <div class="main_list_li">
+                            <div class="main_lipic">
+                                <a v-bind:href="item.href" target="_blank">
+                                    <img v-bind:src="item.img_url" alt="item.img_name"/>
+                                </a>
+                            </div>
+                            <div class="main_lititle">
+                                <a v-bind:href="item.href" target="_blank">{{item.maintitle}}</a>
+                            </div>
+                            <div class="main_litext">
+                                {{item.subtitle}}
+                            </div>
+                            <div class="main_price">NT$<span>{{item.price}}</span></div>
+                            <a class="main_button" v-bind:href="item.href" target="_blank">
+                                <img src="images/shopping-cart.svg" width="25px">一口價
+                            </a>
+                        </div>
+                    </div>
+             </div>
+             <!--EZ商品模組元件-->
+        </div>
+        </div>
+        <hr class="ts-hr ts-hr--transparent-20">
+    </section>
+    <!-- 四欄式-通用型元件結束 -->
+
+    
+    <!-- 兩欄式-通用型元件開始 -->
+    <section class="ts-columns">
+        <div class="container-fluid container-columns-default">
+        <div class="row row_product2">
+            <!--EZ大圖模組元件-->
+            <div id="ez_bigphotobox" class="product_2">
+                <ul>
+                <li v-for="item in items">
+                        <div class="imgbox col col-xs-12 col-md-8">
+                            <a v-bind:href="item.href" target="_blank">
+                                <img v-bind:src="item.img_url" alt="item.img_name"/>
+                            </a>    
+                        </div>
+                        <div class="msgbox col col-xs-12 col-md-4">
+                            <h3>{{item.maintitle}}</h3>
+                            <h4>{{item.brandname}}</h4>
+                            <h4>{{item.productname}}</h4>
+                            <div class="shopper">
+                                <p>{{item.shopper}}</p>
+                                <p>{{item.content}}</p>
+                            </div>
+                            <button class="btnbox"><span class="money"><b>一口價</b>$</span><span class="Price">{{item.price}}</span></button>                           
+                        </div>
+                </li>
+                </ul> 
+            </div>
+            <!--EZ大圖模組元件-->        
+        </div>
+        </div>
+        <hr class="ts-hr ts-hr--transparent-20">
+    </section>
+    <!-- 兩欄式-通用型元件結束 -->
+
+
+    <!-- 單欄式-通用型元件開始 -->
+    <section id="article" class="ts-columns">
+        <div class="container-fluid container-columns-default">
+        <div class="row ts-columns__container__row">
+            <div class="titlebox">
+            <h2 class="ts-columns__heading--main text-center ts-columns__heading--white">代購小學堂<br class="hidden-md hidden-lg"></h2>
+            <div class="ts-columns__heading--main-desc text-center ts-columns__heading--white">達人比比昂開課囉！</div>
+            </div>
+            <!--EZ文章模組元件-->
+            <div id="ez_articlebox">
+            <div class="col col-xs-12 col-md-12" v-for="item in items">
+                <div class="articlebox">
+                    <div class="main_lititle">
+                        <h3>{{item.article_title}}</h3>
+                    </div> 
+                    <div class="main_litext" v-for="item in itemss">
+                        <div class="part">{{item.article_part}}</div>
+                    </div>
+                    <div class="author">{{item.shopper}}</div>
+                    <div class="clearfix">
+                        <div class="imsbox" v-for="item in imgs">
+                            <img v-bind:src="item.img_url">
+                        </div>
+                    </div>
+                </div>       
+            </div>  
+            </div>
+            <!--EZ文章模組元件-->  
+        </div>
+        </div>
+        </div>
+        <hr class="ts-hr ts-hr--transparent-20">
+    </section>
+    <!-- 單欄式-通用型元件結束 -->
+
+    <!-- FAT-Footer開始 -->
+    <section class="ts-columns fatfootersection">
+        <div class="container-fluid container-columns-default">
+        <div class="row ts-columns__container__row">
+            <div class="col col-xs-12 col-md-12">
+                <div class="fatfooterbox">
+                    <div class="title">
+                        <h4>日本JAPAN</h4>
+                    </div>
+                    <div class="buttonbox">
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >日本7-11人氣零嘴</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >7-11獨家保養fancl/Kpse聯名限定</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >煤油電暖爐</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >本名店拉麵</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >聚餐神器-多功能圍爐/燒烤</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >廚房家電 必買9選</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >Youtuber開箱爆紅美顏儀</a>
+                    </div>
+                </div> 
+                <div class="fatfooterbox">
+                    <div class="title">
+                        <h4>美國USA</h4>
+                    </div>
+                    <div class="buttonbox">
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >日本7-11人氣零嘴</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >7-11獨家保養fancl/Kpse聯名限定</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >煤油電暖爐</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >本名店拉麵</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >聚餐神器-多功能圍爐/燒烤</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >廚房家電 必買9選</a>
+                        <a href="https://shopping.pchome.com.tw/" target="_blank" >Youtuber開箱爆紅美顏儀</a>
+                    </div>
+                </div>    
+            </div>  
+        </div>
+        </div>
+        </div>
+        <hr class="ts-hr ts-hr--transparent-20">
+    </section>
+    <!-- FAT-Footer結束 -->
+
+    <!-- Footer開始 -->
+    <section class="ts-columns ts-columns--3 footersection">
+        <div class="container-fluid container-columns-default">
+        <div class="row ts-columns__container__row">
+            <div class="col col-xs-12 col-md-12">
+                <div class="footer">
+                    <p>本活動頁商品規格、顏色、價位、贈品如與銷售網頁不符，以銷售網頁標示為準！</p>
+                    <p>網路家庭版權所有Copyright PChome Online版權所有，轉載必究</p>
+                    <p>Copyright © 2003-2018 Mitsurei Co.,Ltd. All rights reserved</p>
+                    <p>ez易買 - 由日本東京三黎株式會社委託大弘信息股份有限公司管理 版權所有‧轉載必究</p>
+                </div>    
+            </div>  
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer結束 -->
+
+
+<script>
+/*--EZ商品模組元件--*/
+    new Vue( {
+        el: '#ez_pdbox',
+        data: {
+          items: [
+            /*--品1--*/
+            {   
+                img_url: "pm/pd1.jpg", 
+                img_name: "大谷鬼次之奴江戶兵衛", 
+                href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                maintitle: "figma 「桌上美術館」寫樂作 第三代大谷鬼次之奴江戶兵衛", 
+                subtitle: "惡搞經典藝術品，可動式人物模型",
+                price: "2,600",
+            },
+            /*--品2--*/ 
+            {
+                img_url: "pm/pd2.jpg", 
+                img_name: "多功能幼兒防護網＆露營小屋", 
+                href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                maintitle: "多功能幼兒防護網＆露營小屋—阿卡將代購", 
+                subtitle: "收納超方便不腰痛，很適合屋子空間不大的家庭",
+                price: "4,900",
+            },
+            /*--品3--*/ 
+            {
+                img_url: "pm/pd3.jpg", 
+                img_name: "薩莫色雷斯的勝利女神", 
+                href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                maintitle: "figma 「桌上美術館」薩莫色雷斯的勝利女神", 
+                subtitle: "惡搞經典藝術品，可動式人物模型",
+                price: "1,400",
+            },
+            /*--品4--*/
+            {
+                img_url: "pm/pd4.jpg", 
+                img_name: "圓山應舉作 幽靈圖", 
+                href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                maintitle: "figma 「桌上美術館」圓山應舉作 幽靈圖", 
+                subtitle: "惡搞經典藝術品，可動式人物模型",
+                price: "1,500",
+            },
+            /*--品5--*/
+            {
+                img_url: "pm/pd1.jpg", 
+                img_name: "大谷鬼次之奴江戶兵衛", 
+                href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                maintitle: "figma 「桌上美術館」寫樂作 第三代大谷鬼次之奴江戶兵衛", 
+                subtitle: "惡搞經典藝術品，可動式人物模型",
+                price: "2,600",
+            },
+            /*--品6--*/
+            {
+                img_url: "pm/pd2.jpg", 
+                img_name: "多功能幼兒防護網＆露營小屋", 
+                href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                maintitle: "多功能幼兒防護網＆露營小屋—阿卡將代購", 
+                subtitle: "收納超方便不腰痛，很適合屋子空間不大的家庭",
+                price: "4,900",
+            },
+            /*--品7--*/
+            {
+                img_url: "pm/pd3.jpg", 
+                img_name: "薩莫色雷斯的勝利女神", 
+                href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                maintitle: "figma 「桌上美術館」薩莫色雷斯的勝利女神", 
+                subtitle: "惡搞經典藝術品，可動式人物模型",
+                price: "1,400",
+            },
+            /*--品8--*/
+            {
+                img_url: "pm/pd4.jpg", 
+                img_name: "圓山應舉作 幽靈圖", 
+                href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                maintitle: "figma 「桌上美術館」圓山應舉作 幽靈圖", 
+                subtitle: "惡搞經典藝術品，可動式人物模型",
+                price: "1,500",
+            },
+          ]
+        }
+      })	
+</script>      
+
+<script>
+    /*--EZ大圖模組元件--*/
+    new Vue({
+            el: '#ez_bigphotobox',
+            data: {
+                items: [
+                /*--品1--*/  
+                {   
+                    img_url: "pm/750x400-1.jpg", 
+                    img_name: "多功能燒烤分離式鐵板燒烤組", 
+                    href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                    maintitle: "節日聚會省時省力 聚餐神器特輯!", 
+                    brandname: "象印ZOJIRUSHI",
+                    productname: "多功能燒烤分離式鐵板燒烤組",
+                    shopper: "代購達人/比比昂",
+                    content: "主廚不用全身油煙，也不需一個人在廚房寂寞的準備料理，不論是主廚還是食客，大家一起在桌上共同動手，歡樂時刻，誰都不準離開座位!一台機器就能搞定多料理!沒廚房也能開伙!大家一起動手做!火力大 好清洗!",
+                    price: "9999",
+                },
+                /*--品2--*/ 
+                {
+                    img_url: "pm/750x400-2.jpg", 
+                    img_name: "多功能燒烤分離式鐵板燒烤組", 
+                    href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                    maintitle: "節日聚會省時省力 聚餐神器特輯!", 
+                    brandname: "象印ZOJIRUSHI",
+                    productname: "多功能燒烤分離式鐵板燒烤組",
+                    shopper: "代購達人/比比昂",
+                    content: "主廚不用全身油煙，也不需一個人在廚房寂寞的準備料理，不論是主廚還是食客，大家一起在桌上共同動手，歡樂時刻，誰都不準離開座位!一台機器就能搞定多料理!沒廚房也能開伙!大家一起動手做!火力大 好清洗!",
+                    price: "9999",
+                },
+            ]
+        }
+    })	
+</script>
+
+<script>
+    /*--EZ文章模組元件--*/
+    new Vue({
+            el: '#ez_articlebox',
+            data: {
+                items: [
+                /*--文章1--*/  
+                {   
+                    href: "http://www.ezimport.co.jp/buy/oneprice_edm.php", 
+                    article_title: "為什麼日本煤油電暖爐那麼好用?", 
+                    shopper: "代購達人/比比昂",
+                },
+            ],
+                itemss: [
+                /*--段落1--*/
+                {
+                    article_part: "日本是到了冬天會下雪的國家，因此在屋子內外的保暖非常重要，尤其是有老年人或小孩子的家庭。大約於60多年前日本家電大廠Corona發明第一台煤油暖爐，與普通陶磁電暖器或葉片式加熱電暖器相比，居住日本雪國人研發的煤油電暖爐大大勝出！不只是省電，暖房效果更是優異，開機後超快3~5分鐘能全屋子每個角落都暖和，不用電，一筒煤油狂用整個冬天都沒問題。所以在日本，可說是家家戶戶都是使用煤油暖爐來度過冬天。", 
+                },
+                /*--段落2--*/
+                {
+                    article_part: "煤油暖爐一直到現代已發展得很先進，煤油燃燒不會有臭味而且使用上很安全，遇到震動會自動停機等國家規定PSC安全裝置，因此已不用再擔心燃燒不完全(二氧化碳)或者漏油等等問題，請安心使用。", 
+                },
+                /*--段落3--*/
+                {
+                    article_part: "目前日本前二大暖爐品牌為Corona與Dainichi。二個品牌的品質都很好，所有機型一律100%日本製造品管優良；Corona歷史優久機種齊全而且設計上更省電，不只是插電款也有對流型可以室內戶外都能用的機種（隨身帶著走，露營族必備）；Dainichi則主打方便性的插電機種與大油箱，二個品牌各有各的愛好者。通常，還沒用過煤油暖爐的人都會有許多擔心，但真正使用後，大家只會打從心理發出＂相見恨晚＂的感嘆！再也不會想回去使用以前買的很花電費的電暖器了....", 
+                },
+
+            ],
+                imgs: [
+                /*--圖片1--*/  
+                {   
+                    img_url: "pm/400-1.jpg",
+                },
+                /*--圖片2--*/  
+                {   
+                    img_url: "pm/400-2.jpg",
+                },
+                /*--圖片3--*/  
+                {   
+                    img_url: "pm/400-3.jpg",
+                },
+            ],
+        }
+    })	
+</script>
+</body>	
+</html>

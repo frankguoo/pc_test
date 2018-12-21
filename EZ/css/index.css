@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.ts-subkv{padding: 40px 0;}
+.ts-subkv__carousel__words__title{text-align: center;color:#fff;}
+.ts-allrateplan__row{margin-top: 0px;}
+.ts-subkv__carousel__words__title h2{font-size: 180px;font-weight:400;}
+.ts-subkv__carousel__words__title h3{font-size: 32px;font-weight:100!important;}
+.ts-allrateplan__col__content {border-bottom: solid 1px #fff;}
+.bidding_box.container{max-width: 992px;}
+.bidding_box.container .ts-allrateplan__col{background-size: cover!important; color:#fff;padding: 20px 30px}
+.bidding_box.container .ts-allrateplan__col .bidding_box_word{padding-top: 150px;}
+.bidding_box.container h3{font-size: 2.2em;margin-bottom: 0px;}
+.btn--allrateplan{background-color: transparent;}
+.btn--allrateplan:hover{background-color: transparent;color:#e1382a;}
+
+.step_box{padding: 60px 0;}
+.step_box_title{text-align: center;color:#fff;}
+.step_box_title h2{font-size: 90px;font-weight:400;margin: 0;}
+.step_box_title h3{font-size: 28px;font-weight:100!important;}
+.step_box_content{margin-top: 40px;margin-bottom: 40px;}
+.step_circle{border:solid 1px #fff;text-align: center; width: 250px;height:250px;border-radius: 50%;margin: 0 auto;}
+.circle_grid:nth-child(1):before{content:'';width: 20px;height: 30px;display: block;color:#fff;background: none;margin-top: -15px;margin-left:-10px;top: 140px;position: relative;}
+.circle_grid:nth-child(2):before, .circle_grid:nth-child(3):before{content:'';width: 20px;height: 30px;display: block;color:#fff;background: url(../images/arrow.svg) no-repeat;margin-top: -15px;margin-left:-10px;top: 140px;position: relative;}
+.step_circle img{width:200px;height:200px;display:block; margin:auto!important;max-width: 100%;padding-top: 50px;}
+.step_box_link{text-align: center;color:#fff;font-size: 26px;font-weight: 100;text-decoration: underline;}
+
+
+.flight_box_title{text-align: center;}
+.flight_box_title h2{font-size: 90px;font-weight:400;margin: 0;color:#4d4d4d;}
+.flight_box_title h3{font-size: 28px;font-weight:100!important;color:#4d4d4d;}
+
+.flight_box_content .flight_box h3{display: block;color:#fff;background-color: #e1382a;text-align: center;padding: 30px 0;}
