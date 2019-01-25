@@ -168,12 +168,7 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 			</div>
 		</div>
 		<!-- END // Mobile Header LOGO 手機版頁頭-->
-	<script>
-	.on('click', '#btnBack', function(e) {
-        e.preventDefault();
-        window.history.go(-1);
-    })
-	</script>
+
 		<!-- Mobile 手機版置頂選單-->
 		<div class="mobile" id="mob_topmenu">
 			<div id="menu">
@@ -591,6 +586,10 @@ var nextDate = now.getDate() + 1;
 				log: false
 			}]);
 
+			$("#btnBack").click(function (e){
+				e.preventDefault();
+				window.history.go(-1);
+			});
 			// 滑動
 			$('.pointer').click(function () {
 				$('html,body').animate({
@@ -793,6 +792,7 @@ var nextDate = now.getDate() + 1;
 				}, 1000);
 			}
 		});
+
 </script>
 </body>
 </html>
