@@ -25,7 +25,9 @@
 		<meta name="format-detection" content="telephone=no">
 		<meta name="format-detection" content="address=no">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+<style>
+.mainBody{background:url(../img/bk12.jpg) top center no-repeat #af212d}
+</style>
 
 	<!--CSS-->
 	<link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -158,7 +160,7 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 	
 		<!-- Mobile Header LOGO 手機版頁頭-->
 		<div id="header">
-			<div id="return"><a href="https://24h.m.pchome.com.tw/" target="_blank"><img src="img/arrow.jpg" width="35" border="0" alt="PChome24h購物" /></a></div>
+			<div id="return"><a id="btnBack" href="javascript:void(0);" target="_blank"><img src="img/arrow.jpg" width="35" border="0" alt="PChome24h購物" /></a></div>
 			<div id="logo">
 				<a href="https://24h.m.pchome.com.tw/" target="_blank">
 					<img src="img/24HLOGO.png" width="202" border="0" alt="PChome24h購物">
@@ -166,7 +168,12 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 			</div>
 		</div>
 		<!-- END // Mobile Header LOGO 手機版頁頭-->
-	
+	<script>
+	.on('click', '#btnBack', function(e) {
+        e.preventDefault();
+        window.history.go(-1);
+    })
+	</script>
 		<!-- Mobile 手機版置頂選單-->
 		<div class="mobile" id="mob_topmenu">
 			<div id="menu">
