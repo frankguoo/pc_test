@@ -46,7 +46,7 @@ to{opacity:1;transform:scale(1);filter:brightness(100%)}
 }
 .shine4{animation-name:shine4;-webkit-animation-name:shine4;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
 @keyframes darts {
-0%{transform-origin:right;transform:perspective(5px) translateX(300px) translateY(139px) translateZ(200px) rotateY(360deg)}
+0%{transform-origin:right;transform:perspective(5px) translateX(300px) translateY(300px) translateZ(0px) rotateY(0deg)}
 to{transform-origin:right;transform:perspective(0px) translateX(0px) translateY(0px) translateZ(0px) rotateY(0deg)}
 }
 .darts{transform-origin:right;-webkit-animation-name:darts;animation-name:darts;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-duration:.3s;animation-duration:.3s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}
