@@ -800,8 +800,10 @@ var nextDate = now.getDate() + 1;
 	var base_url = window.location.origin;
 	var host = window.location.host;
 	var pathArray = window.location.pathname[2];
-		$('.666').attr('src', base_url + pathArray + src);
-</script>
 
+$('.666').attr('src', function(index, src) {
+     return  base_url + pathArray + src;
+});
+</script>
 </body>
 </html>
