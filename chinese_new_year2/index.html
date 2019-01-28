@@ -40,12 +40,7 @@
 	<link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
 	<link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
 
-<script>
-var base_url = window.location.origin;
-var host = window.location.host;
-var pathArray = window.location.pathname.split( '/' );
-
-</script>	
+	
 
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -154,7 +149,7 @@ src="https://www.facebook.com/tr?id=2439447216084198&ev=PageView&noscript=1"
 			<div class="appDonload" data-toggle="popover" data-placement="bottom" data-trigger="focus"> APP下載 
 				<div class="appQRcode">
 					<a href="https://24h.m.pchome.com.tw/appget.php" target="_blank">
-						<img src="base_url + '/img/QRCode_new.png'">
+						<img class="666" src="img/QRCode_new.png" alt="">
 					</a>
 				</div>
 			</div>		
@@ -799,7 +794,16 @@ var nextDate = now.getDate() + 1;
 		});
 
 
-
 </script>
+
+<script>
+	var base_url = window.location.origin;
+	var host = window.location.host;
+	var pathArray = window.location.pathname;
+	$('.666')(function() {
+		$(this).attr('src', base_url + pathArray + $(this).attr('src'));
+	});
+</script>
+
 </body>
 </html>
