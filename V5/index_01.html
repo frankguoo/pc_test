@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>版身一</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <meta name="format-detection" content="telephone=no, address=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=0">
+	  
+  <!--CSS-->
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+	  
+<!-- (1) 將css資料夾的bodyF1.css 丟入專案css資料夾裡面  -->	  
+  <link href="css/bodyF1.css" rel="stylesheet" type="text/css">
+	  
+	  
+	  
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+	  
+	  
+<!-- (2) 將js資料夾的iframeResizer.contentWindow.min.js丟入專案js資料夾裡面  -->	  
+  <script type="text/javascript" src="js/iframeResizer.contentWindow.min.js" ></script>
+
+   <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+   <![endif]-->
+
+<script>
+$( function(){
+	var myArray= new Array();
+	myArray = [
+        {         
+      "LINK": "https://24h.pchome.com.tw/store/DHAFGT",
+      "PIC": "0201_main_01.jpg",
+      "HIGHLIGHT": "八代雙碟 限量送1TB",
+      "NAME": "ASUS 14吋窄邊輕薄機 ",
+      "PRICE": "34900",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DICK3N",
+      "PIC": "0201_main_02.jpg",
+      "HIGHLIGHT": "附原廠精美包裝盒",
+      "NAME": "萬寶龍經典款白金夾原子筆",
+      "PRICE": "9999",
+      "PRICE-S": "$13400",
+      "PCS": ""
+    },
+    {
+      "LINK": "https://24h.pchome.com.tw/store/DYAJ82",
+      "PIC": "0201_main_03.jpg",
+      "HIGHLIGHT": "超值2入",
+      "NAME": "Apple iPhone 7 256G",
+      "PRICE": "24500",
+      "PRICE-S": "",
+      "PCS": "平均"
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DDAH4W",
+      "PIC": "0201_main_04.jpg",
+      "HIGHLIGHT": "頂級女香 質感女人味 ",
+      "NAME": "CHANEL女性淡香水100ml",
+      "PRICE": "4370",
+      "PRICE-S": "$4650",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DIAEOR",
+      "PIC": "0201_main_05.jpg",
+      "HIGHLIGHT": "珠飾全館7折up",
+      "NAME": "Pandora潘朵拉純銀手環",
+      "PRICE": "2199",
+      "PRICE-S": "$2830",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DYAL47",
+      "PIC": "0201_main_06.jpg",
+      "HIGHLIGHT": "送一年延長保固",
+      "NAME": "Samsung Galaxy A8 (2018)",
+      "PRICE": "14990",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+    {
+      "LINK": "https://24h.pchome.com.tw/store/DXBD0G",
+      "PIC": "0201_main_07.jpg",
+      "HIGHLIGHT": "全館同步55折up",
+      "NAME": "New Balance-復古鞋",
+      "PRICE": "1880",
+      "PRICE-S": "$3450",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DCAE8Y",
+      "PIC": "0201_main_08.jpg",
+      "HIGHLIGHT": "送20張紙加保護包",
+      "NAME": "HP Sprocket 2in1 相印機",
+      "PRICE": "4990",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://shopping.pchome.com.tw/DRAM08-A9008NEZE",
+      "PIC": "0201_main_09.jpg",
+      "HIGHLIGHT": "輕巧繽紛浪漫首選",
+      "NAME": "BackupPlus2TB行動硬碟",
+      "PRICE": "2688",
+      "PRICE-S": "$2788",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DECL1F",
+      "PIC": "0201_main_10.jpg",
+      "HIGHLIGHT": "情人手杯 溫暖蔓延",
+      "NAME": "【膳魔師x凱菲】輕量保溫瓶(贈)隔溫杯",
+      "PRICE": "899",
+      "PRICE-S": "$2100",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/store/DGADD7",
+      "PIC": "0201_main_11.jpg",
+      "HIGHLIGHT": "送限量專屬皮套",
+      "NAME": "富士instax mini 9(公司貨)",
+      "PRICE": "2480",
+      "PRICE-S": "",
+      "PCS": ""
+    },
+    {
+      "LINK": "http://24h.pchome.com.tw/prod/DBAO1T-A9008IOCX",
+      "PIC": "0201_main_12.jpg",
+      "HIGHLIGHT": "比利時巧克力專家",
+      "NAME": "吉利蓮 經典貝殼海馬巧克力禮盒",
+      "PRICE": "450",
+      "PRICE-S": "$499",
+      "PCS": ""
+    }
+		
+  ];
+
+
+  /* 版身顯示商品內容 */ 
+  var htmlPD = '';
+  for (var i = 0; i < myArray.length; i++) {
+    htmlPD += '<li>';
+    htmlPD += '<a href="' + myArray[i]['LINK'] + '" target="_blank">';
+    htmlPD += '<img src="pm/' + myArray[i]['PIC'] + '" title="' + myArray[i].NAME + '">';
+    htmlPD += '<div class="hotF1">' + myArray[i]['HIGHLIGHT'] + '</div>';
+    htmlPD += '<div class="pd_titleF1">' + myArray[i]['NAME'] + '</div><p>';
+    htmlPD += '<span class="old_priceF1">' + myArray[i]['PRICE-S'] + '</span>';
+	htmlPD += '<span class="pcs1">' + myArray[i]['PCS'] + '</span>';
+    htmlPD += '<span class="hot_priceF1"><small>$</small>' + myArray[i]['PRICE'] + '</span>';
+    htmlPD += '<span class="buyF1">搶購</span></p></a></li>';
+  }
+  $('.pd_wrapF1').html(htmlPD);
+});
+
+</script>
+
+<style>
+  body {
+    background: none;
+    width: 100%;
+    height: 100%;    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+	
+
+  /*--- box ---*/
+  .boxF1 { 
+    width: 100%; 
+  }
+  .boxF1 ul {
+    background: #e53f81;
+    padding: 10px 5px 7px 10px;
+  }
+  .boxF1 ul li {
+    border-right: 5px solid #e53f81;
+    border-bottom: 5px solid #e53f81;
+    padding: 10px;
+	 -webkit-transition: all 0.2s ease;
+						 -moz-transition: all 0.2s ease;
+						  -ms-transition: all 0.2s ease;
+						   -o-transition: all 0.2s ease;
+							  transition: all 0.2s ease; 
+  }
+	
+  .boxF1 ul li:hover {
+	 -webkit-transform:translateY(-6px); transform:translateY(-6px); box-shadow:0 0 20px rgba(0,0,0,0.2);
+	} 
+	
+   .boxF1 .hotF1 {
+    background-color: #fc0367;
+    color: #fff;
+  }
+</style>
+	  
+</head>
+
+<body>
+  <div class="wrap boxF1">
+    <ul class="pd_wrapF1">
+      <!-- 商品顯示區 -->
+    </ul>
+  </div>
+</body>
+</html>
