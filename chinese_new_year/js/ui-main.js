@@ -114,7 +114,5 @@ $(function()
                 }) ;
             });
 			
-        }) ;
-
-    $("#BOX_A img").replace('ec1img.pchome.com.tw', "b.ecimg.tw");   
+        }) ;  
 });
