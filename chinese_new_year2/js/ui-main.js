@@ -116,7 +116,5 @@ $(function()
             });
 			
         }) ;
-        var thisimg = $(".ggg");             
-        $(".ggg").attr('src',thisimg.attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'));
 
 });
