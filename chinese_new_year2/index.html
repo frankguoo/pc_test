@@ -808,11 +808,15 @@ $('img').each(function(){
       thisimg.attr('src',thisimg.attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'))
 });
 
-$('.js-image-replace').each(function(){
+$('.ggg').each(function(){
       // Get your image src
       var source = $(this).attr('src');
       // Replace the first set of integers in your URL with 660
-      $(this).attr('src',source.replace(/\/\d+\//,'/660/'));
+	  $(this).attr('src',source.replace(/\/\d+\//,'/660/'));
+	  
+	  var thisimg = $(".ggg");             
+     $(".ggg").attr('src',thisimg.attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'));
+
   });
 
 </script>
