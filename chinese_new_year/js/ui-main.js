@@ -7,7 +7,7 @@ $(function()
             var strTimeStamp = parseInt((new Date().getTime())/60000) ; // change per minute
             $.ajax(
             {
-                 url:'https://b.ecimg.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252F3c&d=now&_callback=jsonpcb_onsale_3c&'+ strTimeStamp
+                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252F3c&d=now&_callback=jsonpcb_onsale_3c&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'jsonpcb_onsale_3c'
@@ -21,10 +21,10 @@ $(function()
                     $.each(_data.Nodes, function(idx, _node)
                     {
 						
-						$("#BOX_A")
-                            .append('<li id="box'+idx+'" class="box">'+
+						$("#BOX_A").append('<li id="box'+idx+'" class="box">'+
                                         '<a href="'+_node.Link.Url+'" target="_blank"><div class="imgs"><img src="'+_node.Img2.Src+'" alt=""></div></a>'+
-                                	 '</li>');	
+                                     '</li>');
+                        $("#BOX_A img").replace('ec1img.pchome.com.tw', "b.ecimg.tw");
 							
 					});
 					
@@ -34,7 +34,7 @@ $(function()
 			
 			 $.ajax(
             {
-                 url:'https://c.ecimg.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252Fce&d=now&_callback=jsonpcb_onsale_ce&'+ strTimeStamp
+                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252Fce&d=now&_callback=jsonpcb_onsale_ce&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'jsonpcb_onsale_ce'
@@ -61,7 +61,7 @@ $(function()
 			
 			 $.ajax(
             {
-                 url:'https://d.ecimg.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252Ffood&d=now&_callback=jsonpcb_onsale_food&'+ strTimeStamp
+                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252Ffood&d=now&_callback=jsonpcb_onsale_food&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'jsonpcb_onsale_food'
@@ -88,7 +88,7 @@ $(function()
 			
 			$.ajax(
             {
-                 url:'https://e.ecimg.tw/ecshop/adapi/v5/ad&q=welcome&d=now&_callback=json_welcome&'+ strTimeStamp
+                 url:'http://ecapi.pchome.com.tw/ecshop/adapi/v5/ad&q=welcome&d=now&_callback=json_welcome&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'json_welcome'
