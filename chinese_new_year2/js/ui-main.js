@@ -29,6 +29,18 @@ $(function()
                     
 					
                 });
+                $.each(data, function(idx, _data)
+                {
+
+                    $.each(_data.Nodes, function(idx, _node)
+                    {
+						
+						$("img").attr('src',$("img").attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'));	                                               
+                    });
+                    
+					
+                });
+
             });
 			
 			
