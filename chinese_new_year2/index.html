@@ -803,12 +803,8 @@ $('.666').attr('src', function(index, src) {
      return  base_url + pathArray + src;
 });
 
+$("#BOX_A img").replace('ec1img.pchome.com.tw', "b.ecimg.tw"); 
 
-$("#BOX_A img").each(function() {
-    var text = $(this).text();
-    text = text.replace("ec1img.pchome.com.tw", "b.ecimg.tw");
-    $(this).text(text);
-});
 </script>
 </body>
 </html>
