@@ -20,14 +20,16 @@ $(function()
 
                     $.each(_data.Nodes, function(idx, _node)
                     {
-						$("#BOX_A").attr('src',$(this).attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'))
+						$("#BOX_A")
                             .append('<li id="box'+idx+'" class="box">'+
                                         '<a href="'+_node.Link.Url+'" target="_blank"><div class="imgs"><img src="'+_node.Img2.Src+'" alt=""></div></a>'+
                                      '</li>');	 
                     });
 						 
                 });
-                
+                $('#BOX_A img').each(function(){
+                    $(this).attr('src',$(this).attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw')); 
+                });
             });
 			
 			
@@ -55,6 +57,10 @@ $(function()
 					});
 					
                 });
+                $('#BOX_B img').each(function(){
+                    $(this).attr('src',$(this).attr('src').replace('ec1img.pchome.com.tw','c.ecimg.tw')); 
+                });
+
             });
 			
 			
@@ -82,6 +88,9 @@ $(function()
 							
 					});
 					
+                });
+                $('#BOX_C img').each(function(){
+                    $(this).attr('src',$(this).attr('src').replace('ec1img.pchome.com.tw','d.ecimg.tw')); 
                 });
             });
 			
@@ -111,7 +120,10 @@ $(function()
                                 	+'</li>') ;
 
                     }) ;
-                }) ;
+                });
+                $('#BOX_D img').each(function(){
+                    $(this).attr('src',$(this).attr('src').replace('ec1img.pchome.com.tw','e.ecimg.tw')); 
+                });
             });
 			
         }) ;
