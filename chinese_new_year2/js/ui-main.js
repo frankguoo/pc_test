@@ -20,16 +20,10 @@ $(function()
 
                     $.each(_data.Nodes, function(idx, _node)
                     {
-						
 						$("#BOX_A")
                             .append('<li id="box'+idx+'" class="box">'+
                                         '<a href="'+_node.Link.Url+'" target="_blank"><div class="imgs"><img class="ggg" src="'+_node.Img2.Src+'" alt=""></div></a>'+
                                      '</li>');	 
-                        	             
-                        $.each(_data.Nodes, function(idx, _node)
-                        {  
-                            $(this).attr('src',_node.Img2.Src.replace('ec1img.pchome.com.tw','b.ecimg.tw')); 
-                        });
                     });
 						 
                 });
