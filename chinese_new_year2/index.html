@@ -803,7 +803,9 @@ $('.666').attr('src', function(index, src) {
      return  base_url + pathArray + src;
 });
 
-$("#BOX_A img").replace('ec1img.pchome.com.tw', "b.ecimg.tw"); 
+
+var imgsrc = $("#BOX_A img").attr('src');
+imgsrc.replace('ec1img.pchome.com.tw', "b.ecimg.tw"); 
 
 </script>
 </body>
