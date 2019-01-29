@@ -24,9 +24,8 @@ $(function()
 						$("#BOX_A")
                             .append('<li id="box'+idx+'" class="box">'+
                                         '<a href="'+_node.Link.Url+'" target="_blank"><div class="imgs"><img class="ggg" src="'+_node.Img2.Src+'" alt=""></div></a>'+
-                                     '</li>');	
-                        var thisimg = $(".ggg");             
-                        $(".ggg").attr('src',thisimg.attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'));
+                                     '</li>');	             
+                        
                                                
 							
 					});
