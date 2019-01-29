@@ -7,7 +7,7 @@ $(function()
             var strTimeStamp = parseInt((new Date().getTime())/60000) ; // change per minute
             $.ajax(
             {
-                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252F3c&d=now&_callback=jsonpcb_onsale_3c&'+ strTimeStamp
+                 url:'https://b.ecimg.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252F3c&d=now&_callback=jsonpcb_onsale_3c&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'jsonpcb_onsale_3c'
@@ -34,7 +34,7 @@ $(function()
 			
 			 $.ajax(
             {
-                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252Fce&d=now&_callback=jsonpcb_onsale_ce&'+ strTimeStamp
+                 url:'https://c.ecimg.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252Fce&d=now&_callback=jsonpcb_onsale_ce&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'jsonpcb_onsale_ce'
@@ -61,7 +61,7 @@ $(function()
 			
 			 $.ajax(
             {
-                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252Ffood&d=now&_callback=jsonpcb_onsale_food&'+ strTimeStamp
+                 url:'https://d.ecimg.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252Ffood&d=now&_callback=jsonpcb_onsale_food&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'jsonpcb_onsale_food'
@@ -88,7 +88,7 @@ $(function()
 			
 			$.ajax(
             {
-                 url:'http://ecapi.pchome.com.tw/ecshop/adapi/v5/ad&q=welcome&d=now&_callback=json_welcome&'+ strTimeStamp
+                 url:'https://e.ecimg.tw/ecshop/adapi/v5/ad&q=welcome&d=now&_callback=json_welcome&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'json_welcome'
