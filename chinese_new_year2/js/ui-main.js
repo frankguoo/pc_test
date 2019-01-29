@@ -28,7 +28,7 @@ $(function()
                         	             
                         $.each(_data.Nodes, function(idx, _node)
                         {  
-                            $('this').attr('src',_node.Img2.Src.replace('ec1img.pchome.com.tw','b.ecimg.tw')); 
+                            $(this).attr('src',_node.Img2.Src.replace('ec1img.pchome.com.tw','b.ecimg.tw')); 
                         });
                     });
 						 
