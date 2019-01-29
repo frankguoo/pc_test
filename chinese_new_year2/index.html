@@ -807,6 +807,13 @@ $('img').each(function(){
       var thisimg = $(this);
       thisimg.attr('src',thisimg.attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'))
 });
+
+$('.js-image-replace').each(function(){
+      // Get your image src
+      var source = $(this).attr('src');
+      // Replace the first set of integers in your URL with 660
+      $(this).attr('src',source.replace(/\/\d+\//,'/660/'));
+  });
 </script>
 </body>
 </html>
