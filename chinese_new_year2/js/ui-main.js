@@ -27,9 +27,6 @@ $(function()
                                      '</li>');	                                               
                     });
                     
-                    var thisimg = $("#BOX_A img");             
-                    $("#BOX_A img").attr('src',thisimg.attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'));
-
 					
                 });
             });
