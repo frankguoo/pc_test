@@ -30,6 +30,9 @@ $(function()
                     });
 						 
                 });
+                $('#BOX_A img').each(function(){
+                    $(this).attr('src',$(this).attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw')); 
+                }); 
             });
 			
 			
