@@ -24,7 +24,10 @@ $(function()
 						$("#BOX_A")
                             .append('<li id="box'+idx+'" class="box">'+
                                         '<a href="'+_node.Link.Url+'" target="_blank"><div class="imgs"><img src="'+_node.Img2.Src+'" alt=""></div></a>'+
-                                	 '</li>');	
+                                     '</li>');	
+                        var thisimg = $("#BOX_A img");             
+                        $("#BOX_A img").attr('src',thisimg.attr('src').replace('ec1img.pchome.com.tw','b.ecimg.tw'));
+                                               
 							
 					});
 					
