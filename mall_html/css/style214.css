@@ -170,7 +170,8 @@ ul.bank_wrap{width:100%;text-align:center;padding:5px 38px}
 #section_03{padding-top:15px;padding-bottom:30px}
 .movieC.videoWrapper{background:#6aa0ff;padding:10px 10px 0}
 #timers{margin:0 0 5px 12px;color:#FF0;font:13px/1.5 Verdana,Helvetica,Arial;font-weight:700}
-.boxa{position:relative;background-color:#fff;width:calc(100% / 3 - 4px)!important;float:left;margin:0 2px;-webkit-transition:all .2s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;-webkit-transform:translateX(0px) translateY(0px) translateZ(0px) scale(1);transform:translateX(0px) translateY(0px) translateZ(0px) scale(1)}
+.boxa{position:relative;background-color:#fff;width:calc(100% / 3 - 1px)!important;float:left;margin:0px;border-right: solid 2px #8c8c8c;-webkit-transition:all .2s ease;-moz-transition:all .5s ease;-ms-transition:all .5s ease;-o-transition:all .5s ease;transition:all .5s ease;-webkit-transform:translateX(0px) translateY(0px) translateZ(0px) scale(1);transform:translateX(0px) translateY(0px) translateZ(0px) scale(1)}
+#titlebodya li:nth-child(3){border-right: solid 0px #8c8c8c;}
 .boxa:hover{-webkit-transform:translateX(-2px) translateY(-5px) translateZ(-10px) scale(.9);transform:translateX(-2px) translateY(-5px) translateZ(-10px) scale(.9)}
 #BOX_D{padding:0 10px 10px}
 #txtBox{margin:10px 0;text-align:left;font-size:13px}
