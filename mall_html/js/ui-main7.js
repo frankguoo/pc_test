@@ -7,9 +7,9 @@ $(function()
             $.ajax(
             {
                 type: "get"
-                ,url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&sign=h24%252F3c&d=now&_callback=jsonpcb_onsale_3c&'+ strTimeStamp
+                ,url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&site=mall&sign=mall%252F3c&d=now&_callback=mall%252Flife&'+ strTimeStamp
                 ,dataType : 'jsonp'
-                ,jsonpCallback : 'jsonpcb_onsale_3c'
+                ,jsonpCallback : 'mall%252Flife'
                 ,cache : true
             })
             .done(function(data)
