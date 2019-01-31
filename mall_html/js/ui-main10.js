@@ -6,10 +6,10 @@ $(function()
             var strTimeStamp = parseInt((new Date().getTime())/60000) ; // change per minute
             $.ajax(
             {
-                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&site=mall&sign=mall%252F3c&d=now&_callback=mall%252Flife&'+ strTimeStamp
+                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5/ad&q=onsale&site=mall&sign=mall%252Flife&d=now&_callback=jsonpcb_onsale_life&'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
-                ,jsonpCallback : 'mall%252Flife'
+                ,jsonpCallback : 'jsonpcb_onsale_life'
                 ,cache : true
             })
             .done(function(data)
