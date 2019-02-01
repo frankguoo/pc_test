@@ -120,9 +120,7 @@ $(function()
 
                     }) ;
                 });
-                $('#BOX_D img').each(function(){
-                    $(this).attr('src',$(this).attr('src').replace('ec1img.pchome.com.tw','e.ecimg.tw')); 
-                });
+            
             });
 			
         }) ;
