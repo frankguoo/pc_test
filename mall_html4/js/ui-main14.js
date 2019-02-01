@@ -95,7 +95,7 @@ $(function()
 			
 			$.ajax(
             {
-                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5.1/ad&q=welcome&site=mall&d=20190131&_callback=json_welcome&'+ strTimeStamp
+                 url:'http://ecapi.pchome.com.tw/cdn/ecshop/adapi/v5.1/ad&q=welcome&site=mall&d=now&_callback=json_welcome&25815332'+ strTimeStamp
                 ,dataType : 'jsonp'
                 ,jsonp : false
                 ,jsonpCallback : 'json_welcome'
