@@ -19,7 +19,14 @@
 	
 	<link rel="stylesheet" href="../../css_new/owl.carousel.min.css" >
 	<link rel="stylesheet" href="../../css_new/owl.theme.default.min.css" >
-	
+	<style>
+  .fbvideo-v{text-align: center;
+    background-color: #000;
+    min-height: 650px;
+    position: relative;
+    z-index: 9;}  
+  .mainimg{max-height:650px;position:absolute;z-index:1;margin-left: -50%;}
+  </style>
     <!--沒商品開這個-->
 <!--	<style> @media (max-width: 932px) {.col-md-3{display: none;}  }</style>-->	
    
@@ -46,14 +53,6 @@
 
 <body id="page-top">
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.2';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script> 
 	
 	<div id="menu">
 	</div>
@@ -63,18 +62,24 @@
     		<div class="container box1a-section" style="background-color:#fff;">
 				<div class="row">
                     <div class="col-xs-12 col-md-9 ">
-                    
+                      
                       <!--FB直式影片容器開始--> 
                        
-                      <div class="fbvideo-v" style="text-align: center;background-color:#000;">
+                      <div class="fbvideo-v" style="text-align: center;
+    background-color: #000;
+    min-height: 650px;
+    position: relative;
+    z-index: 9;
+">
                         <!--這邊貼上fb-code-->
-                        
-
-                        <div class="fb-video" data-href="https://www.facebook.com/pchome24h/videos/998666243677121/" data-width="500" data-show-text="true">
+                        <div class="fb-video" data-href="https://www.facebook.com/aMEI.feat.AMIT/videos/300590950814544/" data-width="500" data-show-text="true" style="position: relative;z-index:5;">
                         </div>
+                        <img class="mainimg" src="img/event.jpg" alt="" style="max-height:650px;position:absolute;z-index:1;margin-left: -50%;"/>
                       </div>
                       <!--FB直式影片容器結束-->
 
+                        
+                   
                       <!--yt直式影片容器開始-->
                       <!--<div class="ytvideo-container-v">
                         <div class="YTwrapper-v">
@@ -321,6 +326,14 @@ $(function() {
 		});	
   </script>	
 
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> 
 
 	
 </body>
