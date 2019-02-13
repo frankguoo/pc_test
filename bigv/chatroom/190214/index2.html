@@ -26,6 +26,10 @@
     position: relative;
     z-index: 9;}  
   .mainimg{max-height:650px;position:absolute;z-index:1;left:50%;margin-left: -197px;}
+  @media (max-width: 790px){
+    .fbvideo-v{min-height: auto;} 
+    .mainimg{display:none;}
+  }
   </style>
     <!--沒商品開這個-->
 <!--	<style> @media (max-width: 932px) {.col-md-3{display: none;}  }</style>-->	
@@ -73,7 +77,7 @@
                         <!--這邊貼上fb-code-->
                         <div class="fb-video" data-href="https://www.facebook.com/pchome24h/videos/998666243677121/" data-width="500" data-show-text="false" style="position: relative;z-index:5;">
                         </div>
-                        <img class="mainimg" src="img/event.jpg" alt="" style="max-height:650px;position:absolute;z-index:1;left:50%;margin-left: -197px;"/>
+                        <img class="mainimg desktop" src="img/event.jpg" alt="" style="max-height:650px;position:absolute;z-index:1;left:50%;margin-left: -197px;"/>
                       </div>
                       <!--FB直式影片容器結束-->
 
@@ -235,15 +239,11 @@
 	<script src="../../js_new/jquery-1.8.3.min.js"></script>
 	<script src="../../js_new/bootstrap/js/bootstrap.min.js"></script>
     
-    
-    
-    <script src="../../js_new/owl.carousel.js"></script>
+  <script src="../../js_new/owl.carousel.js"></script>
 	<script src="../../js_new/iframeResizer.min.js"></script>
 	<script src="../../js_new/common.js"></script>
 	<script src="../../js_new/jQuery.verticalCarousel.js"></script>
 	<script src="../js_new/menu.js"></script>
-	
-	
 	
 	
 <script>
