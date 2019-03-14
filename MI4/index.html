@@ -424,8 +424,7 @@ $(document).on('click', '#shareFaceBook', function(e) {
 	} else {
 		window.open(strURL, '_blank');
 	}
-});
-$(document).on('click', '#shareLINE', function(e) {
+}).on('click', '#shareLINE', function(e) {
 	e.preventDefault();
 	var strText = encodeURIComponent('{0} {1}'.format(document.title, window.location.toString()));
 	var isApp = navigator.userAgent.match(/PChome_APP_(ios|and)/);
@@ -435,8 +434,7 @@ $(document).on('click', '#shareLINE', function(e) {
 	} else {
 		window.open('http://line.me/R/msg/text/?' + strText, '_blank');
 	}
-});
-$(document).on('click', '#shareLink', function(e) {
+}).on('click', '#shareLink', function(e) {
         try {
             $('<div id="CopyContainer">{0} {1}</div>'.format(document.title, window.location.toString())).appendTo("body");
             var eleTmp = document.getElementById("CopyContainer");
@@ -478,7 +476,7 @@ $(document).on('click', '#shareLink', function(e) {
             eleTmp.remove();
             alert('不支援複製剪貼簿功能');
         }
-    });
+    })
 </script>
 
 
