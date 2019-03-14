@@ -417,15 +417,7 @@ $(function(){
 	});
 });
 
-$(document).on('click', '#shareFaceBook', function(e) {
-	e.preventDefault();
-	var strURL = 'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(window.location.toString());
-	if (navigator.userAgent.match('PChome_APP')) {
-		window.location = strURL + '#AppUrlBlank';
-	} else {
-		window.open(strURL, '_blank');
-	}
-}).on('click', '#shareLINE', function(e) {
+$(document).on('click', '#shareLINE', function(e) {
 	e.preventDefault();
 	var strText = encodeURIComponent('{0} {1}'.format(document.title, window.location.toString()));
 	var isApp = navigator.userAgent.match(/PChome_APP_(ios|and)/);
@@ -434,6 +426,14 @@ $(document).on('click', '#shareFaceBook', function(e) {
 		window.location = strURL;
 	} else {
 		window.open('http://line.me/R/msg/text/?' + strText, '_blank');
+	}
+}).on('click', '#shareFaceBook', function(e) {
+	e.preventDefault();
+	var strURL = 'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(window.location.toString());
+	if (navigator.userAgent.match('PChome_APP')) {
+		window.location = strURL + '#AppUrlBlank';
+	} else {
+		window.open(strURL, '_blank');
 	}
 }).on('click', '#shareLink', function(e) {
         try {
