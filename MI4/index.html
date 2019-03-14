@@ -427,7 +427,7 @@ $(document).on('click', '#shareLINE', function(e) {
 	window.open(strURL, '_blank');
 }).on('click', '#shareLink', function(e) {
         try {
-            $('<div id="CopyContainer">{0} {1}</div>'.format(document.title, window.location.toString())).appendTo("body");
+            $('<div id="CopyContainer"></div>'.format(window.location.toString())).appendTo("body");
             var eleTmp = document.getElementById("CopyContainer");
             var range = document.createRange();
             range.selectNode(eleTmp);
