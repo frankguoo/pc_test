@@ -427,44 +427,12 @@ $(document).on('click', '#shareLINE', function(e) {
 	window.open(strURL, '_blank');
 }).on('click', '#shareLink', function(e) {
         try {
-            $('<div id="CopyContainer"></div>'.format(window.location.toString())).appendTo("body");
-            var eleTmp = document.getElementById("CopyContainer");
+            encodeURIComponent(window.location.toString())).appendTo("body");
             var range = document.createRange();
-            range.selectNode(eleTmp);
             window.getSelection().removeAllRanges();
             window.getSelection().addRange(range);
-            if (document.execCommand('copy')) {
-                if (!$('#PanelSwiperContainer').hasClass('unblock')) {
-                    $('.copy_box').css({
-                        "top": "80px"
-                    });
-                } else {
-                    $('.copy_box').css({
-                        "top": "40px"
-                    });
-                }
-                $('.copy_box').removeClass('unblock');
-                $('#btnShare').click();
-                setTimeout(function() {
-                    $(".copy_box").slideToggle();
-                    setTimeout(function() {
-                        $('.copy_box').removeAttr('style').addClass('unblock');
-                        if (!$('#PanelSwiperContainer').hasClass('unblock')) {
-                            $('.copy_box').css({
-                                "top": "80px"
-                            });
-                        } else {
-                            $('.copy_box').css({
-                                "top": "40px"
-                            });
-                        }
-                    }, 1000);
-                }, 2000);
-            }
             window.getSelection().removeAllRanges();
-            eleTmp.remove();
         } catch (err) {
-            eleTmp.remove();
             alert('不支援複製剪貼簿功能');
         }
     })
