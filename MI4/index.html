@@ -425,18 +425,7 @@ $(document).on('click', '#shareLINE', function(e) {
 	e.preventDefault();
 	var strURL = 'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(window.location.toString());
 	window.open(strURL, '_blank');
-}).on('click', '#shareLink', function(e) {
-        try {
-            encodeURIComponent(window.location.toString())).appendTo("body");
-            var range = document.createRange();
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(range);
-            window.getSelection().removeAllRanges();
-        } catch (err) {
-            alert('不支援複製剪貼簿功能');
-        }
-    })
-
+})
 </script>
 
 
