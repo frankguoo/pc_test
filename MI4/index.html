@@ -179,14 +179,14 @@
 <div class="fixedbutton">
 	<a class="linkmore" href="javascript:;"></a>
 	<div class="fixedbutton_more">
-		<a id="shareLink">
-			<div class="copylink"></div>
+		<a >
+			<div id="shareLink" class="copylink"></div>
 		</a>
-		<a id="shareLINE">
-			<div class="line"></div>
+		<a >
+			<div id="shareLINE" class="line"></div>
 		</a>
-		<a id="shareFaceBook">
-			<div class="fb"></div>
+		<a >
+			<div id="shareFaceBook" class="fb"></div>
 		</a>
 	</div>
 </div>
@@ -416,6 +416,7 @@ $(function(){
 		$(".fixedbutton_more").toggleClass("open")
 	});
 });
+$(function() {
 $(document).on('click', '#shareFaceBook', function(e) {
 	e.preventDefault();
 	var strURL = 'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(window.location.toString());
@@ -477,6 +478,7 @@ $(document).on('click', '#shareFaceBook', function(e) {
             alert('不支援複製剪貼簿功能');
         }
     })
+});	
 </script>
 
 
