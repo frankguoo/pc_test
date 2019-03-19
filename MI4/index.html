@@ -415,7 +415,17 @@ $(function(){
 	$(".linkmore").on("click", function () {
 		$(".fixedbutton_more").toggleClass("open")
 	});
+	$('html')
+        .delay(1000)
+        .queue(function (next) {
+            var sliderHeight = $('.sub-slider .item').height();
+            if (windowScreen.width() < 767) {
+                $('footer').css('margin-bottom',sliderHeight);
+            }
+    });
 });
+
+
 
 $(document).on('click', '#shareLINE', function(e) {
 	e.preventDefault();
