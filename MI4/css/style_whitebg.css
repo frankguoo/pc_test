@@ -75,9 +75,9 @@ header .pchome_member > li > a:hover{color:#ff6900}
 .mi_section .miLogo{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .mi_section .miLogo h1{margin: 0px 0 0 20px;font-size: 1.8em;font-weight: 700;}
 .mi_section .miLogo > img{width:40px}
-.mi_section .marquee_Section{position:absolute;width:370px;right:20px;bottom:-3px;}
-.mi_section .marquee_Section .marqueebar .item{width:100%}
-.mi_section .marquee_Section .marqueebar .owl-dots{display:none}
+.marquee_Section{position:absolute;width:370px;right:20px;bottom:-3px;}
+.marquee_Section .marqueebar .item{width:100%}
+.marquee_Section .marqueebar .owl-dots{display:none}
 @media only screen and (max-width: 800px) {
   .mi_section .row{width: auto;}
 }
@@ -85,9 +85,9 @@ header .pchome_member > li > a:hover{color:#ff6900}
   .mi_section{justify-content: center;position: fixed;top:42.44px;height:60px;z-index: 98;background: #fff;width: 100%;margin:auto;box-shadow: 1px 1px 1px #d8d8d8;}
   .mi_section .miLogo{margin-left: 0px;}
   .mi_section .miLogo h1 {margin: 0px 0 0 10px;}
-  .mi_section .marquee_Section {position: fixed;bottom: 0;left: 0;right: 0;z-index: 20;width: 100%;}
-  .mi_section .marquee_Section .marqueebar {width: 100%;}
-  .mi_section .marquee_Section .marqueebar:before {content: '';display: block;position: absolute;top: -10px;width: 100%;height: 100%;background-color: rgba(255, 255, 255, 0.6);}
+.marquee_Section {position: fixed;bottom: 0;left: 0;right: 0;z-index: 20;width: 100%;}
+.marquee_Section .marqueebar {width: 100%;}
+.marquee_Section .marqueebar:before {content: '';display: block;position: absolute;top: -10px;width: 100%;height: 100%;background-color: rgba(255, 255, 255, 0.6);}
 }
 
 

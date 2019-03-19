@@ -68,20 +68,6 @@
 			<img src="images/logo_mi.svg" alt="miLogo">
 			<h1>小米旗艦館</h1>
 		</div>
-		<div class="marquee_Section">
-			<div class="marqueebar owl-carousel owl-theme">
-				<div>
-					<a href="#" target="_blank">
-						<img src="images/bn1.jpg" alt=""/>
-					</a>
-				</div>
-				<div>
-					<a href="#" target="_blank">
-						<img src="images/bn2.jpg" alt=""/>
-					</a>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 
@@ -311,6 +297,20 @@
 	<p>網路家庭版權所有 Copyright PChome Online 版權所有，轉載必究</p>
 	<p>*PChome聯名卡活動期間至2019/3/31，相關優惠權益或服務之細節及限制條件請詳花旗官網/權益手冊</p>
 </footer>
+<div class="marquee_Section">
+	<div class="marqueebar owl-carousel owl-theme">
+		<div>
+			<a href="#" target="_blank">
+				<img src="images/bn1.jpg" alt=""/>
+			</a>
+		</div>
+		<div>
+			<a href="#" target="_blank">
+				<img src="images/bn2.jpg" alt=""/>
+			</a>
+		</div>
+	</div>
+</div>
 
 
 
@@ -415,30 +415,6 @@ $(function(){
 	$(".linkmore").on("click", function () {
 		$(".fixedbutton_more").toggleClass("open")
 	});
-    // apple small silder fixed 
-    var windowScreen = $(window);
-    if (windowScreen.width() < 768) {
-        $('a.logo_link').attr('href','https://24h.m.pchome.com.tw/');
-        windowScreen.scroll(function() {
-            if (windowScreen.scrollTop() > 50) {
-                $('.marquee_Section').fadeIn();
-            } else {
-                $('.marquee_Section').fadeOut();
-            }
-        });
-    }
-    windowScreen.resize(function() {
-        if (windowScreen.width() < 768) {
-            $('a.logo_link').attr('href','https://24h.m.pchome.com.tw/');
-            windowScreen.scroll(function() {
-                if (windowScreen.scrollTop() > 50) {
-                    $('.marquee_Section').fadeIn();
-                } else {
-                    $('.marquee_Section').fadeOut();
-                }
-            });
-        }
-    })//apple silder end 
 });
 
 
