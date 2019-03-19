@@ -415,14 +415,30 @@ $(function(){
 	$(".linkmore").on("click", function () {
 		$(".fixedbutton_more").toggleClass("open")
 	});
-	$('html')
-        .delay(1000)
-        .queue(function (next) {
-            var sliderHeight = $('.sub-slider .item').height();
-            if (windowScreen.width() < 767) {
-                $('footer').css('margin-bottom',sliderHeight);
+    // apple small silder fixed 
+    var windowScreen = $(window);
+    if (windowScreen.width() < 768) {
+        $('a.logo_link').attr('href','https://24h.m.pchome.com.tw/');
+        windowScreen.scroll(function() {
+            if (windowScreen.scrollTop() > 50) {
+                $('.marquee_Section').fadeIn();
+            } else {
+                $('.marquee_Section').fadeOut();
             }
-    });
+        });
+    }
+    windowScreen.resize(function() {
+        if (windowScreen.width() < 768) {
+            $('a.logo_link').attr('href','https://24h.m.pchome.com.tw/');
+            windowScreen.scroll(function() {
+                if (windowScreen.scrollTop() > 50) {
+                    $('.marquee_Section').fadeIn();
+                } else {
+                    $('.marquee_Section').fadeOut();
+                }
+            });
+        }
+    })//apple silder end 
 });
 
 
