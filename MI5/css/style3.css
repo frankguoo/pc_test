@@ -314,9 +314,9 @@ footer > p{font-weight:300}
   }
   .mostly-customized-scrollbar {
     display: block;
-    width: 10em;
-    overflow: auto;
-    height: 2em;
+    width: 10em!important;
+    overflow: auto!important;
+    height: 2em!important;
   }
   .invisible-scrollbar::-webkit-scrollbar {
     display: none;
