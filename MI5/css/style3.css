@@ -122,7 +122,7 @@ header .pchome_member > li > a:hover{color:#ff6900}
   .menu_box .menu_list li a{font-size: 17px;line-height: 35px;padding:0 10px;}
   .menu_box .menu_list li .submenu{padding-right: 150px;height: 100vh;}
   .menu_box .menu_list li .submenu a{font-size: 16px;line-height: 46px;}
-  .menu_box .menu_list li .submenu{overflow: scroll;padding: 20px 20px 140px 20px;}
+  .menu_box .menu_list li .submenu{overflow: scroll;padding: 20px 20px 200px 20px;}
   .menu_box .menu_list li:hover > .submenu{display:block;opacity:1;min-width: auto;}
   .menu_box .menu_list li:hover > .sub2 .subcolumn{width: 100%;}
 }
