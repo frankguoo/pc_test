@@ -24,6 +24,19 @@
   background:rgba(0,0,0,0.05);
 }
 
+/* Demonstrate a "mostly customized" scrollbar
+ * (won't be visible otherwise if width/height is specified) */
+ .mostly-customized-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+  background-color: #aaa; /* or add it to the track */
+}
+
+/* Add a thumb */
+.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
+    background: #000; 
+}
+
 ol,ul{margin:0;padding:0;list-style:none}
 html,body{font-family:"Helvetica Neue",'Helvetica','微軟正黑體','Arial',sans-serif;-webkit-overflow-scrolling:touch;width:100%;overflow-x:hidden}
 .wrap{background-color:#fff;background-position:center top;background-repeat:no-repeat;background-size:100% auto;max-width:100%;margin:0 auto;position:relative;box-sizing:border-box;-webkit-box-sizing:border-box}
@@ -126,7 +139,7 @@ header .pchome_member > li > a:hover{color:#ff6900}
   .menu_box .menu_list li a{font-size: 17px;line-height: 35px;padding:0 10px;}
   .menu_box .menu_list li .submenu{padding-right: 150px;height: 100vh;}
   .menu_box .menu_list li .submenu a{font-size: 16px;line-height: 46px;}
-  .menu_box .menu_list li .submenu{overflow-y: scroll;padding: 20px 20px 140px 20px;}
+  .menu_box .menu_list li .submenu{overflow: scroll;padding: 20px 20px 140px 20px;}
   .menu_box .menu_list li:hover > .submenu{display:block;opacity:1;min-width: auto;}
   .menu_box .menu_list li:hover > .sub2 .subcolumn{width: 100%;}
 }
