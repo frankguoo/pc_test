@@ -1,6 +1,7 @@
 @charset "UTF-8";
 ::-webkit-scrollbar {
   width:9px;
+  -webkit-appearance: none;
 }
 
 ::-webkit-scrollbar-track {
