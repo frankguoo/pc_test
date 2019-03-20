@@ -98,7 +98,7 @@
 					<ul class="menu_list">
 						<li>
 							<a href="javascript:void(0)" onclick="return false;">手機<span>›</span></a>
-							<div class="submenu sub2 mostly-customized-scrollbar">
+							<div class="submenu sub2">
 								<div class="subcolumn">
 									<div><a href="#">小米MIX2系列</a></div>
 									<div><a href="#">小米MIX2 64G</a></div>
@@ -125,7 +125,7 @@
 						</li>
 						<li>
 							<a href="javascript:void(0)" onclick="return false;">智慧家庭<span>›</span></a>
-							<div class="submenu sub2 mostly-customized-scrollbar">
+							<div class="submenu sub2">
 								<div class="subcolumn">
 									<div><a href="#">米家電磁爐</a></div>
 									<div><a href="#">石頭掃地機器人</a></div>
@@ -406,7 +406,7 @@ $(function(){
 	})
 	$('.menu_icon').click(function(){
 		$(this).toggleClass('active');
-		$('.menu_overlay, .marquee_Section').toggleClass('active');
+		$('.menu_overlay, .marquee_Section, html, body').toggleClass('active');
 		$('.ui-toolbar').toggleClass('active');
 	})
 	$('.gotop, .gotopm').click(function() {
@@ -445,7 +445,7 @@ var subColumn = $('.subcolumn');
 	if (windowScreen.width() < 799) {
 		$('.submenu').css('width', windowScreen.width() - 130);
 	}else{
-		$('.submenu').css('width',  '');
+		$('.submenu').css('width', '');
 	}
 windowScreen.resize(function() {
 	if (windowScreen.width() < 799) {

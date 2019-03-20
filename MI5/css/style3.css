@@ -1,8 +1,27 @@
 @charset "UTF-8";
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 
 ol,ul{margin:0;padding:0;list-style:none}
 html,body{font-family:"Helvetica Neue",'Helvetica','微軟正黑體','Arial',sans-serif;-webkit-overflow-scrolling:touch;width:100%;overflow-x:hidden}
+html.active,body.active{overflow-y: hidden;}
 .wrap{background-color:#fff;background-position:center top;background-repeat:no-repeat;background-size:100% auto;max-width:100%;margin:0 auto;position:relative;box-sizing:border-box;-webkit-box-sizing:border-box}
 a:hover,a:active,a:focus,button:active,button:focus,area:active,area:focus{-webkit-box-shadow:none;box-shadow:none;outline:0;text-decoration:none}
 [class*="col"]{padding:0}
@@ -311,21 +330,4 @@ footer > p{font-weight:300}
   @media only screen and (max-width: 931px) {
   .mobile{display:block!important}
   .desktop{display:none!important}
-  }
-  .mostly-customized-scrollbar {
-    display: block;
-    width: 10em!important;
-    overflow: auto!important;
-    height: 2em!important;
-  }
-  .invisible-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .mostly-customized-scrollbar::-webkit-scrollbar {
-    width: 5px;
-    height: 8px;
-    background-color: #aaa; /* or add it to the track */
-  }
-  .mostly-customized-scrollbar::-webkit-scrollbar-thumb {
-      background: #000; 
   }
