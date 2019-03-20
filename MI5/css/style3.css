@@ -1,28 +1,4 @@
 @charset "UTF-8";
-::-webkit-scrollbar {
-  width:9px;
-  -webkit-appearance: none;
-}
-
-::-webkit-scrollbar-track {
-  -webkit-border-radius:5px;
-  border-radius:5px;
-  background:rgba(0,0,0,0.1);
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius:5px;
-  border-radius:5px;
-  background:rgba(0,0,0,0.2);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background:rgba(0,0,0,0.4);
-}
-
-::-webkit-scrollbar-thumb:window-inactive {
-  background:rgba(0,0,0,0.05);
-}
 .visible-scrollbar, .invisible-scrollbar, .mostly-customized-scrollbar {
   display: block;
   width: 10em;
@@ -37,18 +13,6 @@
 /* Demonstrate a "mostly customized" scrollbar
  * (won't be visible otherwise if width/height is specified) */
 .mostly-customized-scrollbar::-webkit-scrollbar {
-  width: 5px;
-  height: 8px;
-  background-color: #aaa; /* or add it to the track */
-}
-
-/* Add a thumb */
-.mostly-customized-scrollbar::-webkit-scrollbar-thumb {
-    background: #000; 
-}
-/* Demonstrate a "mostly customized" scrollbar
- * (won't be visible otherwise if width/height is specified) */
- .mostly-customized-scrollbar::-webkit-scrollbar {
   width: 5px;
   height: 8px;
   background-color: #aaa; /* or add it to the track */
