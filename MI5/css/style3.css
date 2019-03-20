@@ -86,7 +86,7 @@ header .pchome_member > li > a:hover{color:#ff6900}
 .menu_box .menu_list li .submenu a:hover{color:#ff5f00;}
 .menu_box .menu_list li .submenu hr{margin: 10px 0;border-top: 1px solid #eeeeee;}
 .menu_box .menu_list li .sub2 hr{width: 90%;}
-.menu_box .menu_list li:hover > .submenu{display:inline-flex;display:-ms-inline-flexbox;opacity:1;}
+.menu_box .menu_list li:hover > .submenu{display:inline-flex;display:-ms-inline-flexbox;opacity:1;min-width: 422px;}
 .menu_box .menu_list li .sub2 .subcolumn{padding:0 10px;float:left;}
 .menu_box .menu_list li .sub2 .subcolumn > div{width: 170px;}
 .menu_box .site_evt li{margin:1px 0;}
@@ -103,7 +103,7 @@ header .pchome_member > li > a:hover{color:#ff6900}
   .menu_box .menu_list li .submenu{padding-right: 150px;height: 100vh;}
   .menu_box .menu_list li .submenu a{font-size: 16px;line-height: 46px;}
   .menu_box .menu_list li .submenu{overflow-y: scroll;padding: 20px 20px 140px 20px;}
-  .menu_box .menu_list li:hover > .submenu{display:block;opacity:1;}
+  .menu_box .menu_list li:hover > .submenu{display:block;opacity:1;min-width: auto;}
   .menu_box .menu_list li:hover > .sub2 .subcolumn{width: 100%;}
 }
 
