@@ -336,7 +336,7 @@ $(function(){
 </script>
 <script>
 	/*---------各板身load--------*/
-	$('#Section2 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_01.html", function() {
+	$('#Section2 > .container > .row').load("index_01.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 		if($('.subSlider ul li').length <= 2){
 			$('.subSlider ul li').removeClass('item col-xs-6 col-sm-6 col-md-3').addClass('item col-xs-12 col-sm-12 col-md-6');
@@ -344,28 +344,28 @@ $(function(){
 			$('.subSlider ul li').removeClass('item col-xs-6 col-sm-6 col-md-3').addClass('item col-xs-12 col-sm-12 col-md-4');
 		}
 	});
-	$('#Section3 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_02.html", function() {
+	$('#Section3 > .container > .row').load("index_02.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section4 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_03.html", function() {
+	$('#Section4 > .container > .row').load("index_03.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section5 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_04.html", function() {
+	$('#Section5 > .container > .row').load("index_04.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section6 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_05.html", function() {
+	$('#Section6 > .container > .row').load("index_05.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section7 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_06.html", function() {
+	$('#Section7 > .container > .row').load("index_06.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section8 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_07.html", function() {
+	$('#Section8 > .container > .row').load("index_07.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section9 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_08.html", function() {
+	$('#Section9 > .container > .row').load("index_08.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section10 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_09.html", function() {
+	$('#Section10 > .container > .row').load("index_09.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
 	 
@@ -441,7 +441,7 @@ $(function(){
 	});
 
 
-if (windowScreen.width() > 768 && windowScreen.width() < 1025) {	
+if (windowScreen.width() > 800 && windowScreen.width() < 1025) {	
 	$(window).scroll(function () {
 		if ($(window).scrollTop() >= 5) {
 			$('.ui-toolbar').addClass('s_close');
@@ -457,6 +457,11 @@ if (windowScreen.width() > 768 && windowScreen.width() < 1025) {
 	});
 	$(window).on( 'scroll', function(){
 		$('.menu_box .menu_list li .active').removeClass("active");
+	});
+	$(".ui-toolbar").on("click", function () {
+		if ($(".ui-toolbar").hasClass("s_close")) {
+			$('.submenu, .menu_box .menu_list li > a').removeClass("active");
+		}
 	});
 }
 
