@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/style3.css">
+	<link rel="stylesheet" href="css/style6.css">
 </head>
 
 <body>
@@ -67,7 +67,7 @@
 			</div>
 		</div>
 		<div class="miLogo">
-			<img src="images/logo_mi.svg" alt="miLogo">
+			<img src="images/logo_mi2.svg" alt="miLogo">
 			<h1>小米旗艦館</h1>
 		</div>
 		<div class="marquee_Section">
@@ -194,6 +194,10 @@
 <div class="gotopm"></div>
 
 
+<!-- 大背景圖 -->
+<div class="bg_wrap">
+
+	
 <!-- 大圖輪播 -->
 <section id="Section1">	
 	<div class="container">
@@ -304,7 +308,7 @@
 	</div>
 </div>
 
-
+</div>
 <!-- footer -->
 <footer>
 	<p>本活動頁商品規格、顏色、價位、贈品如與銷售網頁不符，以銷售網頁標示為準！</p>
@@ -332,7 +336,7 @@ $(function(){
 </script>
 <script>
 	/*---------各板身load--------*/
-	$('#Section2 > .container > .row').load("index_01.html", function() {
+	$('#Section2 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_01.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 		if($('.subSlider ul li').length <= 2){
 			$('.subSlider ul li').removeClass('item col-xs-6 col-sm-6 col-md-3').addClass('item col-xs-12 col-sm-12 col-md-6');
@@ -340,28 +344,28 @@ $(function(){
 			$('.subSlider ul li').removeClass('item col-xs-6 col-sm-6 col-md-3').addClass('item col-xs-12 col-sm-12 col-md-4');
 		}
 	});
-	$('#Section3 > .container > .row').load("index_02.html", function() {
+	$('#Section3 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_02.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section4 > .container > .row').load("index_03.html", function() {
+	$('#Section4 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_03.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section5 > .container > .row').load("index_04.html", function() {
+	$('#Section5 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_04.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section6 > .container > .row').load("index_05.html", function() {
+	$('#Section6 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_05.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section7 > .container > .row').load("index_06.html", function() {
+	$('#Section7 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_06.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section8 > .container > .row').load("index_07.html", function() {
+	$('#Section8 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_07.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section9 > .container > .row').load("index_08.html", function() {
+	$('#Section9 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_08.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
-	$('#Section10 > .container > .row').load("index_09.html", function() {
+	$('#Section10 > .container > .row').load("https://www.pchomeec.tw/activity/AC79313407?n=index_09.html", function() {
 		$('.css ,.container > .row > meta, .container > .row > tittle').remove();
 	});
 	 
@@ -437,22 +441,41 @@ $(function(){
 	});
 
 
+if (windowScreen.width() > 768 && windowScreen.width() < 1025) {	
+	$(window).scroll(function () {
+		if ($(window).scrollTop() >= 5) {
+			$('.ui-toolbar').addClass('s_close');
+		}else{
+			$('.ui-toolbar').removeClass('s_close');
+		};
+	});
+	$(".menu_box .menu_list li").on("click", function () {
+		$('.menu_box .menu_list li').not(this).children('a').removeClass("active");
+		$(this).children('a').toggleClass("active");
+		$('.menu_box .menu_list li').not(this).children('.submenu').removeClass("active");
+		$(this).children('.submenu').toggleClass("active");
+	});
+	$(window).on( 'scroll', function(){
+		$('.menu_box .menu_list li .active').removeClass("active");
+	});
+}
+
 });
 var windowScreen = $(window);
-
 var subMenu = $('.submenu');
 var subColumn = $('.subcolumn');
 	if (windowScreen.width() < 799) {
 		$('.submenu').css('width', windowScreen.width() - 130);
 	}else{
 		$('.submenu').css('width', '');
-	}
+	};
+
 windowScreen.resize(function() {
 	if (windowScreen.width() < 799) {
 		$('.submenu').css('width', windowScreen.width() - 130);
 	}else{
 		$('.submenu').css('width', '');
-	}
+	};
 })
 /*---------社群分享互動--------*/
 $(document).on('click', '#shareLINE', function(e) {
