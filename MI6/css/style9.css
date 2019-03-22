@@ -136,13 +136,12 @@ header .pchome_member > li > a:hover{color:#ff6900}
   .menu_box .menu_list{width: 115px;}
   .menu_box .gotop{display:none!important;}
   .menu_box .menu_list li a{font-size: 17px;line-height: 46px;padding:0 10px;}
-  .menu_box .menu_list li .submenu{padding-right: 150px;height: 100vh;}
+  .menu_box .menu_list li .submenu{padding-right: 150px;height: 100vh;overflow:auto ;-webkit-overflow-scrolling: touch;position: absolute;z-index: 50;}
   .menu_box .menu_list li .submenu a{font-size: 16px;line-height: 46px;display:inline!important;}
-  .menu_box .menu_list li .submenu{overflow:hidden;overflow-y:auto;
-    -webkit-overflow-scrolling: touch;position: absolute;z-index: 50;
-    overflow-y: auto;padding: 10px 0px 200px 0px;}
-  .menu_box .menu_list li:hover > .submenu{display:block;opacity:1;min-width: auto;}
-  .menu_box .menu_list li:hover > .sub2 .subcolumn{width: 100%;}
+  .menu_box .menu_list li .submenu{overflow:hidden;overflow-y:auto;-webkit-overflow-scrolling: touch;position: absolute;z-index: 50;overflow-y: auto;padding: 10px 0px 200px 0px;}
+  .menu_box .menu_list li:hover > .submenu{display:block;opacity:1;min-width: auto;}`
+  .menu_box .menu_list li:hover > .sub2 .subcolumn{width: 100%;overflow:auto ;-webkit-overflow-scrolling: touch;position: absolute;z-index: 50;}
+  .menu_box .menu_list li .sub2 .subcolumn{width: 100%;overflow:auto ;-webkit-overflow-scrolling: touch;position: absolute;z-index: 50;}
 }
 @media only screen and (max-width: 330px) {
   .menu_box .menu_list li > .submenu {width:207px!important;}
