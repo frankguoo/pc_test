@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+
+<body>
+    <div class="css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/style9.css">
+    </div>
+
+
+    <div id="main">
+        <div class="subSlider">
+            <ul>
+                <!--第一卡-->
+                <li id="jump1" class="item col-xs-6 col-sm-6 col-md-3">
+                    <a target="_blank" href="https://24h.pchome.com.tw/region/DYAN">
+                        <img src="images/banner_sub_1_0320.jpg" class="desktop img-responsive">
+                    </a>
+                    <a target="_blank" href="https://24h.pchome.com.tw/region/DYAN">
+                        <img src="images/banner_sub_1_0320.jpg" class="mobile img-responsive">
+                    </a>
+                </li>
+                <!--第二卡-->
+                <li id="jump2" class="item col-xs-6 col-sm-6 col-md-3">
+                    <a target="_blank" href="https://24h.pchome.com.tw/region/DYAN">
+                        <img src="images/banner_sub_2_0320.jpg" class="desktop img-responsive">
+                    </a>
+                    <a target="_blank" href="https://24h.pchome.com.tw/region/DYAN">
+                        <img src="images/banner_sub_2_0320.jpg" class="mobile img-responsive">
+                    </a>
+                </li>
+                <!--第三卡-->
+                <!--<li id="jump3" class="item col-xs-6 col-sm-6 col-md-3">
+                    <a target="_blank" href="https://24h.pchome.com.tw/region/DYAN">
+                        <img src="images/sub_banner1.jpg" class="desktop img-responsive">
+                    </a>
+                    <a target="_blank" href="https://24h.pchome.com.tw/region/DYAN">
+                        <img src="images/sub_banner1.jpg" class="mobile img-responsive">
+                    </a>
+                </li>-->
+                <!--第四卡-->
+                <!--<li id="jump4" class="item col-xs-6 col-sm-6 col-md-3">
+                    <a target="_blank" href="https://24h.pchome.com.tw/region/DYAN">
+                        <img src="images/sub_banner2.jpg" class="desktop img-responsive">
+                    </a>
+                    <a target="_blank" href="https://24h.pchome.com.tw/region/DYAN">
+                        <img src="images/sub_banner1.jpg" class="mobile img-responsive">
+                    </a>
+                </li>-->
+            </ul>		
+        </div>
+    </div>
+<script>
+/*---------二四格跳轉區域--------*/
+var now = new Date();
+var ms = now.getMonth()+1;
+var ds = now.getDate();
+var hs = now.getHours();
+var nextDate = now.getDate() + 1;
+    if( ms== 3 && ds== 14 && hs >= 0 && hs < 24 ){
+        document.getElementById('jump1').innerHTML = '<a href="#"></a>';
+        document.getElementById('jump2').innerHTML = ;
+        document.getElementById('jump3').innerHTML = ;
+        document.getElementById('jump4').innerHTML = ;
+    }		
+</script>        
+</body>
+
+</html>
