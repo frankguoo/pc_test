@@ -21,7 +21,7 @@
 
 ol,ul{margin:0;padding:0;list-style:none}
 html,body{font-family:"Helvetica Neue",'Helvetica','微軟正黑體','Arial',sans-serif;width:100%;}
-html.active,body.active{overflow-y: hidden!important;overflow: hidden!important;height: 0vh;position: relative;z-index: 1;}
+html.active,body.active{position: relative;z-index: 1;}
 .wrap{background-color:#fff;background-position:center top;background-repeat:no-repeat;background-size:100% auto;max-width:100%;margin:0 auto;position:relative;box-sizing:border-box;-webkit-box-sizing:border-box}
 a:hover,a:active,a:focus,button:active,button:focus,area:active,area:focus{-webkit-box-shadow:none;box-shadow:none;outline:0;text-decoration:none}
 [class*="col"]{padding:0}
