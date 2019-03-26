@@ -134,8 +134,8 @@ header .pchome_member > li > a:hover{color:#ff6900}
   .menu_overlay.active{display:block;}
   .mi_section .marquee_Section.active{bottom:-85px;transition:all .5s;display: none;}
   .ui-toolbar .ui-btn{display:none;}
-  .ui-toolbar .menu_box {height: 100%;left:-130px;top:103px;position: fixed;z-index: 999998;transition:all .5s;overflow: hidden;}
-  .ui-toolbar .menu_box.active {height: 100%;left:0px;top:103px;position: fixed;z-index: 999998;transition:all .5s;overflow: hidden;}
+  .ui-toolbar .menu_box {height: 100%;left:-130px;top:103px;position: fixed;z-index: 999998;transition:all .5s;}
+  .ui-toolbar .menu_box.active {height: 100%;left:0px;top:103px;position: fixed;z-index: 999998;transition:all .5s;}
   .menu_box .menu_list{width: 115px;}
   .menu_box .gotop{display:none!important;}
   .menu_box .menu_list li a{font-size: 17px;line-height: 46px;padding:0 10px;}
