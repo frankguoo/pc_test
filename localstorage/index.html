@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>採買清單</title>
+	<meta name="title" content="採買清單">
+	<meta name="keywords" content="採買清單">
+	<meta name="description" content="採買清單">
+	<meta property="og:title" content="採買清單">
+	<meta property="og:description" content="採買清單">
+	<meta property="og:image" content="https://a.ecimg.tw/img/sites/mi/images/mi_logo_200.png">
+	<meta property="og:site_name" content="採買清單">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://mi.pchomeec.tw/sites/mi">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="cache-control" content="no-cache">
+	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet" id="bootstrap-css">
+	<link href="css/style.css" rel="stylesheet" id="bootstrap-css">
+
+	
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+    <h1>localStorage <small>just a test...</small></h1>
+      <div class="alert alert-success" id="yay">Your browser supports Web Storage. Yay!</div>
+      <div class="alert alert-danger" id="ooh">Oooh... Your browser seems to be retarted. He can't use Web Storage.</div>
+  </div>
+    <div class="row">
+      <div class="col-md-6">
+        <h3>save a value</h3>
+        <form action="#" class="form-inline">
+          <div class="form-group">
+            <input type="text" name="save" id="text" class="form-control" placeholder="save a value here...">
+          </div>
+          <button id="set" class="btn btn-primary">save</button>
+        </form>
+        <hr>
+        <h3>read the value</h3>
+        <div class="alert alert-info" id="val"><i>nothing saved...</i></div>
+        <button id="get" class="btn btn-success">get saved value</button>
+         <button id="remove" class="btn btn-danger">clear the value</button>
+      </div>
+      <div class="col-md-6">
+         <hr class="visible-sm visible-xs">
+        <h3>About</h3>
+        <b>Features:</b>
+          <ul>
+            <li>You can set, read and clear the value.</li>
+            <li>The saved value is saved on your device.</li>
+            <li>On a page refresh or browser restart there should be the last saved value.</li>
+            <li>Even on a reboot the value should be saved.</li>
+            <li>more information <a href="https://www.w3schools.com/html/html5_webstorage.asp" target="_top">here</a></li>
+          </ul>
+        <b>Everything tested and worked on:</b>
+        <ul>
+          <li>Google Chrome 30 on Mac OS X and on Win7</li>
+          <li>Mozilla Firefox 24 on Mac OS X and on Win7</li>
+          <li>IE9, IE10 on Win7</li>
+          <li><i>and if not supported - create a fallback to cookies.</i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+
+<script>
+/* Detect browser can use web storage */
+if (!typeof(Storage) !== 'undefined') {
+  $('#yay').fadeIn('slow');
+} else {
+  $('#ooh').fadeIn('slow');
+}
+
+/* set it */
+$('#set').click(function() {
+  var test = $('#text').val();
+  localStorage.setItem("test", test);
+});
+
+/* get it */
+$('#get').click(function() {
+  $('#val').text(localStorage.getItem("test"));
+});
+
+/* remove it */
+$('#remove').click(function() {
+  localStorage.removeItem("test");
+});
+
+$('#val').text(localStorage.getItem("test"));
+</script>
+</body>	
+</html>
