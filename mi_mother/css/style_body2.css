@@ -319,10 +319,7 @@ header .pchome_member > li > a:hover{color:#ff6900}
 .spd_section .pd > .content > h5.red{background-color:#cc0001}
 .spd_section .pd > .content > h5.green{background-color: #03ae19;}
 @media only screen and (max-width: 1100px) {
-  .spd_section .pd > .content{min-height: 120px;}
-  .spd_section .pd > .content > p{min-height: 50px;}
-  .spd_section .pd > .content.red > p{min-height: 73px;}
-
+  .spd_section .pd > .content{min-height: 140px;}
 }
 @media only screen and (max-width: 800px) {
   .spd_section{padding:0;margin:0px}
@@ -331,7 +328,10 @@ header .pchome_member > li > a:hover{color:#ff6900}
 }
 @media only screen and (max-width: 600px) {
   .spd_section .pd > .content > h3 > span.line-through{display: block;height: 20px;}
-  .spd_section .pd > .content.red > p{min-height: 94px;}
+  .spd_section .pd > .content.red > p{min-height: 69px;}
+}
+@media only screen and (max-width: 370px) {
+  .spd_section .pd > .content > p{min-height: 51px;}
 }
 @media only screen and (max-width: 360px) {
   .spd_section .pd > .content > h5,.spd_section .pd > .content > p{height:47px;padding: 0 3px;}
@@ -339,6 +339,7 @@ header .pchome_member > li > a:hover{color:#ff6900}
   .spd_section .pd > .content.red > p{min-height: 69px;}
   .spd_section .pd > .content {min-height: 220px;}
 }
+
 /*--信用卡＆footer--*/
 .credit{background-color:#333;color:#fff;margin-top: 15px;}
 .credit .container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:15px 0}

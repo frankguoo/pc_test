@@ -332,6 +332,9 @@ header .pchome_member > li > a:hover{color:#ffffff}
   .spd_section .pd > .content > h3 > span.line-through{display: block;height: 20px;}
   .spd_section .pd > .content.red > p{min-height: 69px;}
 }
+@media only screen and (max-width: 370px) {
+  .spd_section .pd > .content > p{min-height: 51px;}
+}
 @media only screen and (max-width: 360px) {
   .spd_section .pd > .content > h5,.spd_section .pd > .content > p{height:47px;padding: 0 3px;}
   .spd_section .pd > .content > p{min-height: 100px;}
