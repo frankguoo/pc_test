@@ -409,7 +409,7 @@ ul.thaitown .right_box {
 	.game_wrap 					{ padding-bottom: 17%; }
 	#lottery 					{ width: 73%; margin-top: 28.5%; }
 	.section ul 				{ padding: 5px; overflow: hidden; padding-top: 10px; display:inline-flex; flex-wrap:wrap;}
-	.note 						{ bottom: 1.2%; width: 34%; margin-left: -17.5%; font-size: 5vw; padding: 1.5vw 0 1.4vw; box-shadow: 0 0; line-height: 0.8; }
+	.note 						{ bottom: 1.2%; width: 34%; margin-left: -17.5%; font-size: 5vw; padding: 1.5vw 0 1.4vw; margin-bottom: 10px; }
 	.section ul li 				{ width: 49%; padding: 5px; margin: 0 2% 2% 0; }
 	.section ul li:nth-child(even) { padding: 5px; margin-right: 0; }
 }
