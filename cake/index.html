@@ -72,7 +72,7 @@
 	<div class="wrap">
 		<div class="game_wrap">
 
-			<div class="note open-popup-link" data-effect="mfp-zoom-in" href="#game-popup">擷取圖片</div>
+			
 
 	<div>
 			<img class="ball" src="img/b01.png" alt="">
@@ -102,8 +102,11 @@
 
 		<!-- <p style="text-align: center; font-size: 24px;margin: 20px 0"><a href="#game-popup" class="open-popup-link" data-effect="mfp-zoom-in">注意事項</a></p> -->
 	</div>
-
-
+	<div class="note">擷取圖片</div>
+	<div class="lightbox">
+		<a href="#" class="closebox">&times;</a>
+		<img src="" class="image"/>
+	</div>
 
 	
 
@@ -123,13 +126,13 @@
 		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
 		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
+		<script type="text/javascript" src="js/html2canvas.min.js"></script>
     <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
-		<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 		<script type="text/javascript" src="js/common_v3.js"></script>
 		<script>
 			$( function() {
 				$( ".ball" ).draggable();
-			} );
+			});
 			</script>
 
 </body>
