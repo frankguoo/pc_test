@@ -25,7 +25,17 @@ function saveAs(uri, filename) {
     document.body.removeChild(link);
   } else {
     window.open(uri);
-  }
+  };
+
+  if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) { //iOS = Iphone, Ipad, etc.
+    alert("Instructions...");
+    link.target = "_blank";
+    link.href = dataURL;
+  } else {
+      link.target = ghostFrame.name;
+      link.href = dataURL.replace(/^data[:]image\/png[;]/i, "data:application/download;");//force download
+  };
+  
 }
 $(".note2").on("click", function() {
   html2canvas(document.getElementById("game")).then(function(canvas) {
@@ -41,3 +51,7 @@ $(".note2").on("click", function() {
 $(".closebox").on("click", function() {
   $(".lightbox").css("display", "none");
 });
+
+
+
+
