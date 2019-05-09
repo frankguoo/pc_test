@@ -140,6 +140,7 @@
 $('.note').on('click', function(){
 
 	html2canvas(document.getElementById("game")).then(function(canvas) {
+		document.body.appendChild(canvas);
 		console.log(canvas.toDataURL('image/png'));
 					var myImage = canvas.toDataURL("image/png");
 					$('.lightbox').fadeIn(200);
