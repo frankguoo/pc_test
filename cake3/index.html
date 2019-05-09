@@ -130,31 +130,7 @@
 		<script type="text/javascript" src="js/jquery.ui.touch-punch.js"></script>
 		<script type="text/javascript" src="js/html2canvas.min.js"></script>
 		<script type="text/javascript" src="js/polyfill.min.js"></script>
-    <script type="text/javascript" src="js/imageMapResizer.min.js"></script>
 		<script type="text/javascript" src="js/common_v3.js"></script>
-		<script>
-			$( function() {
-				$( ".ball" ).draggable();
-			});
-
-
-$('.note').on('click', function(){
-
-	html2canvas(document.getElementById("game")).then(function(canvas) {
-		document.body.appendChild(canvas);
-		console.log(canvas.toDataURL('image/png'));
-					var myImage = canvas.toDataURL("image/png");
-					$('.lightbox').fadeIn(200);
-					$('.image').attr('src', myImage).fadeIn(200);
-	});
-
-});
-
-$('.closebox').on('click', function(){
-		$('.lightbox').css("display","none");
-	});
-
-			</script>
 
 </body>
 </html>
